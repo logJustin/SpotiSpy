@@ -6,7 +6,6 @@ from slack_sdk.errors import SlackApiError
 load_dotenv()
 
 client = WebClient(token=os.getenv("SLACK_BOT_TOKEN"))
-test_channel_id = "C063AFNSPPE"
 spotify_channel_id = "C063HV2H62V"
 
 
