@@ -13,17 +13,17 @@ To enable Slack integration and receive notifications, follow these steps:
 
 1. Create a Slack App on the [Slack API Dashboard](https://api.slack.com/apps).
 2. Add the Slack Bot Token to your .env file:
-```env
+```
 SLACK_BOT_TOKEN=your_slack_bot_token
 ```
-3. Customize the spotify_channel_id in the script based on your Slack channels inside `messenger.py`.
+3. Update the `spotify_channel_id` in the script based on your Slack channels inside `messenger.py`.
 
 
 ## Setup Spotify API Credentials 🎧
 
 1. Obtain your Spotify API credentials by creating a new application on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications).
 2. Configure your .env file:
-    ```env
+    ```
     SPOTIFY_CLIENT_ID=your_client_id
     SPOTIFY_CLIENT_SECRET=your_client_secret
     SPOTIPY_REDIRECT_URI=your_redirect_uri
@@ -40,6 +40,7 @@ This script harmonizes with your tunes by:
 5. 💻 On Windows Machines, use Task Scheduler to:
     - Execute `excel.py` in the last minute of each hour.
     - Execute `send_analysis.py` each day at the time of your choosing.
+        - `send_analysis.py` will deliver a customized Slack messge with the data found in [Features](#features-🌟)
 
 
 ## Features 🌟
