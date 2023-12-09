@@ -40,7 +40,7 @@ This script harmonizes with your tunes by:
 5. 💻 On Windows Machines, use Task Scheduler to:
     - Execute `excel.py` in the last minute of each hour.
     - Execute `send_analysis.py` each day at the time of your choosing.
-        - `send_analysis.py` will deliver a customized Slack messge with the data found in [Features](#features-🌟)
+        - `send_analysis.py` will deliver a customized Slack messge with the data found in [Features](#features-)
 
 
 ## Features 🌟
