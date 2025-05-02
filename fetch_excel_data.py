@@ -10,7 +10,7 @@ def open_workbook():
     today = datetime.today().date()
     yesterday = today - timedelta(days=1)
     yesterday_str, today_str = str(yesterday), str(today)
-    workbook_path = f'./data/{str(yesterday_str)}.xlsx'
+    workbook_path = f'/home/justinreynolds/Documents/SpotiSpy/data/{str(yesterday_str)}.xlsx'
     workbook_location = Path(workbook_path)
 
     if workbook_location.is_file():
@@ -54,8 +54,7 @@ def sum_minutes_per_hour(day):
         for songs_played_time in hour:
             for song in hour[songs_played_time]['songs']:
                 hourly_duration += float(song['duration'])
-            hour[songs_played_time]['minutes_listened'] = format_duration(
-                hourly_duration)
+            hour[songs_played_time]['minutes_listened'] = format_duration(hourly_duration)
 
 
 def find_multiple_played(day, type):
@@ -69,7 +68,7 @@ def find_multiple_played(day, type):
                     artist_song_album = info[type]
                     item_counts[artist_song_album] += 1
                 else:
-                    artist_song_album = f'{info[type]} by {info['artist']}'
+                    artist_song_album = f"{info[type]} by {info['artist']}"
                     item_counts[artist_song_album] += 1
 
     hours_multiple_plays = {artist_song_album: count for artist_song_album,

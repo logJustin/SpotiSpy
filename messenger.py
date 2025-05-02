@@ -7,6 +7,7 @@ load_dotenv()
 
 client = WebClient(token=os.getenv("SLACK_BOT_TOKEN"))
 spotify_channel_id = "C063HV2H62V"
+#spotify_channel_id = "C063AFNSPPE"
 
 
 def send_message(message):

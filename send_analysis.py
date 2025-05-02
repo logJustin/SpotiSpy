@@ -21,8 +21,7 @@ def top_listens(data, type, verb):
         for x in range(length_of_items):
             message_second_part += f"{top_three_tracks[x][1]} {verb}: {top_three_tracks[x][0]}\n"
     else:
-        message_first_part = f"*Your top {length_of_items} {
-            type} from yesterday!*\n"
+        message_first_part = f"*Your top {length_of_items} {type} from yesterday!*\n"
         message_second_part = ""
         for x in range(length_of_items):
             message_second_part += f"{top_three_tracks[x][1]} {verb}: {top_three_tracks[x][0]}\n"
@@ -44,8 +43,7 @@ def most_popular_track(data):
                     highest_popularity = song_popularity
                     most_popular_song = song
 
-    message = f'The most popular song you listened to yesterday was *{most_popular_song['song']}* by *{
-        most_popular_song['artist']}* with a popularity score of {most_popular_song['song_popularity']}.'
+    message = f'The most popular song you listened to yesterday was *{most_popular_song["song"]}* by *{most_popular_song["artist"]}* with a popularity score of {most_popular_song["song_popularity"]}.'
     send_message(message)
 
 
@@ -69,8 +67,7 @@ def most_listened_hour(data):
 
     if longest_time_minutes != 0:
         hours, minutes = divmod(longest_time_minutes, 60)
-        message = f'Yesterday, the hour you listened to most music was at {
-            hour_of_longest_listens} with a listen time of {hours:02}:{minutes:02}'
+        message = f'Yesterday, the hour you listened to most music was at {hour_of_longest_listens} with a listen time of {hours:02}:{minutes:02}'
         send_message(message)
     else:
         print(f'Most listened to hour: No songs listened to yesterday!')
