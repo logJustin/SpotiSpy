@@ -1,0 +1,4 @@
+1. make script to connect to supabase
+2. make script to upload pre-existing data
+3. upload locally & push to pi
+4. see what other information you can add it.
