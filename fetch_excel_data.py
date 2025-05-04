@@ -1,23 +1,22 @@
-from openpyxl import load_workbook
-from datetime import datetime
-from pathlib import Path
-from pprint import pprint
-from collections import defaultdict
+import os
 from datetime import datetime, timedelta
-
+from pathlib import Path
+from collections import defaultdict
+from openpyxl import load_workbook
+from logger import app_logger
 
 def open_workbook():
     today = datetime.today().date()
     yesterday = today - timedelta(days=1)
-    yesterday_str, today_str = str(yesterday), str(today)
-    workbook_path = f'/home/justinreynolds/Documents/SpotiSpy/data/{str(yesterday_str)}.xlsx'
+    yesterday_str = str(yesterday)
+
+    workbook_path = os.path.expanduser(f'~/Documents/SpotiSpy/data/{yesterday_str}.xlsx')
     workbook_location = Path(workbook_path)
 
     if workbook_location.is_file():
         wb = load_workbook(filename=workbook_path)
         return wb
-    else:
-        raise FileNotFoundError(f"No workbook found at: {workbook_location}")
+    raise FileNotFoundError(f"No workbook found at: {workbook_location}")
 
 
 def build_song_info(row):
@@ -79,7 +78,7 @@ def find_multiple_played(day, type):
 def days_duration(day):
     total_seconds = 0
     for hour_data in day['history']:
-        for hour, data in hour_data.items():
+        for data in hour_data.items():
             # Splitting the time string into minutes and seconds
             minutes_listened = data['minutes_listened'].split(':')
             # Converting minutes and seconds to integers
@@ -106,7 +105,7 @@ def summarized_excel_object():
         days_duration(todays_history)
         return todays_history
     except Exception as e:
-        print(e)
+        app_logger.debug(e)
 
 
 if __name__ == '__main__':
@@ -118,9 +117,9 @@ if __name__ == '__main__':
         find_multiple_played(todays_history, 'artist')
         find_multiple_played(todays_history, 'album')
         days_duration(todays_history)
-        pprint(todays_history)
+        app_logger.info(todays_history)
 
     except FileNotFoundError as e:
-        print(e)
+        app_logger.debug(e)
     except Exception as e:
-        print(e)
+        app_logger.debug(e)

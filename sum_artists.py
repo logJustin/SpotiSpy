@@ -1,10 +1,11 @@
 import get_recently_played
 from get_last_hour import last_hour
+from logger import app_logger
 
 hour_ago_epoch = last_hour()
 tracklist = get_recently_played.get_tracklist(hour_ago_epoch)
 
-artist_count = {}  # Use a dictionary to store artist counts
+artist_count = {}
 
 for track in tracklist:
     artist = track['artist']
@@ -15,4 +16,4 @@ for track in tracklist:
 
 
 for artist, count in artist_count.items():
-    print(f"{artist}: {count}")
+    app_logger.info("%s: %s", artist, count)

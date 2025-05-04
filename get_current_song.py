@@ -1,19 +1,8 @@
-import spotipy
-from spotipy.oauth2 import SpotifyOAuth
-from pprint import pprint
-import os
-from dotenv import load_dotenv
 from messenger import send_message
-load_dotenv()
+from spotify_client import spotify_client
+from logger import app_logger
 
-spotify_id = os.getenv("SPOTIFY_CLIENT_ID")
-spotify_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
-redirect_uri = os.getenv("SPOTIPY_REDIRECT_URI")
-scope = 'user-read-currently-playing'
-
-spotify = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id=spotify_id, client_secret=spotify_secret, redirect_uri=redirect_uri, scope=scope))
-
+spotify = spotify_client()
 
 def get_current_song():
     # Get track information
@@ -31,10 +20,11 @@ def get_current_song():
 def main():
     artist, track, tid = get_current_song()
     if artist and track:
-        pprint(f"Currently playing {track} - {artist} - {tid}")
+        app_logger.info("Currently playing %s - %s - %s", track, artist,tid)
         send_message(f"Currently playing {track} by {artist}")
     else:
-        send_message(f"No song is currently playing!")
+        app_logger.info('No song playing!')
+        send_message("No song is currently playing!")
         print('No song playing!')
 
 
