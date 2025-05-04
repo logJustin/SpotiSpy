@@ -2,4 +2,4 @@
 .cache
 __pycache__
 /data
-/.venv
+/spotispyvenv
