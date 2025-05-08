@@ -1,7 +1,6 @@
-from logger import app_logger
-from messenger import send_message
-from fetch_excel_data import summarized_excel_object
-
+from scripts.general.logger import app_logger
+from scripts.message.slack.messenger import send_message
+from scripts.message.supabase.get import summarized_supabase_object
 
 def top_listens(music_list, item, verb):
     """Track and report top listened tracks, albums, or artists"""
@@ -115,11 +114,13 @@ def most_listened_hour(music_list):
         raise
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':    
     app_logger.info("Starting music tracker analysis")
     try:
-        app_logger.info("Fetching excel data")
-        data = summarized_excel_object()
+        app_logger.info("Fetching data")
+        # data = summarized_excel_object()
+        data = summarized_supabase_object()
+        print("multiple_listened_songs:", data.get("multiple_listened_songs"))
 
         app_logger.info("Running top listens analysis")
         top_listens(data, 'songs', 'listens')

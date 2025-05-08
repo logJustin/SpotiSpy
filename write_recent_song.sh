@@ -10,10 +10,10 @@ VENV_PATH="$HOME/Documents/SpotiSpy/spotispyvenv"
 source $VENV_PATH/bin/activate
 
 # Install the required packages (optional if already installed)
-pip install openpyxl slack_sdk python-dotenv spotipy
+pip install -r requirements.txt
 
 # Run your script
-python3 excel.py
+python3 -m scripts.download.fetch_and_upload
 
 # Deactivate the virtual environment
 deactivate

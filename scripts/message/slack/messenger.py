@@ -1,9 +1,9 @@
 import os
 from pprint import pprint
 from dotenv import load_dotenv
-from logger import app_logger
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
+from scripts.general.logger import app_logger
 
 load_dotenv()
 
@@ -20,7 +20,7 @@ def send_message(message):
         )
 
         pprint("\nMessage successfully sent!")
-        app_logger.info("\nMessage successfully sent!")
+        app_logger.info("Message successfully sent!")
 
         return result
     except SlackApiError as e:

@@ -3,16 +3,6 @@ import os
 from datetime import datetime
 
 def setup_logger(log_name='music_tracker', log_level=logging.INFO):
-    """
-    Sets up and returns a logger that can be imported and used across files
-    
-    Args:
-        log_name (str): Name for the logger
-        log_level (int): Logging level (e.g. logging.INFO, logging.DEBUG)
-        
-    Returns:
-        logging.Logger: Configured logger object
-    """
     # Create logs directory if it doesn't exist
     logs_dir = 'logs'
     if not os.path.exists(logs_dir):

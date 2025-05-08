@@ -1,5 +1,10 @@
 .env
-.cache
 __pycache__
 /data
 /spotispyvenv
+/spotispyvenv/__pycache__
+/scripts/archive/__pycache__
+/scripts/general/__pycache__
+/scripts/slack/__pycache__
+/scripts/spotify/__pycache__
+/scripts/supabase/__pycache__

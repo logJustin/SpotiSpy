@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-from logger import app_logger
+from scripts.general.logger import app_logger
 
 load_dotenv()
 

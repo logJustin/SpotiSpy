@@ -1,7 +1,8 @@
+from datetime import datetime
 from pprint import pprint
-from get_last_hour import last_hour
-from spotify_client import spotify_client
-from logger import app_logger
+from scripts.download.spotify.spotify_client import spotify_client
+from scripts.general.get_last_hour import last_hour
+from scripts.general.logger import app_logger
 
 spotify = spotify_client()
 
@@ -17,7 +18,7 @@ def get_tracklist(start_time):
             "album": song_data['track']['album']['name'],
             "artist": song_data['track']['album']['artists'][0]['name'],
             "duration": int(song_data['track']['duration_ms'])/1000,
-            "played_at": song_data['played_at'],
+            "played_at": datetime.fromisoformat(song_data['played_at']).isoformat(),
             "release_date": song_data['track']['album']['release_date'],
             "song": song_data['track']['name'],
             "song_popularity": song_data['track']['popularity'],
@@ -37,4 +38,3 @@ if __name__ == '__main__':
     for index, track in enumerate(tracks):
         pprint(f"{index+1}: {track['song']} by {track['artist']}")
         app_logger.info('%s: %s by %s', index+1, track['song'], track['artist'])
-

@@ -35,3 +35,50 @@ ValueError: No music data found
 2025-05-04 00:14:10,513 - music_tracker - INFO - Starting daily music tracker analysis
 2025-05-04 00:14:10,513 - music_tracker - INFO - Fetching summarized Excel data
 2025-05-04 00:14:10,513 - music_tracker - INFO - No music data found; exiting gracefully.
+2025-05-04 00:44:19,741 - music_tracker - INFO - Starting music tracker analysis
+2025-05-04 00:44:19,741 - music_tracker - INFO - Fetching excel data
+2025-05-04 00:44:19,756 - music_tracker - INFO - Running top listens analysis
+2025-05-04 00:44:19,757 - music_tracker - INFO - Calculating top songs listens
+2025-05-04 00:44:19,757 - music_tracker - ERROR - Error in top_listens for songs: 'NoneType' object is not subscriptable
+2025-05-04 00:44:19,757 - music_tracker - ERROR - Unexpected TypeError error: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/justinreynolds/Documents/SpotiSpy/send_analysis.py", line 125, in <module>
+    top_listens(data, 'songs', 'listens')
+  File "/Users/justinreynolds/Documents/SpotiSpy/send_analysis.py", line 13, in top_listens
+    music_list[f'multiple_listened_{item}'].items(), key=lambda x: x[1], reverse=True)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-04 00:45:24,260 - music_tracker - INFO - Starting music tracker analysis
+2025-05-04 00:45:24,260 - music_tracker - INFO - Fetching excel data
+2025-05-04 00:45:24,275 - music_tracker - INFO - Running top listens analysis
+2025-05-04 00:45:24,275 - music_tracker - INFO - Calculating top songs listens
+2025-05-04 00:45:24,275 - music_tracker - ERROR - Error in top_listens for songs: 'NoneType' object is not subscriptable
+2025-05-04 00:45:24,275 - music_tracker - ERROR - Unexpected TypeError error: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/justinreynolds/Documents/SpotiSpy/send_analysis.py", line 125, in <module>
+    top_listens(data, 'songs', 'listens')
+  File "/Users/justinreynolds/Documents/SpotiSpy/send_analysis.py", line 13, in top_listens
+    music_list[f'multiple_listened_{item}'].items(), key=lambda x: x[1], reverse=True)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-04 00:45:32,850 - music_tracker - INFO - Starting music tracker analysis
+2025-05-04 00:45:32,850 - music_tracker - INFO - Fetching excel data
+2025-05-04 00:45:32,866 - music_tracker - INFO - Running top listens analysis
+2025-05-04 00:45:32,866 - music_tracker - INFO - Calculating top songs listens
+2025-05-04 00:45:32,866 - music_tracker - ERROR - Error in top_listens for songs: 'NoneType' object is not subscriptable
+2025-05-04 00:45:32,866 - music_tracker - ERROR - Unexpected TypeError error: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/justinreynolds/Documents/SpotiSpy/send_analysis.py", line 125, in <module>
+    top_listens(data, 'songs', 'listens')
+  File "/Users/justinreynolds/Documents/SpotiSpy/send_analysis.py", line 13, in top_listens
+    music_list[f'multiple_listened_{item}'].items(), key=lambda x: x[1], reverse=True)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-04 00:47:24,662 - music_tracker - INFO - Starting music tracker analysis
+2025-05-04 00:47:24,662 - music_tracker - INFO - Fetching excel data
+2025-05-04 00:47:24,692 - music_tracker - ERROR - Unexpected AttributeError error: 'NoneType' object has no attribute 'keys'
+Traceback (most recent call last):
+  File "/Users/justinreynolds/Documents/SpotiSpy/send_analysis.py", line 124, in <module>
+    print(data.keys())
+          ^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'keys'
