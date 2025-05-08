@@ -2,5 +2,4 @@ spotipy==2.25.1
 slack_sdk==3.35.0
 python-dotenv==1.1.0
 requests==2.32.3
-
 pandas==2.2.1

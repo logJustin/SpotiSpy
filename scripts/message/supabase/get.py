@@ -66,7 +66,7 @@ def build_day_from_supabase(songs_data):
 def summarized_supabase_object():
     try:
         songs_data = get_recent_songs()
-        app_logger.info("Fetched songs_data: %s", songs_data)
+        app_logger.info("Fetched %s recent songs", len(songs_data))
 
         if not songs_data:
             app_logger.info("No recent songs found")

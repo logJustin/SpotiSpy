@@ -131,7 +131,7 @@ if __name__ == '__main__':
         most_popular_track(data['history'])
         most_listened_hour(data['history'])
 
-        app_logger.info("Analysis completed successfully")
+        app_logger.info("Analysis completed successfully\n")
     except KeyError as e:
         app_logger.error("Missing key in data structure: %s", e, exc_info=True)
         print(f"Data error: {e}")
