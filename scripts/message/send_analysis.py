@@ -1,4 +1,5 @@
 from scripts.general.logger import app_logger
+from scripts.message.analysis.utils import duration_listened_today
 from scripts.message.slack.messenger import send_message
 from scripts.message.supabase.get import summarized_supabase_object
 
@@ -118,8 +119,7 @@ if __name__ == '__main__':
     app_logger.info("Starting music tracker analysis")
     try:
         app_logger.info("Fetching data")
-        # data = summarized_excel_object()
-        data = summarized_supabase_object()
+        data, raw_data = summarized_supabase_object()
         print("multiple_listened_songs:", data.get("multiple_listened_songs"))
 
         app_logger.info("Running top listens analysis")
@@ -130,6 +130,9 @@ if __name__ == '__main__':
         app_logger.info("Running popularity and listening hours analysis")
         most_popular_track(data['history'])
         most_listened_hour(data['history'])
+
+        app_logger.info("Calculating duration listened today")
+        send_message(duration_listened_today(raw_data))
 
         app_logger.info("Analysis completed successfully\n")
     except KeyError as e:

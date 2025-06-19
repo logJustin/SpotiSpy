@@ -78,7 +78,7 @@ def summarized_supabase_object():
         find_multiple_played(day, 'artist')
         find_multiple_played(day, 'album')
         days_duration(day)
-        return day
+        return day, songs_data
 
     except Exception as e:
         app_logger.error("Error building summarized_supabase_object: %s", e)

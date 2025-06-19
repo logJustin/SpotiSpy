@@ -1,4 +1,5 @@
 from collections import defaultdict
+from datetime import timedelta
 from scripts.general.logger import app_logger
 from scripts.message.slack.messenger import send_message
 
@@ -88,3 +89,35 @@ def top_listens(music_list, item, verb):
     except Exception as e:
         app_logger.error("Error in top_listens for %s: %s", item, e)
         raise
+
+
+def duration_listened_today(song_list):
+    """Message the user with how much music they listened to"""
+    
+    try:
+        total_seconds = 0
+        for song in song_list:
+            total_seconds += song['duration']
+            
+        time_string = str(timedelta(seconds=total_seconds))
+        
+        split_time = time_string.split(':')
+        hours = int(split_time[0])
+        minutes = int(split_time[1])
+        seconds = int(float(split_time[2]))
+        
+        human_readable_duration = ''
+        
+        if hours == 0:
+            human_readable_duration = f'{hours} hours, {minutes} minutes, and {seconds} seconds'
+        if minutes > 0: 
+            human_readable_duration = f'{minutes} minutes and {seconds} seconds'
+        else: 
+            human_readable_duration = f'{seconds} seconds'
+            
+        return f'You listened to {human_readable_duration} of music today across {len(song_list)} songs!'
+    
+    except Exception as e:
+        app_logger.error("Error in duration_listened_today: %s", e)
+        raise
+    

@@ -19,7 +19,7 @@ def send_message(message):
             text=message
         )
 
-        pprint("\nMessage successfully sent!")
+        pprint("Message successfully sent!")
         app_logger.info("Message successfully sent!")
 
         return result
