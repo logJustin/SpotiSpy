@@ -108,7 +108,7 @@ def duration_listened_today(song_list):
         
         human_readable_duration = ''
         
-        if hours == 0:
+        if hours > 0:
             human_readable_duration = f'{hours} hours, {minutes} minutes, and {seconds} seconds'
         if minutes > 0: 
             human_readable_duration = f'{minutes} minutes and {seconds} seconds'
