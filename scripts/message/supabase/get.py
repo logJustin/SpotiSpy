@@ -30,7 +30,7 @@ def get_recent_songs():
 
     try:
         response = requests.get(endpoint, headers=headers, timeout=10)
-        print("res", json.dumps(response.json(), indent=2))
+        # print("res", json.dumps(response.json(), indent=2))
         response.raise_for_status()
         return response.json()
     

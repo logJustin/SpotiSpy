@@ -120,7 +120,7 @@ if __name__ == '__main__':
     try:
         app_logger.info("Fetching data")
         data, raw_data = summarized_supabase_object()
-        print("multiple_listened_songs:", data.get("multiple_listened_songs"))
+        # print("multiple_listened_songs:", data.get("multiple_listened_songs"))
 
         app_logger.info("Running top listens analysis")
         top_listens(data, 'songs', 'listens')
