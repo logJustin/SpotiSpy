@@ -14,15 +14,10 @@ SPOTIFY_CHANNEL_ID = "C063HV2H62V"
 def send_message(message):
     try:
         # Call the conversations.list method using the WebClient
-        result = client.chat_postMessage(
+        return client.chat_postMessage(
             channel=SPOTIFY_CHANNEL_ID,
             text=message
         )
-
-        pprint("Message successfully sent!")
-        app_logger.info("Message successfully sent!")
-
-        return result
     except SlackApiError as e:
         pprint(f"Error: {e}")
         return None
