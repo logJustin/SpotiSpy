@@ -1,0 +1,65 @@
+2025-06-18 00:58:06,438 - music_tracker - INFO - Zero songs listened to
+2025-06-18 00:58:06,439 - music_tracker - INFO - No songs uploaded.
+2025-06-18 01:58:07,143 - music_tracker - INFO - Zero songs listened to
+2025-06-18 01:58:07,143 - music_tracker - INFO - No songs uploaded.
+2025-06-18 02:58:06,837 - music_tracker - INFO - Zero songs listened to
+2025-06-18 02:58:06,837 - music_tracker - INFO - No songs uploaded.
+2025-06-18 03:58:06,559 - music_tracker - INFO - Zero songs listened to
+2025-06-18 03:58:06,559 - music_tracker - INFO - No songs uploaded.
+2025-06-18 04:58:07,313 - music_tracker - INFO - Zero songs listened to
+2025-06-18 04:58:07,314 - music_tracker - INFO - No songs uploaded.
+2025-06-18 05:58:07,082 - music_tracker - INFO - Zero songs listened to
+2025-06-18 05:58:07,082 - music_tracker - INFO - No songs uploaded.
+2025-06-18 06:58:06,881 - music_tracker - INFO - Zero songs listened to
+2025-06-18 06:58:06,882 - music_tracker - INFO - No songs uploaded.
+2025-06-18 07:58:06,599 - music_tracker - INFO - Zero songs listened to
+2025-06-18 07:58:06,600 - music_tracker - INFO - No songs uploaded.
+2025-06-18 08:58:09,284 - music_tracker - INFO - Uploading 4 songs
+2025-06-18 09:00:11,761 - music_tracker - INFO - Starting music tracker analysis
+2025-06-18 09:00:11,761 - music_tracker - INFO - Fetching data
+2025-06-18 09:00:17,153 - music_tracker - INFO - Fetched 7 recent songs
+2025-06-18 09:00:17,156 - music_tracker - INFO - Running top listens analysis
+2025-06-18 09:00:17,156 - music_tracker - INFO - Calculating top songs listens
+2025-06-18 09:00:17,157 - music_tracker - INFO - Top listens: No multiples of songs listened to yesterday!
+2025-06-18 09:00:17,157 - music_tracker - INFO - Calculating top albums listens
+2025-06-18 09:00:17,158 - music_tracker - INFO - Sending message with top 1 albums
+2025-06-18 09:00:18,012 - music_tracker - INFO - Message successfully sent!
+2025-06-18 09:00:18,013 - music_tracker - INFO - Calculating top artists listens
+2025-06-18 09:00:18,014 - music_tracker - INFO - Sending message with top 1 artists
+2025-06-18 09:00:18,748 - music_tracker - INFO - Message successfully sent!
+2025-06-18 09:00:18,748 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-06-18 09:00:18,749 - music_tracker - INFO - Finding most popular track
+2025-06-18 09:00:18,749 - music_tracker - INFO - Most popular song found: VOY A LLeVARTE PA PR with score 93
+2025-06-18 09:00:19,443 - music_tracker - INFO - Message successfully sent!
+2025-06-18 09:00:19,443 - music_tracker - INFO - Calculating most listened hour
+2025-06-18 09:00:19,443 - music_tracker - INFO - Most listened hour: 13:00 with 12:04
+2025-06-18 09:00:20,121 - music_tracker - INFO - Message successfully sent!
+2025-06-18 09:00:20,122 - music_tracker - INFO - Analysis completed successfully
+
+2025-06-18 09:58:06,864 - music_tracker - INFO - Zero songs listened to
+2025-06-18 09:58:06,865 - music_tracker - INFO - No songs uploaded.
+2025-06-18 10:58:08,021 - music_tracker - INFO - Uploading 4 songs
+2025-06-18 11:58:06,755 - music_tracker - INFO - Zero songs listened to
+2025-06-18 11:58:06,755 - music_tracker - INFO - No songs uploaded.
+2025-06-18 12:58:06,534 - music_tracker - INFO - Zero songs listened to
+2025-06-18 12:58:06,535 - music_tracker - INFO - No songs uploaded.
+2025-06-18 13:58:07,644 - music_tracker - INFO - Zero songs listened to
+2025-06-18 13:58:07,645 - music_tracker - INFO - No songs uploaded.
+2025-06-18 14:58:07,392 - music_tracker - INFO - Zero songs listened to
+2025-06-18 14:58:07,393 - music_tracker - INFO - No songs uploaded.
+2025-06-18 15:58:08,228 - music_tracker - INFO - Uploading 3 songs
+2025-06-18 16:58:12,974 - music_tracker - INFO - Uploading 2 songs
+2025-06-18 17:58:06,743 - music_tracker - INFO - Zero songs listened to
+2025-06-18 17:58:06,744 - music_tracker - INFO - No songs uploaded.
+2025-06-18 18:58:06,479 - music_tracker - INFO - Zero songs listened to
+2025-06-18 18:58:06,480 - music_tracker - INFO - No songs uploaded.
+2025-06-18 19:58:07,207 - music_tracker - INFO - Zero songs listened to
+2025-06-18 19:58:07,208 - music_tracker - INFO - No songs uploaded.
+2025-06-18 20:58:07,180 - music_tracker - INFO - Zero songs listened to
+2025-06-18 20:58:07,181 - music_tracker - INFO - No songs uploaded.
+2025-06-18 21:58:06,971 - music_tracker - INFO - Zero songs listened to
+2025-06-18 21:58:06,971 - music_tracker - INFO - No songs uploaded.
+2025-06-18 22:58:08,941 - music_tracker - INFO - Zero songs listened to
+2025-06-18 22:58:08,943 - music_tracker - INFO - No songs uploaded.
+2025-06-18 23:58:11,744 - music_tracker - INFO - Zero songs listened to
+2025-06-18 23:58:11,745 - music_tracker - INFO - No songs uploaded.

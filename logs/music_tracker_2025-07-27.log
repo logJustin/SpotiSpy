@@ -1,0 +1,67 @@
+2025-07-27 00:58:07,039 - music_tracker - INFO - Zero songs listened to
+2025-07-27 00:58:07,040 - music_tracker - INFO - No songs uploaded.
+2025-07-27 01:58:06,687 - music_tracker - INFO - Zero songs listened to
+2025-07-27 01:58:06,687 - music_tracker - INFO - No songs uploaded.
+2025-07-27 02:58:07,396 - music_tracker - INFO - Zero songs listened to
+2025-07-27 02:58:07,396 - music_tracker - INFO - No songs uploaded.
+2025-07-27 03:58:07,189 - music_tracker - INFO - Zero songs listened to
+2025-07-27 03:58:07,190 - music_tracker - INFO - No songs uploaded.
+2025-07-27 04:58:06,898 - music_tracker - INFO - Zero songs listened to
+2025-07-27 04:58:06,899 - music_tracker - INFO - No songs uploaded.
+2025-07-27 05:58:06,610 - music_tracker - INFO - Zero songs listened to
+2025-07-27 05:58:06,610 - music_tracker - INFO - No songs uploaded.
+2025-07-27 06:58:12,411 - music_tracker - INFO - Zero songs listened to
+2025-07-27 06:58:12,412 - music_tracker - INFO - No songs uploaded.
+2025-07-27 07:58:07,184 - music_tracker - INFO - Zero songs listened to
+2025-07-27 07:58:07,184 - music_tracker - INFO - No songs uploaded.
+2025-07-27 08:58:06,916 - music_tracker - INFO - Zero songs listened to
+2025-07-27 08:58:06,917 - music_tracker - INFO - No songs uploaded.
+2025-07-27 09:00:11,333 - music_tracker - INFO - Starting music tracker analysis
+2025-07-27 09:00:11,334 - music_tracker - INFO - Fetching data
+2025-07-27 09:00:11,874 - music_tracker - INFO - Fetched 67 recent songs
+2025-07-27 09:00:11,879 - music_tracker - INFO - Running top listens analysis
+2025-07-27 09:00:11,879 - music_tracker - INFO - Calculating top songs listens
+2025-07-27 09:00:11,880 - music_tracker - INFO - Sending message with top 3 songs
+2025-07-27 09:00:12,537 - music_tracker - INFO - Message successfully sent!
+2025-07-27 09:00:12,537 - music_tracker - INFO - Calculating top albums listens
+2025-07-27 09:00:12,538 - music_tracker - INFO - Sending message with top 3 albums
+2025-07-27 09:00:13,156 - music_tracker - INFO - Message successfully sent!
+2025-07-27 09:00:13,157 - music_tracker - INFO - Calculating top artists listens
+2025-07-27 09:00:13,157 - music_tracker - INFO - Sending message with top 3 artists
+2025-07-27 09:00:13,796 - music_tracker - INFO - Message successfully sent!
+2025-07-27 09:00:13,797 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-07-27 09:00:13,797 - music_tracker - INFO - Finding most popular track
+2025-07-27 09:00:13,798 - music_tracker - INFO - Most popular song found: Numb with score 91
+2025-07-27 09:00:14,416 - music_tracker - INFO - Message successfully sent!
+2025-07-27 09:00:14,417 - music_tracker - INFO - Calculating most listened hour
+2025-07-27 09:00:14,417 - music_tracker - INFO - Most listened hour: 17:00 with 42:39
+2025-07-27 09:00:15,025 - music_tracker - INFO - Message successfully sent!
+2025-07-27 09:00:15,026 - music_tracker - INFO - Calculating duration listened today
+2025-07-27 09:00:15,652 - music_tracker - INFO - Message successfully sent!
+2025-07-27 09:00:15,653 - music_tracker - INFO - Analysis completed successfully
+
+2025-07-27 09:58:08,093 - music_tracker - INFO - Uploading 1 song
+2025-07-27 10:58:11,322 - music_tracker - INFO - Uploading 17 songs
+2025-07-27 11:58:09,596 - music_tracker - INFO - Uploading 9 songs
+2025-07-27 12:58:07,964 - music_tracker - INFO - Uploading 1 song
+2025-07-27 13:58:06,708 - music_tracker - INFO - Zero songs listened to
+2025-07-27 13:58:06,709 - music_tracker - INFO - No songs uploaded.
+2025-07-27 14:58:06,424 - music_tracker - INFO - Zero songs listened to
+2025-07-27 14:58:06,425 - music_tracker - INFO - No songs uploaded.
+2025-07-27 15:58:08,086 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2005\""}
+2025-07-27 15:58:08,087 - music_tracker - INFO - No songs uploaded.
+2025-07-27 16:58:08,663 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2005\""}
+2025-07-27 16:58:08,665 - music_tracker - INFO - No songs uploaded.
+2025-07-27 17:58:07,406 - music_tracker - INFO - Zero songs listened to
+2025-07-27 17:58:07,407 - music_tracker - INFO - No songs uploaded.
+2025-07-27 18:58:07,164 - music_tracker - INFO - Zero songs listened to
+2025-07-27 18:58:07,165 - music_tracker - INFO - No songs uploaded.
+2025-07-27 19:58:06,899 - music_tracker - INFO - Zero songs listened to
+2025-07-27 19:58:06,900 - music_tracker - INFO - No songs uploaded.
+2025-07-27 20:58:06,671 - music_tracker - INFO - Zero songs listened to
+2025-07-27 20:58:06,671 - music_tracker - INFO - No songs uploaded.
+2025-07-27 21:58:08,926 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2000\""}
+2025-07-27 21:58:08,928 - music_tracker - INFO - No songs uploaded.
+2025-07-27 22:58:08,938 - music_tracker - INFO - Uploading 1 song
+2025-07-27 23:58:06,672 - music_tracker - INFO - Zero songs listened to
+2025-07-27 23:58:06,672 - music_tracker - INFO - No songs uploaded.

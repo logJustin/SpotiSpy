@@ -1,0 +1,59 @@
+2025-08-05 00:58:07,101 - music_tracker - INFO - Zero songs listened to
+2025-08-05 00:58:07,102 - music_tracker - INFO - No songs uploaded.
+2025-08-05 01:58:06,709 - music_tracker - INFO - Zero songs listened to
+2025-08-05 01:58:06,710 - music_tracker - INFO - No songs uploaded.
+2025-08-05 02:58:06,332 - music_tracker - INFO - Zero songs listened to
+2025-08-05 02:58:06,333 - music_tracker - INFO - No songs uploaded.
+2025-08-05 03:58:06,960 - music_tracker - INFO - Zero songs listened to
+2025-08-05 03:58:06,961 - music_tracker - INFO - No songs uploaded.
+2025-08-05 04:58:06,533 - music_tracker - INFO - Zero songs listened to
+2025-08-05 04:58:06,534 - music_tracker - INFO - No songs uploaded.
+2025-08-05 05:58:07,103 - music_tracker - INFO - Zero songs listened to
+2025-08-05 05:58:07,104 - music_tracker - INFO - No songs uploaded.
+2025-08-05 06:58:06,764 - music_tracker - INFO - Zero songs listened to
+2025-08-05 06:58:06,765 - music_tracker - INFO - No songs uploaded.
+2025-08-05 07:58:06,327 - music_tracker - INFO - Zero songs listened to
+2025-08-05 07:58:06,328 - music_tracker - INFO - No songs uploaded.
+2025-08-05 08:58:06,943 - music_tracker - INFO - Zero songs listened to
+2025-08-05 08:58:06,943 - music_tracker - INFO - No songs uploaded.
+2025-08-05 09:00:11,206 - music_tracker - INFO - Starting music tracker analysis
+2025-08-05 09:00:11,207 - music_tracker - INFO - Fetching data
+2025-08-05 09:00:11,977 - music_tracker - INFO - Fetched 13 recent songs
+2025-08-05 09:00:11,979 - music_tracker - INFO - Running top listens analysis
+2025-08-05 09:00:11,979 - music_tracker - INFO - Calculating top songs listens
+2025-08-05 09:00:11,980 - music_tracker - INFO - Top listens: No multiples of songs listened to yesterday!
+2025-08-05 09:00:11,980 - music_tracker - INFO - Calculating top albums listens
+2025-08-05 09:00:11,981 - music_tracker - INFO - Sending message with top 1 albums
+2025-08-05 09:00:12,839 - music_tracker - INFO - Calculating top artists listens
+2025-08-05 09:00:12,840 - music_tracker - INFO - Sending message with top 1 artists
+2025-08-05 09:00:13,546 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-08-05 09:00:13,546 - music_tracker - INFO - Finding most popular track
+2025-08-05 09:00:13,547 - music_tracker - INFO - Most popular song found: BIRDS OF A FEATHER with score 97
+2025-08-05 09:00:14,506 - music_tracker - INFO - Calculating most listened hour
+2025-08-05 09:00:14,507 - music_tracker - INFO - Most listened hour: 22:00 with 16:04
+2025-08-05 09:00:15,215 - music_tracker - INFO - Calculating duration listened today
+2025-08-05 09:00:15,954 - music_tracker - INFO - Analysis completed successfully
+
+2025-08-05 09:58:06,521 - music_tracker - INFO - Zero songs listened to
+2025-08-05 09:58:06,522 - music_tracker - INFO - No songs uploaded.
+2025-08-05 10:58:07,112 - music_tracker - INFO - Zero songs listened to
+2025-08-05 10:58:07,112 - music_tracker - INFO - No songs uploaded.
+2025-08-05 11:58:06,686 - music_tracker - INFO - Zero songs listened to
+2025-08-05 11:58:06,687 - music_tracker - INFO - No songs uploaded.
+2025-08-05 12:58:09,456 - music_tracker - INFO - Uploading 6 songs
+2025-08-05 13:58:09,134 - music_tracker - INFO - Uploading 6 songs
+2025-08-05 14:58:06,772 - music_tracker - INFO - Zero songs listened to
+2025-08-05 14:58:06,773 - music_tracker - INFO - No songs uploaded.
+2025-08-05 15:58:08,449 - music_tracker - INFO - Uploading 6 songs
+2025-08-05 16:58:09,973 - music_tracker - INFO - Uploading 10 songs
+2025-08-05 17:58:11,022 - music_tracker - INFO - Uploading 17 songs
+2025-08-05 18:58:07,461 - music_tracker - INFO - Uploading 1 song
+2025-08-05 19:58:07,098 - music_tracker - INFO - Zero songs listened to
+2025-08-05 19:58:07,099 - music_tracker - INFO - No songs uploaded.
+2025-08-05 20:58:09,232 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2007\""}
+2025-08-05 20:58:09,234 - music_tracker - INFO - No songs uploaded.
+2025-08-05 21:58:08,508 - music_tracker - INFO - Uploading 5 songs
+2025-08-05 22:58:07,398 - music_tracker - INFO - Zero songs listened to
+2025-08-05 22:58:07,400 - music_tracker - INFO - No songs uploaded.
+2025-08-05 23:58:06,992 - music_tracker - INFO - Zero songs listened to
+2025-08-05 23:58:06,993 - music_tracker - INFO - No songs uploaded.

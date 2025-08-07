@@ -1,0 +1,64 @@
+2025-06-07 00:58:06,520 - music_tracker - INFO - Zero songs listened to
+2025-06-07 00:58:06,521 - music_tracker - INFO - No songs uploaded.
+2025-06-07 01:58:07,250 - music_tracker - INFO - Zero songs listened to
+2025-06-07 01:58:07,251 - music_tracker - INFO - No songs uploaded.
+2025-06-07 02:58:07,036 - music_tracker - INFO - Zero songs listened to
+2025-06-07 02:58:07,037 - music_tracker - INFO - No songs uploaded.
+2025-06-07 03:58:06,787 - music_tracker - INFO - Zero songs listened to
+2025-06-07 03:58:06,787 - music_tracker - INFO - No songs uploaded.
+2025-06-07 04:58:06,982 - music_tracker - INFO - Zero songs listened to
+2025-06-07 04:58:06,983 - music_tracker - INFO - No songs uploaded.
+2025-06-07 05:58:06,713 - music_tracker - INFO - Zero songs listened to
+2025-06-07 05:58:06,714 - music_tracker - INFO - No songs uploaded.
+2025-06-07 06:58:06,502 - music_tracker - INFO - Zero songs listened to
+2025-06-07 06:58:06,503 - music_tracker - INFO - No songs uploaded.
+2025-06-07 07:58:07,207 - music_tracker - INFO - Zero songs listened to
+2025-06-07 07:58:07,208 - music_tracker - INFO - No songs uploaded.
+2025-06-07 08:58:06,963 - music_tracker - INFO - Zero songs listened to
+2025-06-07 08:58:06,963 - music_tracker - INFO - No songs uploaded.
+2025-06-07 09:00:11,341 - music_tracker - INFO - Starting music tracker analysis
+2025-06-07 09:00:11,344 - music_tracker - INFO - Fetching data
+2025-06-07 09:00:11,963 - music_tracker - INFO - Fetched 126 recent songs
+2025-06-07 09:00:11,969 - music_tracker - INFO - Running top listens analysis
+2025-06-07 09:00:11,970 - music_tracker - INFO - Calculating top songs listens
+2025-06-07 09:00:11,970 - music_tracker - INFO - Sending message with top 3 songs
+2025-06-07 09:00:12,632 - music_tracker - INFO - Message successfully sent!
+2025-06-07 09:00:12,632 - music_tracker - INFO - Calculating top albums listens
+2025-06-07 09:00:12,633 - music_tracker - INFO - Sending message with top 3 albums
+2025-06-07 09:00:13,219 - music_tracker - INFO - Message successfully sent!
+2025-06-07 09:00:13,220 - music_tracker - INFO - Calculating top artists listens
+2025-06-07 09:00:13,220 - music_tracker - INFO - Sending message with top 3 artists
+2025-06-07 09:00:13,818 - music_tracker - INFO - Message successfully sent!
+2025-06-07 09:00:13,819 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-06-07 09:00:13,819 - music_tracker - INFO - Finding most popular track
+2025-06-07 09:00:13,820 - music_tracker - INFO - Most popular song found: For the Last Time with score 78
+2025-06-07 09:00:14,442 - music_tracker - INFO - Message successfully sent!
+2025-06-07 09:00:14,442 - music_tracker - INFO - Calculating most listened hour
+2025-06-07 09:00:14,443 - music_tracker - INFO - Most listened hour: 19:00 with 59:05
+2025-06-07 09:00:15,085 - music_tracker - INFO - Message successfully sent!
+2025-06-07 09:00:15,085 - music_tracker - INFO - Analysis completed successfully
+
+2025-06-07 09:58:06,785 - music_tracker - INFO - Zero songs listened to
+2025-06-07 09:58:06,786 - music_tracker - INFO - No songs uploaded.
+2025-06-07 10:58:07,570 - music_tracker - INFO - Uploading 3 songs
+2025-06-07 11:58:12,060 - music_tracker - INFO - Uploading 18 songs
+2025-06-07 12:58:08,873 - music_tracker - INFO - Uploading 7 songs
+2025-06-07 13:58:10,034 - music_tracker - INFO - Uploading 15 songs
+2025-06-07 14:58:07,790 - music_tracker - INFO - Uploading 3 songs
+2025-06-07 15:58:07,781 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2005\""}
+2025-06-07 15:58:07,784 - music_tracker - INFO - No songs uploaded.
+2025-06-07 16:58:08,008 - music_tracker - INFO - Uploading 5 songs
+2025-06-07 17:58:06,774 - music_tracker - INFO - Zero songs listened to
+2025-06-07 17:58:06,774 - music_tracker - INFO - No songs uploaded.
+2025-06-07 18:58:06,471 - music_tracker - INFO - Zero songs listened to
+2025-06-07 18:58:06,471 - music_tracker - INFO - No songs uploaded.
+2025-06-07 19:58:07,199 - music_tracker - INFO - Zero songs listened to
+2025-06-07 19:58:07,199 - music_tracker - INFO - No songs uploaded.
+2025-06-07 20:58:07,108 - music_tracker - INFO - Zero songs listened to
+2025-06-07 20:58:07,109 - music_tracker - INFO - No songs uploaded.
+2025-06-07 21:58:06,913 - music_tracker - INFO - Zero songs listened to
+2025-06-07 21:58:06,914 - music_tracker - INFO - No songs uploaded.
+2025-06-07 22:58:07,341 - music_tracker - INFO - Zero songs listened to
+2025-06-07 22:58:07,343 - music_tracker - INFO - No songs uploaded.
+2025-06-07 23:58:09,002 - music_tracker - INFO - Zero songs listened to
+2025-06-07 23:58:09,003 - music_tracker - INFO - No songs uploaded.

@@ -1,0 +1,56 @@
+2025-06-27 00:58:07,093 - music_tracker - INFO - Zero songs listened to
+2025-06-27 00:58:07,094 - music_tracker - INFO - No songs uploaded.
+2025-06-27 01:58:06,807 - music_tracker - INFO - Zero songs listened to
+2025-06-27 01:58:06,808 - music_tracker - INFO - No songs uploaded.
+2025-06-27 02:58:06,507 - music_tracker - INFO - Zero songs listened to
+2025-06-27 02:58:06,507 - music_tracker - INFO - No songs uploaded.
+2025-06-27 03:58:07,288 - music_tracker - INFO - Zero songs listened to
+2025-06-27 03:58:07,289 - music_tracker - INFO - No songs uploaded.
+2025-06-27 04:58:07,060 - music_tracker - INFO - Zero songs listened to
+2025-06-27 04:58:07,061 - music_tracker - INFO - No songs uploaded.
+2025-06-27 05:58:06,774 - music_tracker - INFO - Zero songs listened to
+2025-06-27 05:58:06,774 - music_tracker - INFO - No songs uploaded.
+2025-06-27 06:58:06,549 - music_tracker - INFO - Zero songs listened to
+2025-06-27 06:58:06,549 - music_tracker - INFO - No songs uploaded.
+2025-06-27 07:58:07,255 - music_tracker - INFO - Zero songs listened to
+2025-06-27 07:58:07,255 - music_tracker - INFO - No songs uploaded.
+2025-06-27 08:58:09,519 - music_tracker - INFO - Uploading 7 songs
+2025-06-27 09:00:12,062 - music_tracker - INFO - Starting music tracker analysis
+2025-06-27 09:00:12,062 - music_tracker - INFO - Fetching data
+2025-06-27 09:00:12,427 - music_tracker - INFO - Fetched 112 recent songs
+2025-06-27 09:00:12,433 - music_tracker - INFO - Running top listens analysis
+2025-06-27 09:00:12,434 - music_tracker - INFO - Calculating top songs listens
+2025-06-27 09:00:12,434 - music_tracker - INFO - Sending message with top 3 songs
+2025-06-27 09:00:13,436 - music_tracker - INFO - Message successfully sent!
+2025-06-27 09:00:13,437 - music_tracker - INFO - Calculating top albums listens
+2025-06-27 09:00:13,437 - music_tracker - INFO - Sending message with top 3 albums
+2025-06-27 09:00:14,629 - music_tracker - INFO - Message successfully sent!
+2025-06-27 09:00:14,630 - music_tracker - INFO - Calculating top artists listens
+2025-06-27 09:00:14,631 - music_tracker - INFO - Sending message with top 3 artists
+2025-06-27 09:00:15,463 - music_tracker - INFO - Message successfully sent!
+2025-06-27 09:00:15,463 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-06-27 09:00:15,464 - music_tracker - INFO - Finding most popular track
+2025-06-27 09:00:15,464 - music_tracker - INFO - Most popular song found: Safe In Your Skin with score 74
+2025-06-27 09:00:16,185 - music_tracker - INFO - Message successfully sent!
+2025-06-27 09:00:16,186 - music_tracker - INFO - Calculating most listened hour
+2025-06-27 09:00:16,186 - music_tracker - INFO - Most listened hour: 15:00 with 57:49
+2025-06-27 09:00:17,110 - music_tracker - INFO - Message successfully sent!
+2025-06-27 09:00:17,115 - music_tracker - INFO - Analysis completed successfully
+
+2025-06-27 09:58:10,463 - music_tracker - INFO - Uploading 14 songs
+2025-06-27 10:58:09,701 - music_tracker - INFO - Uploading 8 songs
+2025-06-27 11:58:13,379 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2005\""}
+2025-06-27 11:58:13,381 - music_tracker - INFO - No songs uploaded.
+2025-06-27 12:58:08,769 - music_tracker - INFO - Uploading 5 songs
+2025-06-27 13:58:09,760 - music_tracker - INFO - Uploading 13 songs
+2025-06-27 14:58:10,505 - music_tracker - INFO - Uploading 15 songs
+2025-06-27 15:58:10,290 - music_tracker - INFO - Uploading 12 songs
+2025-06-27 16:58:10,007 - music_tracker - INFO - Uploading 12 songs
+2025-06-27 17:58:10,492 - music_tracker - INFO - Uploading 15 songs
+2025-06-27 18:58:10,455 - music_tracker - INFO - Uploading 13 songs
+2025-06-27 19:58:08,584 - music_tracker - INFO - Uploading 4 songs
+2025-06-27 20:58:07,315 - music_tracker - INFO - Zero songs listened to
+2025-06-27 20:58:07,315 - music_tracker - INFO - No songs uploaded.
+2025-06-27 21:58:07,871 - music_tracker - INFO - Uploading 2 songs
+2025-06-27 22:58:08,610 - music_tracker - INFO - Uploading 5 songs
+2025-06-27 23:58:08,424 - music_tracker - INFO - Uploading 3 songs

@@ -1,0 +1,61 @@
+2025-06-28 00:58:07,190 - music_tracker - INFO - Zero songs listened to
+2025-06-28 00:58:07,190 - music_tracker - INFO - No songs uploaded.
+2025-06-28 01:58:06,919 - music_tracker - INFO - Zero songs listened to
+2025-06-28 01:58:06,920 - music_tracker - INFO - No songs uploaded.
+2025-06-28 02:58:06,634 - music_tracker - INFO - Zero songs listened to
+2025-06-28 02:58:06,635 - music_tracker - INFO - No songs uploaded.
+2025-06-28 03:58:07,404 - music_tracker - INFO - Zero songs listened to
+2025-06-28 03:58:07,405 - music_tracker - INFO - No songs uploaded.
+2025-06-28 04:58:07,183 - music_tracker - INFO - Zero songs listened to
+2025-06-28 04:58:07,183 - music_tracker - INFO - No songs uploaded.
+2025-06-28 05:58:06,890 - music_tracker - INFO - Zero songs listened to
+2025-06-28 05:58:06,891 - music_tracker - INFO - No songs uploaded.
+2025-06-28 06:58:06,638 - music_tracker - INFO - Zero songs listened to
+2025-06-28 06:58:06,638 - music_tracker - INFO - No songs uploaded.
+2025-06-28 07:58:07,354 - music_tracker - INFO - Zero songs listened to
+2025-06-28 07:58:07,355 - music_tracker - INFO - No songs uploaded.
+2025-06-28 08:58:07,061 - music_tracker - INFO - Zero songs listened to
+2025-06-28 08:58:07,062 - music_tracker - INFO - No songs uploaded.
+2025-06-28 09:00:11,637 - music_tracker - INFO - Starting music tracker analysis
+2025-06-28 09:00:11,637 - music_tracker - INFO - Fetching data
+2025-06-28 09:00:12,238 - music_tracker - INFO - Fetched 128 recent songs
+2025-06-28 09:00:12,250 - music_tracker - INFO - Running top listens analysis
+2025-06-28 09:00:12,251 - music_tracker - INFO - Calculating top songs listens
+2025-06-28 09:00:12,252 - music_tracker - INFO - Sending message with top 3 songs
+2025-06-28 09:00:17,973 - music_tracker - INFO - Message successfully sent!
+2025-06-28 09:00:17,973 - music_tracker - INFO - Calculating top albums listens
+2025-06-28 09:00:17,974 - music_tracker - INFO - Sending message with top 3 albums
+2025-06-28 09:00:18,707 - music_tracker - INFO - Message successfully sent!
+2025-06-28 09:00:18,707 - music_tracker - INFO - Calculating top artists listens
+2025-06-28 09:00:18,707 - music_tracker - INFO - Sending message with top 3 artists
+2025-06-28 09:00:19,428 - music_tracker - INFO - Message successfully sent!
+2025-06-28 09:00:19,429 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-06-28 09:00:19,429 - music_tracker - INFO - Finding most popular track
+2025-06-28 09:00:19,430 - music_tracker - INFO - Most popular song found: End of Beginning with score 92
+2025-06-28 09:00:20,147 - music_tracker - INFO - Message successfully sent!
+2025-06-28 09:00:20,148 - music_tracker - INFO - Calculating most listened hour
+2025-06-28 09:00:20,148 - music_tracker - INFO - Most listened hour: 14:00 with 47:36
+2025-06-28 09:00:20,832 - music_tracker - INFO - Message successfully sent!
+2025-06-28 09:00:20,833 - music_tracker - INFO - Analysis completed successfully
+
+2025-06-28 09:58:06,546 - music_tracker - INFO - Zero songs listened to
+2025-06-28 09:58:06,547 - music_tracker - INFO - No songs uploaded.
+2025-06-28 10:58:07,281 - music_tracker - INFO - Zero songs listened to
+2025-06-28 10:58:07,282 - music_tracker - INFO - No songs uploaded.
+2025-06-28 11:58:08,824 - music_tracker - INFO - Uploading 5 songs
+2025-06-28 12:58:08,961 - music_tracker - INFO - Uploading 8 songs
+2025-06-28 13:58:11,355 - music_tracker - INFO - Uploading 20 songs
+2025-06-28 14:58:10,964 - music_tracker - INFO - Uploading 16 songs
+2025-06-28 15:58:09,375 - music_tracker - INFO - Uploading 10 songs
+2025-06-28 16:58:09,860 - music_tracker - INFO - Uploading 10 songs
+2025-06-28 17:58:09,900 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"1985\""}
+2025-06-28 17:58:09,901 - music_tracker - INFO - No songs uploaded.
+2025-06-28 18:58:08,801 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"1972\""}
+2025-06-28 18:58:08,803 - music_tracker - INFO - No songs uploaded.
+2025-06-28 19:58:09,631 - music_tracker - INFO - Uploading 12 songs
+2025-06-28 20:58:09,050 - music_tracker - INFO - Uploading 6 songs
+2025-06-28 21:58:07,821 - music_tracker - INFO - Uploading 3 songs
+2025-06-28 22:58:06,885 - music_tracker - INFO - Zero songs listened to
+2025-06-28 22:58:06,887 - music_tracker - INFO - No songs uploaded.
+2025-06-28 23:58:06,598 - music_tracker - INFO - Zero songs listened to
+2025-06-28 23:58:06,599 - music_tracker - INFO - No songs uploaded.

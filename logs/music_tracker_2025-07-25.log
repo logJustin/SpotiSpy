@@ -1,0 +1,61 @@
+2025-07-25 00:58:07,065 - music_tracker - INFO - Zero songs listened to
+2025-07-25 00:58:07,065 - music_tracker - INFO - No songs uploaded.
+2025-07-25 01:58:06,876 - music_tracker - INFO - Zero songs listened to
+2025-07-25 01:58:06,877 - music_tracker - INFO - No songs uploaded.
+2025-07-25 02:58:06,581 - music_tracker - INFO - Zero songs listened to
+2025-07-25 02:58:06,582 - music_tracker - INFO - No songs uploaded.
+2025-07-25 03:58:07,406 - music_tracker - INFO - Zero songs listened to
+2025-07-25 03:58:07,407 - music_tracker - INFO - No songs uploaded.
+2025-07-25 04:58:07,156 - music_tracker - INFO - Zero songs listened to
+2025-07-25 04:58:07,156 - music_tracker - INFO - No songs uploaded.
+2025-07-25 05:58:06,842 - music_tracker - INFO - Zero songs listened to
+2025-07-25 05:58:06,842 - music_tracker - INFO - No songs uploaded.
+2025-07-25 06:58:06,634 - music_tracker - INFO - Zero songs listened to
+2025-07-25 06:58:06,635 - music_tracker - INFO - No songs uploaded.
+2025-07-25 07:58:07,358 - music_tracker - INFO - Zero songs listened to
+2025-07-25 07:58:07,359 - music_tracker - INFO - No songs uploaded.
+2025-07-25 08:58:08,848 - music_tracker - INFO - Uploading 4 songs
+2025-07-25 09:00:11,196 - music_tracker - INFO - Starting music tracker analysis
+2025-07-25 09:00:11,196 - music_tracker - INFO - Fetching data
+2025-07-25 09:00:11,595 - music_tracker - INFO - Fetched 81 recent songs
+2025-07-25 09:00:11,600 - music_tracker - INFO - Running top listens analysis
+2025-07-25 09:00:11,600 - music_tracker - INFO - Calculating top songs listens
+2025-07-25 09:00:11,601 - music_tracker - INFO - Sending message with top 3 songs
+2025-07-25 09:00:12,350 - music_tracker - INFO - Message successfully sent!
+2025-07-25 09:00:12,351 - music_tracker - INFO - Calculating top albums listens
+2025-07-25 09:00:12,351 - music_tracker - INFO - Sending message with top 3 albums
+2025-07-25 09:00:12,975 - music_tracker - INFO - Message successfully sent!
+2025-07-25 09:00:12,975 - music_tracker - INFO - Calculating top artists listens
+2025-07-25 09:00:12,976 - music_tracker - INFO - Sending message with top 3 artists
+2025-07-25 09:00:13,737 - music_tracker - INFO - Message successfully sent!
+2025-07-25 09:00:13,737 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-07-25 09:00:13,738 - music_tracker - INFO - Finding most popular track
+2025-07-25 09:00:13,738 - music_tracker - INFO - Most popular song found: I'm Not Okay (I Promise) with score 82
+2025-07-25 09:00:14,502 - music_tracker - INFO - Message successfully sent!
+2025-07-25 09:00:14,503 - music_tracker - INFO - Calculating most listened hour
+2025-07-25 09:00:14,503 - music_tracker - INFO - Most listened hour: 17:00 with 56:16
+2025-07-25 09:00:15,115 - music_tracker - INFO - Message successfully sent!
+2025-07-25 09:00:15,115 - music_tracker - INFO - Calculating duration listened today
+2025-07-25 09:00:15,736 - music_tracker - INFO - Message successfully sent!
+2025-07-25 09:00:15,737 - music_tracker - INFO - Analysis completed successfully
+
+2025-07-25 09:58:07,427 - music_tracker - INFO - Uploading 2 songs
+2025-07-25 10:58:07,168 - music_tracker - INFO - Zero songs listened to
+2025-07-25 10:58:07,168 - music_tracker - INFO - No songs uploaded.
+2025-07-25 11:58:11,217 - music_tracker - INFO - Uploading 16 songs
+2025-07-25 12:58:08,365 - music_tracker - INFO - Uploading 4 songs
+2025-07-25 13:58:09,318 - music_tracker - INFO - Uploading 7 songs
+2025-07-25 14:58:07,045 - music_tracker - INFO - Zero songs listened to
+2025-07-25 14:58:07,046 - music_tracker - INFO - No songs uploaded.
+2025-07-25 15:58:07,736 - music_tracker - INFO - Uploading 2 songs
+2025-07-25 16:58:09,324 - music_tracker - INFO - Uploading 9 songs
+2025-07-25 17:58:08,051 - music_tracker - INFO - Uploading 2 songs
+2025-07-25 18:58:07,848 - music_tracker - INFO - Uploading 3 songs
+2025-07-25 19:58:06,612 - music_tracker - INFO - Zero songs listened to
+2025-07-25 19:58:06,613 - music_tracker - INFO - No songs uploaded.
+2025-07-25 20:58:07,353 - music_tracker - INFO - Zero songs listened to
+2025-07-25 20:58:07,353 - music_tracker - INFO - No songs uploaded.
+2025-07-25 21:58:08,044 - music_tracker - INFO - Uploading 2 songs
+2025-07-25 22:58:07,390 - music_tracker - INFO - Zero songs listened to
+2025-07-25 22:58:07,392 - music_tracker - INFO - No songs uploaded.
+2025-07-25 23:58:07,705 - music_tracker - INFO - Uploading 1 song

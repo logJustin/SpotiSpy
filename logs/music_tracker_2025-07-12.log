@@ -1,0 +1,56 @@
+2025-07-12 00:58:07,402 - music_tracker - INFO - Zero songs listened to
+2025-07-12 00:58:07,403 - music_tracker - INFO - No songs uploaded.
+2025-07-12 01:58:07,460 - music_tracker - INFO - Zero songs listened to
+2025-07-12 01:58:07,461 - music_tracker - INFO - No songs uploaded.
+2025-07-12 02:58:07,669 - music_tracker - INFO - Zero songs listened to
+2025-07-12 02:58:07,669 - music_tracker - INFO - No songs uploaded.
+2025-07-12 03:58:07,458 - music_tracker - INFO - Zero songs listened to
+2025-07-12 03:58:07,458 - music_tracker - INFO - No songs uploaded.
+2025-07-12 04:58:07,198 - music_tracker - INFO - Zero songs listened to
+2025-07-12 04:58:07,198 - music_tracker - INFO - No songs uploaded.
+2025-07-12 05:58:06,916 - music_tracker - INFO - Zero songs listened to
+2025-07-12 05:58:06,917 - music_tracker - INFO - No songs uploaded.
+2025-07-12 06:58:06,931 - music_tracker - INFO - Zero songs listened to
+2025-07-12 06:58:06,931 - music_tracker - INFO - No songs uploaded.
+2025-07-12 07:58:06,637 - music_tracker - INFO - Zero songs listened to
+2025-07-12 07:58:06,638 - music_tracker - INFO - No songs uploaded.
+2025-07-12 08:58:07,417 - music_tracker - INFO - Zero songs listened to
+2025-07-12 08:58:07,418 - music_tracker - INFO - No songs uploaded.
+2025-07-12 09:00:16,951 - music_tracker - INFO - Starting music tracker analysis
+2025-07-12 09:00:16,952 - music_tracker - INFO - Fetching data
+2025-07-12 09:00:22,765 - music_tracker - INFO - Fetched 6 recent songs
+2025-07-12 09:00:22,769 - music_tracker - INFO - Running top listens analysis
+2025-07-12 09:00:22,769 - music_tracker - INFO - Calculating top songs listens
+2025-07-12 09:00:22,770 - music_tracker - INFO - Top listens: No multiples of songs listened to yesterday!
+2025-07-12 09:00:22,770 - music_tracker - INFO - Calculating top albums listens
+2025-07-12 09:00:22,770 - music_tracker - INFO - Top listens: No multiples of albums listened to yesterday!
+2025-07-12 09:00:22,771 - music_tracker - INFO - Calculating top artists listens
+2025-07-12 09:00:22,771 - music_tracker - INFO - Sending message with top 1 artists
+2025-07-12 09:00:23,499 - music_tracker - INFO - Message successfully sent!
+2025-07-12 09:00:23,500 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-07-12 09:00:23,500 - music_tracker - INFO - Finding most popular track
+2025-07-12 09:00:23,500 - music_tracker - INFO - Most popular song found: Rocket Man (I Think It's Going To Be A Long, Long Time) with score 85
+2025-07-12 09:00:24,190 - music_tracker - INFO - Message successfully sent!
+2025-07-12 09:00:24,190 - music_tracker - INFO - Calculating most listened hour
+2025-07-12 09:00:24,190 - music_tracker - INFO - Most listened hour: 22:00 with 20:01
+2025-07-12 09:00:24,855 - music_tracker - INFO - Message successfully sent!
+2025-07-12 09:00:24,856 - music_tracker - INFO - Analysis completed successfully
+
+2025-07-12 09:58:09,473 - music_tracker - INFO - Uploading 10 songs
+2025-07-12 10:58:07,234 - music_tracker - INFO - Zero songs listened to
+2025-07-12 10:58:07,234 - music_tracker - INFO - No songs uploaded.
+2025-07-12 11:58:07,773 - music_tracker - INFO - Uploading 2 songs
+2025-07-12 12:58:10,181 - music_tracker - INFO - Uploading 14 songs
+2025-07-12 14:58:09,930 - music_tracker - INFO - Uploading 13 songs
+2025-07-12 15:58:08,037 - music_tracker - INFO - Uploading 4 songs
+2025-07-12 16:58:08,116 - music_tracker - INFO - Uploading 4 songs
+2025-07-12 17:58:10,039 - music_tracker - INFO - Uploading 13 songs
+2025-07-12 18:58:10,222 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2005\""}
+2025-07-12 18:58:10,224 - music_tracker - INFO - No songs uploaded.
+2025-07-12 19:58:09,634 - music_tracker - INFO - Uploading 10 songs
+2025-07-12 20:58:09,186 - music_tracker - INFO - Uploading 6 songs
+2025-07-12 21:58:11,399 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"1987\""}
+2025-07-12 21:58:11,401 - music_tracker - INFO - No songs uploaded.
+2025-07-12 22:58:09,403 - music_tracker - INFO - Uploading 5 songs
+2025-07-12 23:58:07,147 - music_tracker - INFO - Zero songs listened to
+2025-07-12 23:58:07,147 - music_tracker - INFO - No songs uploaded.

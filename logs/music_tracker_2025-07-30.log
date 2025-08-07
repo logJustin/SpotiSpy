@@ -1,0 +1,66 @@
+2025-07-30 00:58:07,112 - music_tracker - INFO - Zero songs listened to
+2025-07-30 00:58:07,112 - music_tracker - INFO - No songs uploaded.
+2025-07-30 01:58:06,841 - music_tracker - INFO - Zero songs listened to
+2025-07-30 01:58:06,842 - music_tracker - INFO - No songs uploaded.
+2025-07-30 02:58:06,572 - music_tracker - INFO - Zero songs listened to
+2025-07-30 02:58:06,573 - music_tracker - INFO - No songs uploaded.
+2025-07-30 03:58:07,329 - music_tracker - INFO - Zero songs listened to
+2025-07-30 03:58:07,330 - music_tracker - INFO - No songs uploaded.
+2025-07-30 04:58:07,045 - music_tracker - INFO - Zero songs listened to
+2025-07-30 04:58:07,046 - music_tracker - INFO - No songs uploaded.
+2025-07-30 05:58:11,802 - music_tracker - INFO - Zero songs listened to
+2025-07-30 05:58:11,803 - music_tracker - INFO - No songs uploaded.
+2025-07-30 06:58:06,576 - music_tracker - INFO - Zero songs listened to
+2025-07-30 06:58:06,577 - music_tracker - INFO - No songs uploaded.
+2025-07-30 07:58:07,294 - music_tracker - INFO - Zero songs listened to
+2025-07-30 07:58:07,295 - music_tracker - INFO - No songs uploaded.
+2025-07-30 08:58:07,054 - music_tracker - INFO - Zero songs listened to
+2025-07-30 08:58:07,054 - music_tracker - INFO - No songs uploaded.
+2025-07-30 09:00:11,590 - music_tracker - INFO - Starting music tracker analysis
+2025-07-30 09:00:11,591 - music_tracker - INFO - Fetching data
+2025-07-30 09:00:12,303 - music_tracker - INFO - Fetched 44 recent songs
+2025-07-30 09:00:12,306 - music_tracker - INFO - Running top listens analysis
+2025-07-30 09:00:12,306 - music_tracker - INFO - Calculating top songs listens
+2025-07-30 09:00:12,307 - music_tracker - INFO - Sending message with top 3 songs
+2025-07-30 09:00:13,142 - music_tracker - INFO - Message successfully sent!
+2025-07-30 09:00:13,143 - music_tracker - INFO - Calculating top albums listens
+2025-07-30 09:00:13,143 - music_tracker - INFO - Sending message with top 3 albums
+2025-07-30 09:00:13,831 - music_tracker - INFO - Message successfully sent!
+2025-07-30 09:00:13,832 - music_tracker - INFO - Calculating top artists listens
+2025-07-30 09:00:13,832 - music_tracker - INFO - Sending message with top 3 artists
+2025-07-30 09:00:14,549 - music_tracker - INFO - Message successfully sent!
+2025-07-30 09:00:14,549 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-07-30 09:00:14,550 - music_tracker - INFO - Finding most popular track
+2025-07-30 09:00:14,550 - music_tracker - INFO - Most popular song found: I'm Not Okay (I Promise) with score 81
+2025-07-30 09:00:15,180 - music_tracker - INFO - Message successfully sent!
+2025-07-30 09:00:15,180 - music_tracker - INFO - Calculating most listened hour
+2025-07-30 09:00:15,181 - music_tracker - INFO - Most listened hour: 22:00 with 53:53
+2025-07-30 09:00:15,788 - music_tracker - INFO - Message successfully sent!
+2025-07-30 09:00:15,789 - music_tracker - INFO - Calculating duration listened today
+2025-07-30 09:00:16,400 - music_tracker - INFO - Message successfully sent!
+2025-07-30 09:00:16,400 - music_tracker - INFO - Analysis completed successfully
+
+2025-07-30 09:58:07,136 - music_tracker - INFO - Zero songs listened to
+2025-07-30 09:58:07,137 - music_tracker - INFO - No songs uploaded.
+2025-07-30 10:58:08,332 - music_tracker - INFO - Uploading 4 songs
+2025-07-30 11:58:07,073 - music_tracker - INFO - Zero songs listened to
+2025-07-30 11:58:07,074 - music_tracker - INFO - No songs uploaded.
+2025-07-30 12:58:06,800 - music_tracker - INFO - Zero songs listened to
+2025-07-30 12:58:06,801 - music_tracker - INFO - No songs uploaded.
+2025-07-30 13:58:07,291 - music_tracker - INFO - Uploading 2 songs
+2025-07-30 14:58:07,028 - music_tracker - INFO - Zero songs listened to
+2025-07-30 14:58:07,033 - music_tracker - INFO - No songs uploaded.
+2025-07-30 15:58:06,725 - music_tracker - INFO - Zero songs listened to
+2025-07-30 15:58:06,726 - music_tracker - INFO - No songs uploaded.
+2025-07-30 16:58:07,463 - music_tracker - INFO - Uploading 2 songs
+2025-07-30 17:58:07,189 - music_tracker - INFO - Zero songs listened to
+2025-07-30 17:58:07,190 - music_tracker - INFO - No songs uploaded.
+2025-07-30 18:58:07,556 - music_tracker - INFO - Uploading 1 song
+2025-07-30 19:58:08,546 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2012\""}
+2025-07-30 19:58:08,548 - music_tracker - INFO - No songs uploaded.
+2025-07-30 20:58:10,924 - music_tracker - INFO - Uploading 14 songs
+2025-07-30 21:58:06,664 - music_tracker - INFO - Zero songs listened to
+2025-07-30 21:58:06,665 - music_tracker - INFO - No songs uploaded.
+2025-07-30 22:58:08,339 - music_tracker - INFO - Uploading 1 song
+2025-07-30 23:58:07,116 - music_tracker - INFO - Zero songs listened to
+2025-07-30 23:58:07,116 - music_tracker - INFO - No songs uploaded.

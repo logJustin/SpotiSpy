@@ -1,0 +1,57 @@
+2025-06-19 00:58:06,501 - music_tracker - INFO - Zero songs listened to
+2025-06-19 00:58:06,501 - music_tracker - INFO - No songs uploaded.
+2025-06-19 01:58:07,248 - music_tracker - INFO - Zero songs listened to
+2025-06-19 01:58:07,248 - music_tracker - INFO - No songs uploaded.
+2025-06-19 02:58:07,030 - music_tracker - INFO - Zero songs listened to
+2025-06-19 02:58:07,031 - music_tracker - INFO - No songs uploaded.
+2025-06-19 03:58:06,780 - music_tracker - INFO - Zero songs listened to
+2025-06-19 03:58:06,781 - music_tracker - INFO - No songs uploaded.
+2025-06-19 04:58:06,493 - music_tracker - INFO - Zero songs listened to
+2025-06-19 04:58:06,493 - music_tracker - INFO - No songs uploaded.
+2025-06-19 05:58:09,110 - music_tracker - INFO - Zero songs listened to
+2025-06-19 05:58:09,111 - music_tracker - INFO - No songs uploaded.
+2025-06-19 06:58:06,866 - music_tracker - INFO - Zero songs listened to
+2025-06-19 06:58:06,867 - music_tracker - INFO - No songs uploaded.
+2025-06-19 07:58:06,625 - music_tracker - INFO - Zero songs listened to
+2025-06-19 07:58:06,625 - music_tracker - INFO - No songs uploaded.
+2025-06-19 08:58:08,942 - music_tracker - INFO - Uploading 4 songs
+2025-06-19 09:00:11,638 - music_tracker - INFO - Starting music tracker analysis
+2025-06-19 09:00:11,639 - music_tracker - INFO - Fetching data
+2025-06-19 09:00:12,028 - music_tracker - INFO - Fetched 17 recent songs
+2025-06-19 09:00:12,030 - music_tracker - INFO - Running top listens analysis
+2025-06-19 09:00:12,030 - music_tracker - INFO - Calculating top songs listens
+2025-06-19 09:00:12,031 - music_tracker - INFO - Sending message with top 3 songs
+2025-06-19 09:00:12,801 - music_tracker - INFO - Message successfully sent!
+2025-06-19 09:00:12,802 - music_tracker - INFO - Calculating top albums listens
+2025-06-19 09:00:12,802 - music_tracker - INFO - Sending message with top 1 albums
+2025-06-19 09:00:13,695 - music_tracker - INFO - Message successfully sent!
+2025-06-19 09:00:13,695 - music_tracker - INFO - Calculating top artists listens
+2025-06-19 09:00:13,696 - music_tracker - INFO - Sending message with top 1 artists
+2025-06-19 09:00:14,385 - music_tracker - INFO - Message successfully sent!
+2025-06-19 09:00:14,386 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-06-19 09:00:14,386 - music_tracker - INFO - Finding most popular track
+2025-06-19 09:00:14,386 - music_tracker - INFO - Most popular song found: Qué Pasaría... with score 91
+2025-06-19 09:00:15,031 - music_tracker - INFO - Message successfully sent!
+2025-06-19 09:00:15,031 - music_tracker - INFO - Calculating most listened hour
+2025-06-19 09:00:15,032 - music_tracker - INFO - Most listened hour: 13:00 with 23:46
+2025-06-19 09:00:15,648 - music_tracker - INFO - Message successfully sent!
+2025-06-19 09:00:15,648 - music_tracker - INFO - Analysis completed successfully
+
+2025-06-19 09:58:13,520 - music_tracker - INFO - Uploading 2 songs
+2025-06-19 10:58:10,062 - music_tracker - INFO - Uploading 10 songs
+2025-06-19 11:58:15,619 - music_tracker - INFO - Uploading 13 songs
+2025-06-19 12:58:17,560 - music_tracker - INFO - Uploading 19 songs
+2025-06-19 13:58:08,005 - music_tracker - INFO - Uploading 1 song
+2025-06-19 14:58:06,749 - music_tracker - INFO - Zero songs listened to
+2025-06-19 14:58:06,750 - music_tracker - INFO - No songs uploaded.
+2025-06-19 15:58:07,186 - music_tracker - INFO - Uploading 1 song
+2025-06-19 18:58:08,482 - music_tracker - INFO - Uploading 3 songs
+2025-06-19 19:58:07,300 - music_tracker - INFO - Zero songs listened to
+2025-06-19 19:58:07,301 - music_tracker - INFO - No songs uploaded.
+2025-06-19 20:58:07,050 - music_tracker - INFO - Zero songs listened to
+2025-06-19 20:58:07,051 - music_tracker - INFO - No songs uploaded.
+2025-06-19 21:58:06,732 - music_tracker - INFO - Zero songs listened to
+2025-06-19 21:58:06,732 - music_tracker - INFO - No songs uploaded.
+2025-06-19 22:58:07,416 - music_tracker - INFO - Uploading 1 song
+2025-06-19 23:58:07,262 - music_tracker - INFO - Zero songs listened to
+2025-06-19 23:58:07,262 - music_tracker - INFO - No songs uploaded.

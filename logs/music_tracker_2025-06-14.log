@@ -1,0 +1,66 @@
+2025-06-14 00:58:07,151 - music_tracker - INFO - Zero songs listened to
+2025-06-14 00:58:07,152 - music_tracker - INFO - No songs uploaded.
+2025-06-14 01:58:06,846 - music_tracker - INFO - Zero songs listened to
+2025-06-14 01:58:06,846 - music_tracker - INFO - No songs uploaded.
+2025-06-14 02:58:06,561 - music_tracker - INFO - Zero songs listened to
+2025-06-14 02:58:06,562 - music_tracker - INFO - No songs uploaded.
+2025-06-14 03:58:07,304 - music_tracker - INFO - Zero songs listened to
+2025-06-14 03:58:07,305 - music_tracker - INFO - No songs uploaded.
+2025-06-14 04:58:07,034 - music_tracker - INFO - Zero songs listened to
+2025-06-14 04:58:07,035 - music_tracker - INFO - No songs uploaded.
+2025-06-14 05:58:06,796 - music_tracker - INFO - Zero songs listened to
+2025-06-14 05:58:06,796 - music_tracker - INFO - No songs uploaded.
+2025-06-14 06:58:06,633 - music_tracker - INFO - Zero songs listened to
+2025-06-14 06:58:06,634 - music_tracker - INFO - No songs uploaded.
+2025-06-14 07:58:07,395 - music_tracker - INFO - Zero songs listened to
+2025-06-14 07:58:07,395 - music_tracker - INFO - No songs uploaded.
+2025-06-14 08:58:07,153 - music_tracker - INFO - Zero songs listened to
+2025-06-14 08:58:07,154 - music_tracker - INFO - No songs uploaded.
+2025-06-14 09:00:11,684 - music_tracker - INFO - Starting music tracker analysis
+2025-06-14 09:00:11,684 - music_tracker - INFO - Fetching data
+2025-06-14 09:00:12,397 - music_tracker - INFO - Fetched 56 recent songs
+2025-06-14 09:00:12,403 - music_tracker - INFO - Running top listens analysis
+2025-06-14 09:00:12,403 - music_tracker - INFO - Calculating top songs listens
+2025-06-14 09:00:12,404 - music_tracker - INFO - Sending message with top 2 songs
+2025-06-14 09:00:13,104 - music_tracker - INFO - Message successfully sent!
+2025-06-14 09:00:13,104 - music_tracker - INFO - Calculating top albums listens
+2025-06-14 09:00:13,105 - music_tracker - INFO - Sending message with top 3 albums
+2025-06-14 09:00:13,766 - music_tracker - INFO - Message successfully sent!
+2025-06-14 09:00:13,766 - music_tracker - INFO - Calculating top artists listens
+2025-06-14 09:00:13,767 - music_tracker - INFO - Sending message with top 3 artists
+2025-06-14 09:00:14,434 - music_tracker - INFO - Message successfully sent!
+2025-06-14 09:00:14,435 - music_tracker - INFO - Running popularity and listening hours analysis
+2025-06-14 09:00:14,435 - music_tracker - INFO - Finding most popular track
+2025-06-14 09:00:14,435 - music_tracker - INFO - Most popular song found: ARE WE STILL FRIENDS? with score 87
+2025-06-14 09:00:15,053 - music_tracker - INFO - Message successfully sent!
+2025-06-14 09:00:15,053 - music_tracker - INFO - Calculating most listened hour
+2025-06-14 09:00:15,054 - music_tracker - INFO - Most listened hour: 16:00 with 35:11
+2025-06-14 09:00:15,672 - music_tracker - INFO - Message successfully sent!
+2025-06-14 09:00:15,673 - music_tracker - INFO - Analysis completed successfully
+
+2025-06-14 09:58:07,408 - music_tracker - INFO - Zero songs listened to
+2025-06-14 09:58:07,408 - music_tracker - INFO - No songs uploaded.
+2025-06-14 10:58:07,172 - music_tracker - INFO - Zero songs listened to
+2025-06-14 10:58:07,173 - music_tracker - INFO - No songs uploaded.
+2025-06-14 11:58:06,906 - music_tracker - INFO - Zero songs listened to
+2025-06-14 11:58:06,906 - music_tracker - INFO - No songs uploaded.
+2025-06-14 12:58:07,605 - music_tracker - INFO - Uploading 2 songs
+2025-06-14 13:58:07,373 - music_tracker - INFO - Zero songs listened to
+2025-06-14 13:58:07,374 - music_tracker - INFO - No songs uploaded.
+2025-06-14 14:58:07,070 - music_tracker - INFO - Zero songs listened to
+2025-06-14 14:58:07,070 - music_tracker - INFO - No songs uploaded.
+2025-06-14 15:58:08,426 - music_tracker - INFO - Uploading 5 songs
+2025-06-14 16:58:09,877 - music_tracker - INFO -   Supabase error: Status 400, {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2007\""}
+2025-06-14 16:58:09,879 - music_tracker - INFO - No songs uploaded.
+2025-06-14 17:58:06,639 - music_tracker - INFO - Zero songs listened to
+2025-06-14 17:58:06,639 - music_tracker - INFO - No songs uploaded.
+2025-06-14 18:58:07,378 - music_tracker - INFO - Zero songs listened to
+2025-06-14 18:58:07,378 - music_tracker - INFO - No songs uploaded.
+2025-06-14 19:58:07,759 - music_tracker - INFO - Uploading 1 song
+2025-06-14 20:58:06,487 - music_tracker - INFO - Zero songs listened to
+2025-06-14 20:58:06,488 - music_tracker - INFO - No songs uploaded.
+2025-06-14 21:58:07,255 - music_tracker - INFO - Zero songs listened to
+2025-06-14 21:58:07,255 - music_tracker - INFO - No songs uploaded.
+2025-06-14 22:58:07,197 - music_tracker - INFO - Zero songs listened to
+2025-06-14 22:58:07,198 - music_tracker - INFO - No songs uploaded.
+2025-06-14 23:58:07,999 - music_tracker - INFO - Uploading 2 songs
