@@ -11,18 +11,18 @@ load_dotenv()
 client = WebClient(token=os.getenv("SLACK_BOT_TOKEN"))
 SPOTIFY_CHANNEL_ID = "C063HV2H62V"
 
-# Butler greetings - randomized daily messages
+# Butler greetings - Ready Player One inspired digital archivist
 BUTLER_GREETINGS = [
-    "🎩 Good morning, sir. Your musical affairs from yesterday, served fresh:",
-    "🍵 *adjusts white gloves* Your daily musical digest has arrived, sir:",
-    "🎭 *bows gracefully* Allow me to present yesterday's sonic selections:",
-    "🕰️ Right on schedule, sir. Your listening report, prepared to perfection:",
-    "🎼 *polishes monocle* The musical chronicles of your yesterday, sir:",
-    "🚪 *knocks politely* Your daily wrapped is ready for your review, sir:",
-    "🧐 *straightens tie* I've tallied your musical endeavors, sir. The results:",
-    "🎪 *tips hat* Your sonic adventures from yesterday, curated with care:",
-    "☕ *serves report on silver platter* Today's musical intelligence, sir:",
-    "🎯 *clears throat professionally* The daily music briefing, sir. As requested:"
+    "🎮 *materializes from digital archive* Your musical data has been catalogued and indexed, user:",
+    "💾 *accessing yesterday's audio logs* Musical analysis complete. Compiling report from the archives:",
+    "🖥️ *holographic display activates* Greetings, music aficionado. Your sonic data awaits retrieval:",
+    "🤖 *digital butler protocol initiated* Yesterday's musical patterns have been processed and archived:",
+    "⚡ *system online* Welcome back to your personal music vault. Daily statistics compiled:",
+    "🎧 *adjusting virtual monocle* Ah, another day of exquisite musical taste documented for posterity:",
+    "📡 *transmitting from the audio archives* Your daily sonic chronicle is ready for download:",
+    "🎵 *emerging from the musical matrix* Greetings, curator of sound. Your data analysis is complete:",
+    "🔍 *scanning musical databases* Fascinating listening patterns detected. Report generated:",
+    "⭐ *constellation of sound waves appears* Your musical journey through spacetime has been mapped:"
 ]
 
 
@@ -143,58 +143,11 @@ def format_top_items(items_dict, item_type, verb="listens"):
     return header + "\n".join(lines)
 
 
-def format_basic_daily_summary(analysis_results):
-    """
-    Format the current-style daily summary message
-    
-    Args:
-        analysis_results: Dictionary from analyze_listening_day()
-        
-    Returns:
-        String with formatted message
-    """
-    message_parts = []
-    
-    # Top songs
-    if analysis_results['top_songs']:
-        top_songs_msg = format_top_items(analysis_results['top_songs'], 'songs', 'listens')
-        message_parts.append(top_songs_msg)
-    
-    # Top albums  
-    if analysis_results['top_albums']:
-        top_albums_msg = format_top_items(analysis_results['top_albums'], 'albums', 'listens')
-        message_parts.append(top_albums_msg)
-    
-    # Top artists
-    if analysis_results['top_artists']:
-        top_artists_msg = format_top_items(analysis_results['top_artists'], 'artists', 'songs')
-        message_parts.append(top_artists_msg)
-    
-    # Most popular song
-    if analysis_results['most_popular']:
-        song = analysis_results['most_popular']
-        popular_msg = f'The most popular song you listened to yesterday was *{song["song"]}* by *{song["artist"]}* with a popularity score of {song["song_popularity"]}.'
-        message_parts.append(popular_msg)
-    
-    # Peak listening hour
-    if analysis_results['peak_hour']:
-        hour = analysis_results['peak_hour']
-        minutes = int(analysis_results['peak_minutes'])
-        hours_display, mins_display = divmod(minutes, 60)
-        peak_msg = f'Yesterday, the hour you listened to most music was at {hour} with a listen time of {hours_display:02d}:{mins_display:02d}'
-        message_parts.append(peak_msg)
-    
-    # Total listening time
-    if analysis_results['total_time_formatted']:
-        total_msg = f'You listened to {analysis_results["total_time_formatted"]} of music today across {analysis_results["total_songs"]} songs!'
-        message_parts.append(total_msg)
-    
-    return "\n\n".join(message_parts)
 
 
-def format_enhanced_daily_summary(analysis_results):
+def format_daily_summary(analysis_results):
     """
-    Format an enhanced daily summary optimized for iPhone 15
+    Format daily summary with butler greeting and mobile-optimized styling
     
     Args:
         analysis_results: Dictionary from analyze_listening_day()
@@ -210,7 +163,8 @@ def format_enhanced_daily_summary(analysis_results):
     
     # Listening Overview - more compact with decimal hours
     formatted_time = format_time_decimal_hours(analysis_results['total_time'])
-    overview = f"📊 LISTENING\n"
+    overview = f"*LISTENING STATS*\n"
+    overview += f"══════════════════\n"
     overview += f"🎧 {formatted_time}\n"
     overview += f"🎵 {analysis_results['total_songs']} songs"
     message_parts.append(overview)
@@ -220,18 +174,19 @@ def format_enhanced_daily_summary(analysis_results):
         energy_bar = create_progress_bar(analysis_results['energy_level'], max_width=8)
         mood_bar = create_progress_bar(analysis_results['mood_level'], max_width=8)
         
-        vibe_section = f"🌟 VIBE CHECK\n"
-        vibe_section += f"⚡ {energy_bar} {analysis_results['energy_level']}%\n"
-        vibe_section += f"😊 {mood_bar} {analysis_results['mood_level']}%"
+        vibe_section = f"*MOOD & ENERGY*\n"
+        vibe_section += f"══════════════════\n"
+        vibe_section += f"⚡ Energy: {energy_bar} {analysis_results['energy_level']}%\n"
+        vibe_section += f"😊 Mood: {mood_bar} {analysis_results['mood_level']}%"
         message_parts.append(vibe_section)
     
     # Top Hits (mobile-optimized format)
     if analysis_results['top_songs']:
         top_songs = sorted(analysis_results['top_songs'].items(), key=lambda x: x[1], reverse=True)[:3]
         
-        hits_section = "🏆 TOP HITS\n"
+        hits_section = "*TOP HITS*\n"
+        hits_section += "══════════════════\n"
         medals = ["🥇", "🥈", "🥉"]
-        
         for i, (song, count) in enumerate(top_songs):
             medal = medals[i] if i < 3 else f"{i+1}."
             # Let Slack handle long song names naturally
@@ -241,28 +196,28 @@ def format_enhanced_daily_summary(analysis_results):
     
     # Peak Activity - let Slack handle text wrapping
     if analysis_results['peak_hour'] and analysis_results['most_popular']:
-        peak_section = f"⚡ PEAK HOUR\n"
+        peak_section = f"*PEAK ACTIVITY*\n"
+        peak_section += f"══════════════════\n"
         
         # Peak hour - with decimal format
         peak_time = format_minutes_decimal(analysis_results['peak_minutes'])
-        peak_section += f"🕒 {analysis_results['peak_hour']} ({peak_time})\n"
+        peak_section += f"🕒 Peak Hour: {analysis_results['peak_hour']} ({peak_time})\n"
         
         # Most popular - with artist and no "popularity" text
         song = analysis_results['most_popular']
-        peak_section += f"🎯 Most popular: {song['song']} by {song['artist']} ({song['song_popularity']}%)"
+        peak_section += f"🎯 Most Popular: {song['song']} by {song['artist']} ({song['song_popularity']}%)"
         
         message_parts.append(peak_section)
     
     return "\n\n".join(message_parts)
 
 
-def send_daily_analysis(analysis_results, use_enhanced_format=False):
+def send_daily_analysis(analysis_results):
     """
     Send the daily analysis to Slack
     
     Args:
         analysis_results: Dictionary from analyze_listening_day()
-        use_enhanced_format: Boolean - use enhanced or basic format
         
     Returns:
         Boolean indicating success
@@ -270,10 +225,7 @@ def send_daily_analysis(analysis_results, use_enhanced_format=False):
     logger = get_logger()
     
     try:
-        if use_enhanced_format:
-            message = format_enhanced_daily_summary(analysis_results)
-        else:
-            message = format_basic_daily_summary(analysis_results)
+        message = format_daily_summary(analysis_results)
         
         if not message.strip():
             logger.warning("No message content generated")
@@ -327,12 +279,10 @@ if __name__ == "__main__":
         'mood_level': 68
     }
     
-    # Test both formats
-    basic_msg = format_basic_daily_summary(sample_results)
-    enhanced_msg = format_enhanced_daily_summary(sample_results)
+    # Test message format
+    message = format_daily_summary(sample_results)
     
-    logger.info("Basic format length: %s characters", len(basic_msg))
-    logger.info("Enhanced format length: %s characters", len(enhanced_msg))
+    logger.info("Message length: %s characters", len(message))
     
-    print("ENHANCED FORMAT:")
-    print(enhanced_msg)
+    print("DAILY SUMMARY FORMAT:")
+    print(message)

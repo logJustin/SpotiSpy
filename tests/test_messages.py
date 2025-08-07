@@ -2,8 +2,8 @@ import pytest
 from spotispy.messages import (
     create_progress_bar,
     format_top_items,
-    format_basic_daily_summary,
-    format_enhanced_daily_summary
+    format_daily_summary,
+    format_daily_summary
 )
 
 
@@ -93,36 +93,38 @@ class TestMessageFormatting:
         
         assert 'No repeated songs from yesterday!' in result
     
-    def test_basic_daily_summary_format(self, sample_analysis_results):
-        """Should format basic daily summary correctly"""
-        message = format_basic_daily_summary(sample_analysis_results)
+    def test_daily_summary_format_content(self, sample_analysis_results):
+        """Should format daily summary with correct content"""
+        message = format_daily_summary(sample_analysis_results)
         
         # Should contain key information
         assert 'Blinding Lights' in message  # Top song
         assert 'The Weeknd' in message       # Artist
         assert '15:00' in message            # Peak hour
-        assert '4 hours, 23 minutes' in message  # Total time
-        assert '87 songs' in message         # Song count
+        assert '4.4 hours' in message  # Total time (decimal format)
+        assert '🎵 87 songs' in message      # Song count with emoji
     
-    def test_enhanced_daily_summary_format(self, sample_analysis_results):
-        """Should format enhanced daily summary with progress bars"""
-        message = format_enhanced_daily_summary(sample_analysis_results)
+    def test_daily_summary_format_structure(self, sample_analysis_results):
+        """Should format daily summary with butler greeting and progress bars"""
+        message = format_daily_summary(sample_analysis_results)
         
-        # Should contain mobile-optimized formatting
-        assert '🎵 DAILY WRAPPED 🎵' in message
-        assert '━━━━━━━━━━━━━━━━━━━━━' in message  # Shorter separator line
-        assert '📊 LISTENING' in message
-        assert '🌟 VIBE CHECK' in message
-        assert '🏆 TOP HITS' in message
-        assert '⚡ PEAK HOUR' in message
+        # Should contain butler greeting and mobile-optimized formatting
+        # Check for any digital archivist greeting pattern (Ready Player One inspired)
+        assert message.startswith(('🎮', '💾', '🖥️', '🤖', '⚡', '🎧', '📡', '🎵', '🔍', '⭐'))  # Digital butler greeting should be present
+        assert '*LISTENING STATS*' in message
+        assert '*MOOD & ENERGY*' in message
+        assert '*TOP HITS*' in message
+        assert '*PEAK ACTIVITY*' in message
         
         # Should contain progress bars
         assert '█' in message  # Filled bar characters
         assert '░' in message  # Empty bar characters
         
-        # Should contain medals for top songs
-        assert '🥇' in message  # Gold medal
-        assert '🥈' in message  # Silver medal
+        # Should contain section borders and content emojis
+        assert '══════════════════' in message  # Section borders
+        assert '🎧' in message  # Time emoji
+        assert '🎵' in message  # Songs emoji
+        assert '🥇' in message  # Medal emoji
     
     def test_enhanced_format_handles_missing_mood_data(self):
         """Should handle missing mood/energy data gracefully"""
@@ -139,37 +141,34 @@ class TestMessageFormatting:
             'mood_level': 0     # No mood data
         }
         
-        message = format_enhanced_daily_summary(analysis_without_mood)
+        message = format_daily_summary(analysis_without_mood)
         
         # Should still format correctly without mood section
-        assert '🎵 DAILY WRAPPED 🎵' in message
-        assert '📊 LISTENING' in message
+        assert message.startswith(('🎮', '💾', '🖥️', '🤖', '⚡', '🎧', '📡', '🎵', '🔍', '⭐'))  # Digital butler greeting should be present
+        assert '*LISTENING STATS*' in message
         # Should NOT contain mood section when no data
-        assert '🌟 VIBE CHECK' not in message
+        assert '*MOOD & ENERGY*' not in message
     
     def test_message_length_reasonable(self, sample_analysis_results):
         """Messages should not be too long for Slack"""
-        basic_message = format_basic_daily_summary(sample_analysis_results)
-        enhanced_message = format_enhanced_daily_summary(sample_analysis_results)
+        message = format_daily_summary(sample_analysis_results)
         
         # Slack has a 4000 character limit per message
-        assert len(basic_message) < 4000
-        assert len(enhanced_message) < 4000
+        assert len(message) < 4000
         
         # Should not be too short either (empty messages)
-        assert len(basic_message) > 50
-        assert len(enhanced_message) > 100
+        assert len(message) > 100
     
     def test_message_tone_appropriateness(self, sample_analysis_results):
         """Ensure messages have fun but not excessive tone"""
-        enhanced_message = format_enhanced_daily_summary(sample_analysis_results)
+        message = format_daily_summary(sample_analysis_results)
         
-        # Should have reasonable emoji usage
-        emoji_count = sum(1 for char in enhanced_message if ord(char) > 127)  # Rough emoji count
-        assert 10 <= emoji_count <= 60  # Not too few, not too many
+        # Should have reasonable emoji usage (excluding border characters ═)
+        emoji_count = sum(1 for char in message if ord(char) > 127 and char != '═')  # Rough emoji count
+        assert 8 <= emoji_count <= 35  # Not too few, not too many (with fun content emojis)
         
         # Should not have excessive phrases
         excessive_phrases = ['OMG', 'BESTIE', 'LITERALLY', 'PERIODT', '!!!']
-        message_upper = enhanced_message.upper()
+        message_upper = message.upper()
         for phrase in excessive_phrases:
             assert phrase not in message_upper

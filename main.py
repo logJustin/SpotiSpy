@@ -19,12 +19,9 @@ from spotispy.analysis import analyze_listening_day
 from spotispy.messages import send_daily_analysis
 
 
-def run_daily_analysis(use_enhanced_format=False):
+def run_daily_analysis():
     """
     Run the complete daily analysis pipeline
-    
-    Args:
-        use_enhanced_format: Whether to use enhanced message format
         
     Returns:
         Boolean indicating success
@@ -56,7 +53,7 @@ def run_daily_analysis(use_enhanced_format=False):
         
         # Send to Slack
         logger.info("Sending daily summary to Slack...")
-        success = send_daily_analysis(analysis_results, use_enhanced_format)
+        success = send_daily_analysis(analysis_results)
         
         if success:
             logger.info("Daily analysis completed successfully!")
@@ -96,7 +93,6 @@ def main():
     logger = get_logger()
     
     # Check command line arguments
-    enhanced_format = '--enhanced' in sys.argv or '-e' in sys.argv
     weekly_only = '--weekly' in sys.argv or '-w' in sys.argv
     help_requested = '--help' in sys.argv or '-h' in sys.argv
     
@@ -106,7 +102,6 @@ def main():
         print("Usage: python main.py [options]")
         print()
         print("Options:")
-        print("  --enhanced, -e    Use enhanced message format with progress bars")
         print("  --weekly, -w      Run weekly summary only (normally auto-detected on Sundays)")
         print("  --help, -h        Show this help message")
         print()
@@ -123,12 +118,12 @@ def main():
         success = run_weekly_summary()
     elif is_sunday():
         # Run both daily and weekly on Sundays
-        daily_success = run_daily_analysis(enhanced_format)
+        daily_success = run_daily_analysis()
         weekly_success = run_weekly_summary()
         success = daily_success and weekly_success
     else:
         # Just run daily analysis
-        success = run_daily_analysis(enhanced_format)
+        success = run_daily_analysis()
     
     if success:
         logger.info("SpotiSpy completed successfully")

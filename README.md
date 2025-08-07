@@ -1,57 +1,194 @@
-# 🎵 SpotiSpy 📊
+# 🎮 SpotiSpy - Your Digital Music Archivist 🤖
 
-This Python script is your musical companion, designed to fetch and organize your recently played songs from Spotify. It leverages Spotipy for simplicity, the Spotify API to retrieve the tracklist, the openpyxl library for seamless Excel workbook handling, and the Slack integration for automated messaging.
+SpotiSpy is your sophisticated music tracking companion that delivers personalized daily "Spotify Wrapped" reports with a Ready Player One inspired digital archivist personality. Get beautiful, mobile-optimized summaries of your listening habits delivered fresh to Slack every morning.
 
-## Prerequisites 🛠️
+## ✨ Features
 
-Before embarking on your musical journey with this script, ensure you have the necessary dependencies installed: `pip install openpyxl spotipy python-dotenv slack_sdk`
+### 🎭 **Digital Archivist Daily Reports**
+- **10 randomized OASIS-inspired greetings** - Your personal digital music curator with Ready Player One flair
+- **iPhone 15 optimized formatting** - Perfect for mobile viewing
+- **Enhanced visual elements** - Progress bars, emojis, and clean layout
 
+### 📊 **Rich Music Analytics**
+- **Smart time formatting** - Shows "4.5 hours" for long sessions, "45 minutes" for shorter ones  
+- **Top hits tracking** - Your most-played songs, artists, and albums with medal rankings 🥇🥈🥉
+- **Peak activity analysis** - Discover your most musical hour of the day
+- **Mood & energy analysis** - Visual progress bars when audio features are available
+- **Popular track insights** - See your highest Spotify-rated songs with artist info
 
-## Slack Integration 🚀
+### 🗓️ **Weekly Summaries** 
+- **Sunday weekly wraps** - Comprehensive week-in-review reports
+- **Trend analysis** - Compare daily patterns and streaks
 
-To enable Slack integration and receive notifications, follow these steps:
+## 🚀 Quick Start
 
-1. Create a Slack App on the [Slack API Dashboard](https://api.slack.com/apps).
-2. Add the Slack Bot Token to your .env file:
+### 1. **Clone & Setup**
+```bash
+git clone <your-repo>
+cd SpotiSpy
+python3 -m venv spotispyvenv
+source spotispyvenv/bin/activate  # On Windows: spotispyvenv\Scripts\activate
+pip install -r requirements.txt
 ```
-SLACK_BOT_TOKEN=your_slack_bot_token
+
+### 2. **Configure Environment**
+Copy `.env.example` to `.env` and fill in your credentials:
+
+```bash
+# Spotify API (from https://developer.spotify.com/dashboard/)
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
+SPOTIPY_REDIRECT_URI=http://localhost:8080/callback
+
+# Supabase Database
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_KEY=your_supabase_anon_key
+
+# Slack Bot (from https://api.slack.com/apps)
+SLACK_BOT_TOKEN=xoxb-your-slack-bot-token
 ```
-3. Update the `spotify_channel_id` in the script based on your Slack channels inside `messenger.py`.
 
+### 3. **Run Daily Analysis**
+```bash
+# Basic format
+./analysis.sh
 
-## Setup Spotify API Credentials 🎧
+# Daily butler analysis (default format)
+python main.py
 
-1. Obtain your Spotify API credentials by creating a new application on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications).
-2. Configure your .env file:
-    ```
-    SPOTIFY_CLIENT_ID=your_client_id
-    SPOTIFY_CLIENT_SECRET=your_client_secret
-    SPOTIPY_REDIRECT_URI=your_redirect_uri
-    ```
+# Weekly summary only
+python main.py --weekly
+```
 
+## 📱 Sample Output
 
-## Script Overview 📝
-This script harmonizes with your tunes by:
+Your digital archivist will greet you with messages like:
 
-1. 📡 Fetching the tracklist of songs played in the last hour using the get_recently_played and get_last_hour functions.
-2. 📊 Creating or opening an Excel workbook (./data/{date}.xlsx), with each worksheet named after the starting hour of the tracklist.
-3. ✍️ Writing song details (name, artist, album, duration, release date, played at, song popularity) to the worksheet.
-4. 💾 Saving the workbook, ensuring your music data is safely stored.
-5. 💻 On Windows Machines, use Task Scheduler to:
-    - Execute `excel.py` in the last minute of each hour.
-    - Execute `send_analysis.py` each day at the time of your choosing.
-        - `send_analysis.py` will deliver a customized Slack messge with the data found in [Features](#features-)
+```
+🎮 *materializes from digital archive* Your musical data has been catalogued and indexed, user:
 
+🎵 DAILY WRAPPED 🎵
+━━━━━━━━━━━━━━━━━━
+📊 LISTENING
+🎧 4.5 hours
+🎵 82 songs
+🏆 TOP HITS
+🥇 Blinding Lights by The Weeknd (4x)
+🥈 Good 4 U by Olivia Rodrigo (3x)  
+🥉 Levitating by Dua Lipa (2x)
+⚡ PEAK HOUR
+🕒 15:00 (1.4 hours)
+🎯 Most popular: Blinding Lights by The Weeknd (87%)
+```
 
-## Features 🌟
-In addition to tracking your recently played songs, this script offers additional features:
+## 🏗️ Architecture
 
-1. Top Listens: Get insights into your top songs, albums, and artists from yesterday.
-2. Most Popular Track: Discover the most popular song you listened to yesterday.
-3. Most Listened Hour: Find out the hour during which you listened to the most music.
+### **Clean 5-File System**
+```
+spotispy/
+├── spotify.py      # Spotify API integration
+├── database.py     # Supabase data management  
+├── analysis.py     # Music analysis & insights
+├── messages.py     # Slack formatting & butler personality
+└── helpers.py      # Utilities & logging
+```
 
+### **Entry Points**
+- `main.py` - Daily analysis (replaces old send_analysis.py)
+- `weekly.py` - Sunday weekly summaries
+- `analysis.sh` - Cronjob script (no changes needed!)
 
-## Customization 🎨
-- Data Storage: By default, the script saves the Excel workbook in the ./data/ directory. Customize the storage path by modifying the workbook_path.
-- Data Columns: Adjust the columns and their order by modifying the write_workbook function inside `excel.py` where the information is written.
-- Feel free to customize the script to match your rhythm and preferences. Let the music play! 🎶
+### **Testing**
+```bash
+# Run all tests
+pytest tests/
+
+# Run specific test suite
+pytest tests/test_messages.py -v
+```
+
+## ⚙️ Setup Details
+
+### **Spotify API Setup**
+1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
+2. Create a new application
+3. Add redirect URI: `http://localhost:8080/callback`
+4. Copy Client ID and Client Secret to `.env`
+
+### **Supabase Database**
+1. Create account at [Supabase](https://supabase.com)
+2. Create new project
+3. Create `songs` table with your listening data structure
+4. Copy URL and anon key to `.env`
+
+### **Slack Integration**
+1. Go to [Slack API](https://api.slack.com/apps)
+2. Create new app
+3. Add bot token scopes: `chat:write`
+4. Install app to workspace
+5. Copy bot token to `.env`
+6. Update `SPOTIFY_CHANNEL_ID` in `spotispy/messages.py`
+
+### **Cronjob (Raspberry Pi)**
+Add to crontab for daily 9 AM reports:
+```bash
+0 9 * * * cd /path/to/SpotiSpy && ./analysis.sh
+```
+
+## 🎨 Customization
+
+### **Digital Archivist Personality**
+Edit the `BUTLER_GREETINGS` array in `spotispy/messages.py` to add your own OASIS-inspired messages.
+
+### **Message Format**
+- `format_daily_summary()` - Mobile-optimized butler format with professional styling
+
+### **Analysis Options**
+```bash
+python main.py               # Daily archivist analysis (default)
+python main.py --weekly      # Weekly summary only  
+python main.py --help        # Show all options
+```
+
+## 🧪 Development
+
+### **Adding New Features**
+1. Write tests first: `tests/test_*.py`
+2. Implement in appropriate module: `spotispy/*.py`
+3. Run tests: `pytest tests/`
+4. Test integration: `python main.py`
+
+### **File Structure Philosophy**
+- **Simple**: 5 core files, easy to understand
+- **Clean**: No deep nesting or complex imports
+- **Testable**: Comprehensive test coverage
+- **Mobile-first**: Optimized for iPhone 15 viewing
+
+## 📊 Data Flow
+
+```
+Supabase → Database Module → Analysis Module → Messages Module → Slack
+    ↑                            ↑                    ↑
+Historical Data          Daily Insights      Butler Personality
+```
+
+## 🎯 Command Reference
+
+```bash
+# Development
+python main.py                 # Daily butler analysis
+python main.py --weekly        # Weekly summary only
+pytest tests/                  # Run all tests
+python spotispy/messages.py    # Test message formatting
+
+# Production (Cronjob)
+./analysis.sh                  # Your existing cronjob (butler format)
+```
+
+## 🤝 Contributing
+
+This is a personal project, but feel free to fork and adapt for your own musical journey! The clean architecture makes it easy to add new features or modify existing ones.
+
+---
+
+*Let your digital music archivist deliver the perfect daily dose of sonic intelligence from the OASIS! 🎮🤖*
