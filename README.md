@@ -15,6 +15,7 @@ SpotiSpy is your sophisticated music tracking companion that delivers personaliz
 - **Peak activity analysis** - Discover your most musical hour of the day
 - **Mood & energy analysis** - Visual progress bars when audio features are available
 - **Popular track insights** - See your highest Spotify-rated songs with artist info
+- **ASCII Charts** - 2 random visual charts per day showing genre breakdowns, weekly patterns, discovery ratios, and social trends
 
 ### 🗓️ **Weekly Summaries** 
 - **Sunday weekly wraps** - Comprehensive week-in-review reports
@@ -79,6 +80,20 @@ Your digital archivist will greet you with messages like:
 ⚡ PEAK HOUR
 🕒 15:00 (1.4 hours)
 🎯 Most popular: Blinding Lights by The Weeknd (87%)
+
+*WEEKLY PATTERN*
+══════════════════
+Mon: ████░░░░ 2.1h
+Tue: ███░░░░░ 1.8h
+Wed: ████████ 4.2h ← Today
+Thu: ██░░░░░░ 0.9h
+Fri: ███████░ 3.7h
+
+*GENRE BREAKDOWN*
+══════════════════
+Pop          ████░░░░ 50%
+Rock         ██░░░░░░ 25%
+Indie        ██░░░░░░ 25%
 ```
 
 ## 🏗️ Architecture

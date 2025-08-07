@@ -1,9 +1,14 @@
 import pytest
 from spotispy.messages import (
     create_progress_bar,
+    create_ascii_bar,
     format_top_items,
     format_daily_summary,
-    format_daily_summary
+    create_genre_distribution_chart,
+    create_weekly_pattern_chart,
+    create_new_vs_familiar_chart,
+    create_social_discovery_chart,
+    generate_random_ascii_charts
 )
 
 
@@ -172,3 +177,115 @@ class TestMessageFormatting:
         message_upper = message.upper()
         for phrase in excessive_phrases:
             assert phrase not in message_upper
+
+
+class TestAsciiCharts:
+    
+    def test_create_ascii_bar_basic(self):
+        """Should create ASCII bars with custom characters"""
+        bar = create_ascii_bar(50, max_width=10)
+        assert len(bar) == 10
+        assert bar.count('█') == 5
+        assert bar.count('░') == 5
+    
+    def test_create_ascii_bar_custom_chars(self):
+        """Should work with custom fill and empty characters"""
+        bar = create_ascii_bar(75, max_width=8, filled_char="●", empty_char="○")
+        assert len(bar) == 8
+        assert bar.count('●') == 6  # 75% of 8
+        assert bar.count('○') == 2
+    
+    def test_genre_distribution_chart(self):
+        """Should create genre distribution chart from song data"""
+        mock_songs = [
+            {'energy': 0.8, 'valence': 0.9},  # Pop
+            {'energy': 0.9, 'valence': 0.1},  # Rock
+            {'energy': 0.3, 'valence': 0.2},  # Indie
+            {'energy': 0.3, 'valence': 0.2},  # Indie
+        ]
+        
+        chart = create_genre_distribution_chart(mock_songs)
+        
+        assert chart is not None
+        assert 'Indie' in chart
+        assert '█' in chart  # Should contain ASCII bars
+        assert '%' in chart  # Should contain percentages
+    
+    def test_weekly_pattern_chart(self):
+        """Should create weekly pattern chart with horizontal bars"""
+        chart = create_weekly_pattern_chart()
+        
+        assert chart is not None
+        assert 'Mon:' in chart  # Should contain day labels
+        assert 'Today' in chart  # Should highlight today
+        assert '█' in chart  # Should contain ASCII bars
+        assert 'h' in chart  # Should show hours
+    
+    def test_new_vs_familiar_chart(self):
+        """Should categorize songs as new vs familiar"""
+        mock_songs = [
+            {'song_popularity': 30},  # New (low popularity)
+            {'song_popularity': 80},  # Familiar (high popularity)
+            {'song_popularity': 45},  # New
+            {'song_popularity': 75},  # Familiar
+        ]
+        
+        chart = create_new_vs_familiar_chart(mock_songs)
+        
+        assert chart is not None
+        assert '🆕 New:' in chart
+        assert '🔄 Familiar:' in chart
+        assert '█' in chart or '░' in chart  # Should contain ASCII bars
+        assert '%' in chart
+    
+    def test_social_discovery_chart(self):
+        """Should categorize songs as mainstream vs underground"""
+        mock_songs = [
+            {'song_popularity': 85},  # Mainstream
+            {'song_popularity': 45},  # Underground
+            {'song_popularity': 75},  # Mainstream
+            {'song_popularity': 30},  # Underground
+        ]
+        
+        chart = create_social_discovery_chart(mock_songs)
+        
+        assert chart is not None
+        assert '📈 Mainstream:' in chart
+        assert '🔍 Underground:' in chart
+        assert '█' in chart or '░' in chart
+        assert '%' in chart
+    
+    def test_generate_random_ascii_charts(self):
+        """Should generate random selection of charts"""
+        mock_songs = [
+            {'energy': 0.8, 'valence': 0.9, 'song_popularity': 85},
+            {'energy': 0.3, 'valence': 0.2, 'song_popularity': 45}
+        ]
+        
+        charts = generate_random_ascii_charts(mock_songs, num_charts=2)
+        
+        assert isinstance(charts, list)
+        assert len(charts) <= 2  # Should not exceed requested number
+        
+        for title, content in charts:
+            assert isinstance(title, str)
+            assert isinstance(content, str)
+            assert content  # Should not be empty
+    
+    def test_format_daily_summary_with_ascii_charts(self, sample_analysis_results):
+        """Should include ASCII charts when songs_data is provided"""
+        mock_songs = [
+            {'energy': 0.8, 'valence': 0.9, 'song_popularity': 85},
+            {'energy': 0.3, 'valence': 0.2, 'song_popularity': 45}
+        ]
+        
+        message_without_charts = format_daily_summary(sample_analysis_results)
+        message_with_charts = format_daily_summary(sample_analysis_results, mock_songs)
+        
+        # Message with charts should be longer
+        assert len(message_with_charts) > len(message_without_charts)
+        
+        # Should contain at least one chart section
+        chart_indicators = ['GENRE BREAKDOWN', 'WEEKLY PATTERN', 'DISCOVERY RATIO', 'SOCIAL DISCOVERY']
+        has_chart = any(indicator in message_with_charts for indicator in chart_indicators)
+        assert has_chart

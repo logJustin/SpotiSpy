@@ -2,9 +2,12 @@ import os
 import time
 import requests
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 from spotispy.helpers import get_logger
+
+# Define Central Time timezone
+CENTRAL_TZ = timezone(timedelta(hours=-6))  # CST (Central Standard Time)
 
 load_dotenv()
 
@@ -20,13 +23,16 @@ headers = {
 
 
 def get_yesterdays_songs():
-    """Get all songs played in the last 24 hours from Supabase"""
+    """Get all songs played in the last 24 hours from Supabase (Central Time)"""
     logger = get_logger()
     
-    # Get 24 hours ago timestamp
-    one_day_ago_seconds = time.time() - (60 * 60 * 24)
-    one_day_ago_epoch = int(one_day_ago_seconds)
-    one_day_ago_iso = datetime.fromtimestamp(one_day_ago_epoch).isoformat() + 'Z'
+    # Get current time in Central timezone
+    now_central = datetime.now(CENTRAL_TZ)
+    
+    # Get 24 hours ago in Central time, then convert to UTC for database query
+    one_day_ago_central = now_central - timedelta(hours=24)
+    one_day_ago_utc = one_day_ago_central.astimezone(timezone.utc)
+    one_day_ago_iso = one_day_ago_utc.isoformat().replace('+00:00', 'Z')
 
     endpoint = f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}?played_at=gte.{one_day_ago_iso}&order=played_at.desc"
 

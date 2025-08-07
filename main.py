@@ -53,7 +53,7 @@ def run_daily_analysis():
         
         # Send to Slack
         logger.info("Sending daily summary to Slack...")
-        success = send_daily_analysis(analysis_results)
+        success = send_daily_analysis(analysis_results, songs)
         
         if success:
             logger.info("Daily analysis completed successfully!")
