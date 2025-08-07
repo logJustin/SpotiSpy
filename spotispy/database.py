@@ -1,0 +1,190 @@
+import os
+import time
+import requests
+from collections import defaultdict
+from datetime import datetime
+from dotenv import load_dotenv
+from spotispy.helpers import get_logger
+
+load_dotenv()
+
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+SUPABASE_KEY = os.getenv('SUPABASE_KEY')
+SONGS_TABLE = 'songs'
+
+headers = {
+    'apikey': SUPABASE_KEY,
+    'Authorization': f'Bearer {SUPABASE_KEY}',
+    'Content-Type': 'application/json',
+}
+
+
+def get_yesterdays_songs():
+    """Get all songs played in the last 24 hours from Supabase"""
+    logger = get_logger()
+    
+    # Get 24 hours ago timestamp
+    one_day_ago_seconds = time.time() - (60 * 60 * 24)
+    one_day_ago_epoch = int(one_day_ago_seconds)
+    one_day_ago_iso = datetime.fromtimestamp(one_day_ago_epoch).isoformat() + 'Z'
+
+    endpoint = f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}?played_at=gte.{one_day_ago_iso}&order=played_at.desc"
+
+    try:
+        response = requests.get(endpoint, headers=headers, timeout=10)
+        response.raise_for_status()
+        songs = response.json()
+        
+        logger.info("Fetched %s songs from database", len(songs))
+        return songs
+        
+    except requests.RequestException as e:
+        logger.error("Error fetching from database: %s", e)
+        return []
+
+
+def get_songs_for_date_range(start_date, end_date):
+    """
+    Get songs for a specific date range
+    
+    Args:
+        start_date: ISO date string (e.g., '2025-03-15')
+        end_date: ISO date string (e.g., '2025-03-21')
+        
+    Returns:
+        List of song dictionaries
+    """
+    logger = get_logger()
+    
+    endpoint = f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}?played_at=gte.{start_date}T00:00:00Z&played_at=lt.{end_date}T23:59:59Z&order=played_at.desc"
+
+    try:
+        response = requests.get(endpoint, headers=headers, timeout=10)
+        response.raise_for_status()
+        songs = response.json()
+        
+        logger.info("Fetched %s songs for date range %s to %s", len(songs), start_date, end_date)
+        return songs
+        
+    except requests.RequestException as e:
+        logger.error("Error fetching date range from database: %s", e)
+        return []
+
+
+def save_songs(song_list):
+    """
+    Save songs to Supabase database
+    
+    Args:
+        song_list: List of song dictionaries to save
+        
+    Returns:
+        Boolean indicating success
+    """
+    logger = get_logger()
+    
+    if not song_list:
+        logger.info("No songs to save")
+        return True
+    
+    endpoint = f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}"
+    
+    try:
+        response = requests.post(endpoint, headers=headers, json=song_list, timeout=10)
+        response.raise_for_status()
+        
+        logger.info("Successfully saved %s songs to database", len(song_list))
+        return True
+        
+    except requests.RequestException as e:
+        logger.error("Error saving to database: %s", e)
+        return False
+
+
+def group_songs_by_hour(songs_data):
+    """
+    Group songs by hour for analysis
+    
+    Args:
+        songs_data: List of song dictionaries
+        
+    Returns:
+        Dictionary with hourly structure for analysis
+    """
+    if not songs_data:
+        return {"history": []}
+    
+    # Group songs by hour
+    hourly_history = defaultdict(list)
+
+    for song in songs_data:
+        # Parse the ISO timestamp and group by hour
+        dt = datetime.fromisoformat(song['played_at'].replace('Z', ''))
+        hour_key = dt.strftime("%H:00")
+        hourly_history[hour_key].append(song)
+
+    # Structure history list for compatibility with existing analysis
+    history = []
+    for hour, songs in hourly_history.items():
+        history.append({
+            hour: {
+                "songs": songs
+            }
+        })
+
+    return {"history": history}
+
+
+def check_for_duplicates(songs_to_check):
+    """
+    Check if songs already exist in database to avoid duplicates
+    
+    Args:
+        songs_to_check: List of song dictionaries
+        
+    Returns:
+        List of songs that don't exist in database
+    """
+    logger = get_logger()
+    
+    if not songs_to_check:
+        return []
+    
+    # Get played_at times to check
+    timestamps = [song['played_at'] for song in songs_to_check]
+    
+    # Query existing songs with these timestamps
+    timestamp_filter = ",".join(f'"{ts}"' for ts in timestamps)
+    endpoint = f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}?played_at=in.({timestamp_filter})&select=played_at"
+    
+    try:
+        response = requests.get(endpoint, headers=headers, timeout=10)
+        response.raise_for_status()
+        existing_songs = response.json()
+        
+        existing_timestamps = {song['played_at'] for song in existing_songs}
+        
+        # Filter out songs that already exist
+        new_songs = [song for song in songs_to_check 
+                    if song['played_at'] not in existing_timestamps]
+        
+        logger.info("Found %s new songs out of %s total", len(new_songs), len(songs_to_check))
+        return new_songs
+        
+    except requests.RequestException as e:
+        logger.error("Error checking for duplicates: %s", e)
+        # If we can't check, better to risk duplicates than lose data
+        return songs_to_check
+
+
+if __name__ == "__main__":
+    # Test database functions
+    logger = get_logger()
+    logger.info("Testing database connection...")
+    
+    songs = get_yesterdays_songs()
+    logger.info("Found %s songs from yesterday", len(songs))
+    
+    if songs:
+        grouped = group_songs_by_hour(songs[:5])  # Test with first 5 songs
+        logger.info("Grouped into %s hourly buckets", len(grouped['history']))

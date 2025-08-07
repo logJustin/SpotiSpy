@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 # Run your script
 echo "Running analysis script..."
-python3 -m scripts.message.send_analysis
+python3 main.py --enhanced
 
 echo " "
 echo " "
