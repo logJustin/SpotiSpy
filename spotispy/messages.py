@@ -319,6 +319,30 @@ def format_time_decimal_hours(time_str):
         return time_str  # Return original if parsing fails
 
 
+def format_hour_12h(hour_24h_str):
+    """
+    Convert 24-hour format (e.g., "15:00") to 12-hour format with AM/PM
+    
+    Args:
+        hour_24h_str: Time in format "HH:00" (e.g., "15:00")
+        
+    Returns:
+        String like "3:00 PM" or "9:00 AM"
+    """
+    try:
+        hour = int(hour_24h_str.split(':')[0])
+        if hour == 0:
+            return "12:00 AM"
+        elif hour < 12:
+            return f"{hour}:00 AM"
+        elif hour == 12:
+            return "12:00 PM"
+        else:
+            return f"{hour - 12}:00 PM"
+    except (ValueError, IndexError):
+        return hour_24h_str  # Return original if parsing fails
+
+
 def format_minutes_decimal(total_minutes):
     """
     Format minutes as decimal hours if >= 60, otherwise as minutes
@@ -816,7 +840,8 @@ def format_daily_summary(analysis_results, songs_data=None):
         peak_section = f"*PEAK ACTIVITY*\n{character['peak_activity_intro']}\n"        
         
         peak_time = format_minutes_decimal(analysis_results['peak_minutes'])
-        peak_section += f"🕒 Peak Hour: {analysis_results['peak_hour']} ({peak_time})\n"
+        formatted_peak_hour = format_hour_12h(analysis_results['peak_hour'])
+        peak_section += f"🕒 Peak Hour: {formatted_peak_hour} ({peak_time})\n"
         
         song = analysis_results['most_popular']
         peak_section += f"🎯 Most Popular: {song['song']} by {song['artist']} ({song['song_popularity']}%)"

@@ -6,6 +6,7 @@
 - **Overhaul Pt1** - Clean 5-file architecture (`spotify.py`, `database.py`, `analysis.py`, `messages.py`, `helpers.py`)
 - **Butler Feature** - Digital archivist personality with 10 randomized Ready Player One inspired greetings
 - **ASCII Charts** - Visual charts in daily messages (genre breakdown, weekly patterns, discovery ratio, social trends)
+- **Script & Time Fixes** - Fixed broken `write_recent_song.sh`, corrected timezone handling (CST→CDT), added 12-hour AM/PM time display
 
 ### Next Priority: Phase 1 Daily Features 📋
 Missing features for daily summaries according to refined plan:
@@ -55,7 +56,16 @@ Missing features for daily summaries according to refined plan:
   - Sorrento: IOI corporate speak, loyalty center, analytics division
   - Ogden: Kira references, GSS history, "I suppose we were friends"
 
-**Status:** Character enhancement complete with authentic RPO references
+#### Session Continue: Time/Script Fixes
+**Work Completed:**
+- ✅ Fixed broken `write_recent_song.sh` script (was calling non-existent `scripts.download.fetch_and_upload`)
+- ✅ Updated script to correctly run `main.py` 
+- ✅ Fixed timezone handling - corrected CST (UTC-6) to CDT (UTC-5) for current daylight saving time
+- ✅ Added proper timezone conversion in `database.py` - now converts UTC timestamps to Central Time before grouping by hour
+- ✅ Added 12-hour time format with AM/PM display in messages (e.g. "5:00 PM" instead of "17:00")
+- ✅ Created `format_hour_12h()` function for time conversion in messages
+
+**Status:** Script functionality restored, timezone issues resolved, time display improved
 
 **Next Steps:**
 - Test enhanced summaries with real data

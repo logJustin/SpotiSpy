@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from spotispy.helpers import get_logger
 
 # Define Central Time timezone
-CENTRAL_TZ = timezone(timedelta(hours=-6))  # CST (Central Standard Time)
+CENTRAL_TZ = timezone(timedelta(hours=-5))  # CDT (Central Daylight Time)
 
 load_dotenv()
 
@@ -124,9 +124,10 @@ def group_songs_by_hour(songs_data):
     hourly_history = defaultdict(list)
 
     for song in songs_data:
-        # Parse the ISO timestamp and group by hour
-        dt = datetime.fromisoformat(song['played_at'].replace('Z', ''))
-        hour_key = dt.strftime("%H:00")
+        # Parse the ISO timestamp (UTC) and convert to Central Time for grouping
+        dt_utc = datetime.fromisoformat(song['played_at'].replace('Z', '')).replace(tzinfo=timezone.utc)
+        dt_central = dt_utc.astimezone(CENTRAL_TZ)
+        hour_key = dt_central.strftime("%H:00")
         hourly_history[hour_key].append(song)
 
     # Structure history list for compatibility with existing analysis

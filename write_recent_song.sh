@@ -13,7 +13,7 @@ source $VENV_PATH/bin/activate
 pip install -r requirements.txt
 
 # Run your script
-python3 -m scripts.download.fetch_and_upload
+python3 main.py
 
 # Deactivate the virtual environment
 deactivate
