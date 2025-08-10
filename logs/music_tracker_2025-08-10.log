@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2025-08-10 00:58:06,585 - music_tracker - INFO - SpotiSpy starting...
 2025-08-10 00:58:06,586 - music_tracker - INFO - Starting daily SpotiSpy analysis
 2025-08-10 00:58:06,586 - music_tracker - INFO - Fetching yesterday's listening data...
@@ -178,3 +179,20 @@
 2025-08-10 17:41:06,762 - music_tracker - INFO - Weekly summary feature coming soon!
 2025-08-10 17:41:07,619 - music_tracker - INFO - Message sent successfully to Slack
 2025-08-10 17:41:07,620 - music_tracker - INFO - SpotiSpy completed successfully
+=======
+2025-08-10 17:43:59,462 - music_tracker - INFO - SpotiSpy song collection starting...
+2025-08-10 17:43:59,462 - music_tracker - INFO - Starting song collection (last 1 hours)
+2025-08-10 17:43:59,462 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2025-08-10 17:43:59,938 - music_tracker - INFO - No recent songs found from Spotify
+2025-08-10 17:43:59,939 - music_tracker - INFO - No new songs found from Spotify API
+2025-08-10 17:43:59,939 - music_tracker - INFO - Song collection completed successfully
+2025-08-10 17:44:03,495 - music_tracker - INFO - SpotiSpy starting...
+2025-08-10 17:44:03,495 - music_tracker - INFO - Starting daily SpotiSpy analysis
+2025-08-10 17:44:03,495 - music_tracker - INFO - Fetching yesterday's listening data...
+2025-08-10 17:44:03,681 - music_tracker - INFO - Fetched 0 songs from database
+2025-08-10 17:44:03,682 - music_tracker - WARNING - No songs found for yesterday
+2025-08-10 17:44:03,682 - music_tracker - INFO - Running weekly summary...
+2025-08-10 17:44:03,682 - music_tracker - INFO - Weekly summary feature coming soon!
+2025-08-10 17:44:03,976 - music_tracker - INFO - Message sent successfully to Slack
+2025-08-10 17:44:03,977 - music_tracker - INFO - SpotiSpy completed successfully
+>>>>>>> Stashed changes
