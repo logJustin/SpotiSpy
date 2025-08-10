@@ -186,36 +186,25 @@ def format_weekly_message(weekly_analysis):
 
 
 def run_weekly_analysis():
-    """Run the complete weekly analysis"""
+    """Run the complete weekly analysis using the new comprehensive system"""
     logger = get_logger()
     logger.info("Starting weekly analysis")
     
     try:
-        # Get the last 7 days of data
-        songs_by_day = {}
+        # Use the new comprehensive weekly analysis system
+        from spotispy.weekly_analysis import run_weekly_analysis as run_comprehensive_analysis
+        from spotispy.messages import send_weekly_summary
         
-        for days_ago in range(7):
-            date_str = get_date_string(days_ago)
-            
-            # For now, we'll use the daily song fetch (this could be optimized)
-            if days_ago == 0:
-                from spotispy.database import get_yesterdays_songs
-                songs = get_yesterdays_songs()
-            else:
-                # Get songs for specific date - this would need a new database function
-                songs = []  # Placeholder - would need get_songs_for_date function
-            
-            songs_by_day[date_str] = songs
-            logger.info("Date %s: %s songs", date_str, len(songs))
+        # Get comprehensive weekly analysis
+        weekly_results = run_comprehensive_analysis()
         
-        # Analyze weekly data
-        weekly_analysis = analyze_weekly_data(songs_by_day)
+        if not weekly_results:
+            logger.warning("No weekly analysis data available")
+            return False
         
-        # Format and send message
-        message = format_weekly_message(weekly_analysis)
-        
-        logger.info("Sending weekly summary to Slack...")
-        success = send_slack_message(message)
+        # Send weekly summary using new formatting
+        logger.info("Sending comprehensive weekly summary to Slack...")
+        success = send_weekly_summary(weekly_results)
         
         if success:
             logger.info("Weekly analysis completed successfully!")

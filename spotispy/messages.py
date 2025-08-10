@@ -2,7 +2,7 @@ import os
 import random
 import requests
 import base64
-from datetime import datetime
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
@@ -729,7 +729,7 @@ def format_daily_summary(analysis_results, songs_data=None):
     character = select_daily_character()
     
     # Character greeting with optional GIF
-    greeting_section = f"{character['emoji']} **{character['name']}**\n{character['greeting']}"
+    greeting_section = f"{character['emoji']} *{character['name']}*\n{character['greeting']}"
     if 'gif_url' in character:
         greeting_section += f"\n{character['gif_url']}"
     message_parts.append(greeting_section)
@@ -915,24 +915,223 @@ def send_daily_analysis(analysis_results, songs_data=None):
         return False
 
 
-def send_weekly_summary(weekly_data):
+def format_weekly_summary(weekly_analysis):
     """
-    Send weekly summary (placeholder for future implementation)
+    Format weekly summary with Ready Player One character commentary
     
     Args:
-        weekly_data: Weekly analysis results
+        weekly_analysis: Dictionary from weekly_analysis.run_weekly_analysis()
+        
+    Returns:
+        String with formatted weekly message
+    """
+    if not weekly_analysis or not weekly_analysis.get('patterns'):
+        return "🗓️ WEEKLY WRAPPED\n\nNo listening data available for this week. Time to start your musical quest! 🎵"
+    
+    message_parts = []
+    
+    # Select character for weekly summary (different selection logic for variety)
+    characters = list(RPO_CHARACTERS.keys())
+    # Use a different character selection for weekly vs daily to add variety
+    import hashlib
+    week_hash = hashlib.md5(str(datetime.now().isocalendar()[1]).encode()).hexdigest()
+    char_index = int(week_hash[:2], 16) % len(characters)
+    character_key = characters[char_index]
+    character = RPO_CHARACTERS[character_key].copy()
+    
+    # Try to get a GIF
+    gif_url = get_character_gif(character['giphy_search'])
+    if gif_url:
+        character['gif_url'] = gif_url
+    
+    # Header with date range
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=6)
+    date_range = f"{start_date.strftime('%b %d')} - {end_date.strftime('%b %d, %Y')}"
+    
+    # Character greeting for weekly
+    greeting_section = f"{character['emoji']} *{character['name']} - WEEKLY ARCHIVE*\n"
+    if character['name'] == 'Parzival':
+        greeting_section += "*emerges from a week-long quest through the musical sectors of the OASIS* Yo gunters! Weekly intel report incoming - let's see how your sonic adventures played out over the last seven cycles:"
+    elif character['name'] == 'Aech':
+        greeting_section += "*rolls out of the garage after a week of heavy modding* What's good, Z! Time for your weekly performance metrics. Been tracking your audio engine all week - here's the full diagnostic:"
+    elif character['name'] == 'Art3mis':
+        greeting_section += "*materializes from a week of digital wandering* Greetings, fellow music archaeologist! Your weekly listening patterns reveal quite the story - let me share what I've discovered:"
+    elif character['name'] == 'Halliday':
+        greeting_section += "*appears as a hologram surrounded by floating weekly statistics* Ah, the weekly data compilation is complete! Seven days of musical choices, analyzed through my finest algorithms:"
+    elif character['name'] == 'Sorrento':
+        greeting_section += "*adjusts tie while reviewing comprehensive weekly reports* Sorrento here with your complete weekly performance analysis. IOI's data scientists have processed seven full days of audio consumption:"
+    else:  # Ogden
+        greeting_section += "*appears with the wisdom of seven days reflected in his eyes* Greetings, young padawan! The week's musical journey has been quite remarkable - allow me to share what the universe revealed:"
+    
+    if 'gif_url' in character:
+        greeting_section += f"\n{character['gif_url']}"
+    message_parts.append(greeting_section)
+    
+    # Weekly header
+    weekly_header = f"🗓️ *WEEKLY WRAPPED* - {date_range}\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    message_parts.append(weekly_header)
+    
+    # The numbers section
+    patterns = weekly_analysis['patterns']
+    numbers_section = "📊 *THE NUMBERS*\n"
+    numbers_section += f"🎧 Total: {patterns['total_formatted']} across 7 days\n"
+    numbers_section += f"🎵 {patterns['total_songs']} songs from your musical journey\n"
+    
+    if patterns['peak_day']:
+        peak_day_name = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][datetime.fromisoformat(patterns['peak_day']['date']).weekday()]
+        numbers_section += f"🏆 Peak performance: {peak_day_name} with {patterns['peak_day']['formatted']}!\n"
+    
+    numbers_section += f"📊 Daily average: {patterns['average_formatted']}\n"
+    numbers_section += f"🔥 Active listening days: {patterns['active_days']}/7"
+    
+    # Add character-specific commentary on activity level
+    if patterns['active_days'] == 7:
+        if character['name'] == 'Parzival':
+            numbers_section += f"\n🎯 Perfect week! Seven days of musical questing - that's gunter dedication right there!"
+        elif character['name'] == 'Sorrento':
+            numbers_section += f"\n📈 Excellent consistency metrics! 100% daily engagement achieved - IOI would be impressed."
+        else:
+            numbers_section += f"\n✨ A complete musical week achieved - perfect consistency!"
+    elif patterns['active_days'] >= 5:
+        numbers_section += f"\n💪 Strong week of musical exploration!"
+    elif patterns['active_days'] >= 3:
+        numbers_section += f"\n🎵 A solid musical week, with some quiet days for balance."
+    
+    message_parts.append(numbers_section)
+    
+    # Weekly chart
+    chart_section = "📈 *WEEK AT A GLANCE*\n```\n"
+    chart_section += weekly_analysis['weekly_chart']
+    chart_section += "\n```"
+    message_parts.append(chart_section)
+    
+    # Top artists section
+    if weekly_analysis['top_artists']:
+        artists_section = "🎤 *TOP ARTISTS THIS WEEK*\n"
+        for i, (artist, seconds, song_count) in enumerate(weekly_analysis['top_artists'][:3], 1):
+            formatted_time = format_time_decimal_hours(format_duration_to_time_string(seconds))
+            percentage = (seconds / (patterns['total_minutes'] * 60)) * 100 if patterns['total_minutes'] > 0 else 0
+            artists_section += f"🎯 {artist}\n"
+            artists_section += f"   └ {formatted_time}, {song_count} songs ({percentage:.0f}%)\n"
+        
+        # Character commentary on top artist
+        top_artist, top_seconds, top_song_count = weekly_analysis['top_artists'][0]
+        top_percentage = (top_seconds / (patterns['total_minutes'] * 60)) * 100 if patterns['total_minutes'] > 0 else 0
+        
+        if top_percentage > 30:
+            if character['name'] == 'Parzival':
+                artists_section += f"\n🎯 {top_artist} absolutely dominated your week like I dominated the Tomb of Horrors!"
+            elif character['name'] == 'Aech':
+                artists_section += f"\n🔧 {top_artist} had your audio engine locked in all week - that's some serious artist dedication!"
+            elif character['name'] == 'Art3mis':
+                artists_section += f"\n🎨 {top_artist} clearly captured your artistic soul this week - beautiful focus!"
+            else:
+                artists_section += f"\n🌟 {top_artist} was your week's musical companion - {top_percentage:.0f}% of your time together!"
+        
+        message_parts.append(artists_section)
+    
+    # Album binges section
+    if weekly_analysis['album_binges']:
+        binges_section = "💿 *ALBUM DEEP DIVES*\n"
+        for binge in weekly_analysis['album_binges'][:2]:
+            day_name = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][datetime.fromisoformat(binge['date']).weekday()]
+            binges_section += f"🎯 \"{binge['album']}\" by {binge['artist']}\n"
+            binges_section += f"   └ {binge['song_count']} tracks, {binge['formatted_duration']} on {day_name}\n"
+        
+        if character['name'] == 'Halliday':
+            binges_section += f"\n🎵 Album immersion detected! Sometimes the best experiences come from diving deep into a single creative work."
+        elif character['name'] == 'Art3mis':
+            binges_section += f"\n💭 These deep album sessions show true appreciation for artistic coherence - quality over quantity!"
+        else:
+            binges_section += f"\n🔍 These focused listening sessions reveal your commitment to musical exploration!"
+        
+        message_parts.append(binges_section)
+    
+    # Streak and insights
+    if weekly_analysis['streak'] > 0:
+        insights_section = "🔥 *STREAK STATUS*\n"
+        insights_section += f"📅 Current listening streak: {weekly_analysis['streak']} days strong!"
+        
+        if weekly_analysis['streak'] >= 14:
+            if character['name'] == 'Parzival':
+                insights_section += f"\n🏆 That's an epic streak, gunter! Consistency worthy of a leaderboard!"
+            elif character['name'] == 'Sorrento':
+                insights_section += f"\n📊 Impressive consistency metrics - this level of engagement exceeds corporate expectations!"
+            else:
+                insights_section += f"\n🌟 Your dedication to daily music is truly inspiring!"
+        elif weekly_analysis['streak'] >= 7:
+            insights_section += f"\n💪 A week or more of daily music - excellent habit formation!"
+        else:
+            insights_section += f"\n🎵 Keep building that musical routine!"
+        
+        message_parts.append(insights_section)
+    
+    # Character-specific closing for weekly
+    if character['name'] == 'Parzival':
+        closing = "That's your week in the musical OASIS, gunter! Keep questing, keep discovering, and remember: 'Being human is the only way to live.' See you in the next cycle! 🎮"
+    elif character['name'] == 'Aech':
+        closing = "Another week of solid audio performance in the books! Keep those engines running and those beats pumping, friend. 'Thanks for playing along!' 🔧🎵"
+    elif character['name'] == 'Art3mis':
+        closing = "Your weekly musical journey reveals such beautiful patterns of discovery and focus. Until next week, keep creating soundtrack to your story! 🌸🎨"
+    elif character['name'] == 'Halliday':
+        closing = "Another week of data successfully archived in the great musical database of life. 'Thank you for playing my game' - see you next Sunday! 🎮✨"
+    elif character['name'] == 'Sorrento':
+        closing = "Weekly performance metrics complete. Maintain these engagement levels for optimal results. IOI will continue monitoring your progress. 📊💼"
+    else:  # Ogden
+        closing = "What a wonderful week of musical exploration! Each song a small treasure, each day a new adventure. 'I suppose you could say we were friends' - with music as our guide! ✨🎵"
+    
+    message_parts.append(closing)
+    
+    return "\n\n".join(message_parts)
+
+
+def format_duration_to_time_string(seconds):
+    """Convert seconds to HH:MM:SS format for weekly analysis"""
+    hours = int(seconds // 3600)
+    minutes = int((seconds % 3600) // 60)
+    secs = int(seconds % 60)
+    return f"{hours:02d}:{minutes:02d}:{secs:02d}"
+
+
+def send_weekly_summary(weekly_data=None):
+    """
+    Send weekly summary with comprehensive analysis
+    
+    Args:
+        weekly_data: Optional pre-computed weekly analysis results
         
     Returns:
         Boolean indicating success
     """
     logger = get_logger()
-    logger.info("Weekly summary feature coming soon!")
+    logger.info("Generating weekly summary...")
     
-    # Basic weekly message for now
-    message = f"🗓️ WEEKLY WRAPPED\n\nWeekly summary coming soon! For now, enjoy your daily updates. 🎵"
-    
-    response = send_slack_message(message)
-    return response is not None
+    try:
+        # Get weekly analysis if not provided
+        if not weekly_data:
+            from spotispy.weekly_analysis import run_weekly_analysis
+            weekly_analysis = run_weekly_analysis()
+        else:
+            weekly_analysis = weekly_data
+        
+        if not weekly_analysis:
+            logger.warning("No weekly analysis data available")
+            # Send fallback message
+            message = "🗓️ WEEKLY WRAPPED\n\nNo listening data available for this week. Time to start your musical quest! 🎵"
+        else:
+            message = format_weekly_summary(weekly_analysis)
+        
+        if not message.strip():
+            logger.warning("No weekly message content generated")
+            return False
+        
+        response = send_slack_message(message)
+        return response is not None
+        
+    except Exception as e:
+        logger.error("Error sending weekly summary: %s", e, exc_info=True)
+        return False
 
 
 if __name__ == "__main__":

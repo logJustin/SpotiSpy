@@ -196,3 +196,187 @@
 2025-08-10 17:44:03,976 - music_tracker - INFO - Message sent successfully to Slack
 2025-08-10 17:44:03,977 - music_tracker - INFO - SpotiSpy completed successfully
 >>>>>>> Stashed changes
+2025-08-10 17:58:27,986 - music_tracker - INFO - Testing weekly analysis...
+2025-08-10 17:58:27,987 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 17:58:28,368 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 17:58:28,369 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 17:58:28,542 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 17:58:28,542 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 17:58:28,664 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 17:58:28,665 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 17:58:28,833 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 17:58:28,833 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 17:58:28,984 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 17:58:28,985 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 17:58:29,128 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 17:58:29,129 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 17:58:29,283 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 17:58:29,283 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 17:58:29,283 - music_tracker - INFO - Weekly analysis completed successfully
+2025-08-10 18:01:25,503 - music_tracker - INFO - Testing weekly message formatting...
+2025-08-10 18:01:25,503 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:01:25,638 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:01:25,639 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:01:25,847 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:01:25,848 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:01:26,000 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:01:26,001 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:01:26,155 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:01:26,156 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:01:26,277 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:01:26,278 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:01:26,485 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:01:26,485 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:01:26,627 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:01:26,628 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:02:14,946 - music_tracker - INFO - Testing weekly message formatting...
+2025-08-10 18:02:14,946 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:02:15,124 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:02:15,125 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:02:15,256 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:02:15,256 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:02:15,375 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:02:15,375 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:02:15,497 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:02:15,498 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:02:15,647 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:02:15,648 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:02:15,784 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:02:15,784 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:02:15,897 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:02:15,897 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:02:19,746 - music_tracker - INFO - SpotiSpy starting...
+2025-08-10 18:02:19,746 - music_tracker - INFO - Running weekly summary...
+2025-08-10 18:02:19,746 - music_tracker - INFO - Generating weekly summary...
+2025-08-10 18:02:19,747 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:02:19,937 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:02:19,937 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:02:20,077 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:02:20,077 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:02:20,209 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:02:20,209 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:02:20,358 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:02:20,358 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:02:20,493 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:02:20,494 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:02:20,628 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:02:20,628 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:02:20,755 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:02:20,756 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:02:21,194 - music_tracker - INFO - Message sent successfully to Slack
+2025-08-10 18:02:21,194 - music_tracker - INFO - SpotiSpy completed successfully
+2025-08-10 18:02:35,740 - music_tracker - INFO - Running standalone weekly analysis...
+2025-08-10 18:02:35,741 - music_tracker - INFO - Starting weekly analysis
+2025-08-10 18:02:35,741 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:02:35,862 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:02:35,862 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:02:35,975 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:02:35,975 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:02:36,091 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:02:36,091 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:02:36,218 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:02:36,219 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:02:36,351 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:02:36,352 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:02:36,474 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:02:36,475 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:02:36,585 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:02:36,585 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:02:36,586 - music_tracker - INFO - Sending comprehensive weekly summary to Slack...
+2025-08-10 18:02:36,586 - music_tracker - INFO - Generating weekly summary...
+2025-08-10 18:02:36,889 - music_tracker - INFO - Message sent successfully to Slack
+2025-08-10 18:02:36,889 - music_tracker - INFO - Weekly analysis completed successfully!
+2025-08-10 18:02:36,889 - music_tracker - INFO - Weekly analysis completed successfully
+2025-08-10 18:03:19,997 - music_tracker - INFO - SpotiSpy starting...
+2025-08-10 18:03:19,997 - music_tracker - INFO - Starting daily SpotiSpy analysis
+2025-08-10 18:03:19,997 - music_tracker - INFO - Fetching yesterday's listening data...
+2025-08-10 18:03:20,176 - music_tracker - INFO - Fetched 0 songs from database
+2025-08-10 18:03:20,177 - music_tracker - WARNING - No songs found for yesterday
+2025-08-10 18:03:20,177 - music_tracker - INFO - Running weekly summary...
+2025-08-10 18:03:20,177 - music_tracker - INFO - Generating weekly summary...
+2025-08-10 18:03:20,177 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:03:20,304 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:03:20,305 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:03:20,453 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:03:20,454 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:03:20,579 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:03:20,579 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:03:20,705 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:03:20,706 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:03:20,872 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:03:20,873 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:03:21,035 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:03:21,035 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:03:21,227 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:03:21,227 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:03:21,604 - music_tracker - INFO - Message sent successfully to Slack
+2025-08-10 18:03:21,604 - music_tracker - INFO - SpotiSpy completed successfully
+2025-08-10 18:05:12,777 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:05:13,020 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:05:13,020 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:05:13,141 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:05:13,141 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:05:13,270 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:05:13,271 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:05:13,399 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:05:13,400 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:05:13,620 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:05:13,621 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:05:13,756 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:05:13,756 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:05:13,876 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:05:13,877 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:05:39,164 - music_tracker - INFO - SpotiSpy starting...
+2025-08-10 18:05:39,164 - music_tracker - INFO - Starting daily SpotiSpy analysis
+2025-08-10 18:05:39,164 - music_tracker - INFO - Fetching yesterday's listening data...
+2025-08-10 18:05:39,277 - music_tracker - INFO - Fetched 0 songs from database
+2025-08-10 18:05:39,277 - music_tracker - WARNING - No songs found for yesterday
+2025-08-10 18:05:39,278 - music_tracker - INFO - Running weekly summary...
+2025-08-10 18:05:39,278 - music_tracker - INFO - Generating weekly summary...
+2025-08-10 18:05:39,278 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:05:39,385 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:05:39,385 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:05:39,497 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:05:39,498 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:05:39,611 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:05:39,612 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:05:39,766 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:05:39,767 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:05:39,905 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:05:39,906 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:05:40,048 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:05:40,048 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:05:40,164 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:05:40,165 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:05:40,581 - music_tracker - INFO - Message sent successfully to Slack
+2025-08-10 18:05:40,582 - music_tracker - INFO - SpotiSpy completed successfully
+2025-08-10 18:06:39,028 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:06:39,179 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:06:39,179 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:06:39,285 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:06:39,285 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:06:39,406 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:06:39,406 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:06:39,532 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:06:39,532 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:06:39,648 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:06:39,648 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:06:39,767 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:06:39,767 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:06:39,883 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:06:39,884 - music_tracker - INFO - Date 2025-08-04: 9 songs
+2025-08-10 18:07:30,500 - music_tracker - INFO - Starting comprehensive weekly analysis
+2025-08-10 18:07:30,775 - music_tracker - INFO - Fetched 0 songs for date 2025-08-10
+2025-08-10 18:07:30,775 - music_tracker - INFO - Date 2025-08-10: 0 songs
+2025-08-10 18:07:31,059 - music_tracker - INFO - Fetched 0 songs for date 2025-08-09
+2025-08-10 18:07:31,060 - music_tracker - INFO - Date 2025-08-09: 0 songs
+2025-08-10 18:07:31,178 - music_tracker - INFO - Fetched 0 songs for date 2025-08-08
+2025-08-10 18:07:31,178 - music_tracker - INFO - Date 2025-08-08: 0 songs
+2025-08-10 18:07:31,395 - music_tracker - INFO - Fetched 47 songs for date 2025-08-07
+2025-08-10 18:07:31,395 - music_tracker - INFO - Date 2025-08-07: 47 songs
+2025-08-10 18:07:31,500 - music_tracker - INFO - Fetched 64 songs for date 2025-08-06
+2025-08-10 18:07:31,501 - music_tracker - INFO - Date 2025-08-06: 64 songs
+2025-08-10 18:07:31,629 - music_tracker - INFO - Fetched 50 songs for date 2025-08-05
+2025-08-10 18:07:31,630 - music_tracker - INFO - Date 2025-08-05: 50 songs
+2025-08-10 18:07:31,742 - music_tracker - INFO - Fetched 9 songs for date 2025-08-04
+2025-08-10 18:07:31,742 - music_tracker - INFO - Date 2025-08-04: 9 songs

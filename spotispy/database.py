@@ -77,6 +77,42 @@ def get_songs_for_date_range(start_date, end_date):
         return []
 
 
+def get_songs_for_single_date(date_str):
+    """
+    Get songs for a specific single date
+    
+    Args:
+        date_str: ISO date string (e.g., '2025-03-15')
+        
+    Returns:
+        List of song dictionaries for that date
+    """
+    logger = get_logger()
+    
+    # Query from start of date to start of next date
+    start_time = f"{date_str}T00:00:00Z"
+    
+    # Calculate next day
+    from datetime import datetime, timedelta
+    date_obj = datetime.fromisoformat(date_str)
+    next_date = date_obj + timedelta(days=1)
+    end_time = next_date.strftime("%Y-%m-%dT00:00:00Z")
+    
+    endpoint = f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}?played_at=gte.{start_time}&played_at=lt.{end_time}&order=played_at.desc"
+
+    try:
+        response = requests.get(endpoint, headers=headers, timeout=10)
+        response.raise_for_status()
+        songs = response.json()
+        
+        logger.info("Fetched %s songs for date %s", len(songs), date_str)
+        return songs
+        
+    except requests.RequestException as e:
+        logger.error("Error fetching songs for date %s: %s", date_str, e)
+        return []
+
+
 def save_songs(song_list):
     """
     Save songs to Supabase database
