@@ -400,3 +400,13 @@
 2025-08-07 23:19:54,769 - music_tracker - INFO - Message sent successfully to Slack
 2025-08-07 23:19:54,769 - music_tracker - INFO - Daily analysis completed successfully!
 2025-08-07 23:19:54,769 - music_tracker - INFO - SpotiSpy completed successfully
+2025-08-07 23:58:06,854 - music_tracker - INFO - SpotiSpy starting...
+2025-08-07 23:58:06,854 - music_tracker - INFO - Starting daily SpotiSpy analysis
+2025-08-07 23:58:06,861 - music_tracker - INFO - Fetching yesterday's listening data...
+2025-08-07 23:58:07,195 - music_tracker - INFO - Fetched 12 songs from database
+2025-08-07 23:58:07,197 - music_tracker - INFO - Found 12 songs to analyze
+2025-08-07 23:58:07,198 - music_tracker - INFO - Running analysis...
+2025-08-07 23:58:07,199 - music_tracker - INFO - Sending daily summary to Slack...
+2025-08-07 23:58:07,954 - music_tracker - INFO - Message sent successfully to Slack
+2025-08-07 23:58:07,954 - music_tracker - INFO - Daily analysis completed successfully!
+2025-08-07 23:58:07,955 - music_tracker - INFO - SpotiSpy completed successfully
