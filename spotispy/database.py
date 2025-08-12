@@ -1,6 +1,7 @@
 import os
 import time
 import requests
+import urllib.parse
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
@@ -197,13 +198,16 @@ def check_for_duplicates(songs_to_check):
     timestamps = [song['played_at'] for song in songs_to_check]
     
     # Query existing songs with these timestamps
-    timestamp_filter = ",".join(f'"{ts}"' for ts in timestamps)
+    # Use URL encoding for the timestamp values
+    timestamp_filter = ",".join(urllib.parse.quote(f'"{ts}"') for ts in timestamps)
     endpoint = f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}?played_at=in.({timestamp_filter})&select=played_at"
     
     try:
+        logger.debug("Duplicate check endpoint: %s", endpoint)
         response = requests.get(endpoint, headers=headers, timeout=10)
         response.raise_for_status()
         existing_songs = response.json()
+        logger.debug("Found %s existing songs in database", len(existing_songs))
         
         existing_timestamps = {song['played_at'] for song in existing_songs}
         
