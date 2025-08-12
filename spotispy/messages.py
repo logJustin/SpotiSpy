@@ -29,12 +29,12 @@ RPO_CHARACTERS = {
         'name': 'Parzival',
         'emoji': '🎮',
         'greeting': "*materializes from his stack hideout with DeLorean keys jingling* Yo! Parzival here with your daily sonic quest report. Just like finding the Copper Key, let's decode your musical patterns:",
-        'listening_stats_intro': "Alright gunter, let's break down your musical XP gains - and remember, 'the first key is won by those who take risks':",
+        'listening_stats_intro': "Alright gunter, let's break down your musical XP gains - and remember, _\"the first key is won by those who take risks\"_:",
         'mood_energy_intro': "Your vibe meter readings are looking solid today (better than my dance moves on Planet Doom):",
         'top_hits_intro': "Here's your power playlist - the tracks that dominated your quest like I dominated the Tomb of Horrors:",
         'peak_activity_intro': "Peak gaming... I mean listening sessions detected (hope you weren't distracted by sixers):",
         'charts_intro': "Check out these visual analytics from my custom HUD - cleaner than Aech's workshop diagnostics:",
-        'closing': "Keep grinding those beats, fellow gunter! Remember: 'Being human is the only way to live.' 🕹️",
+        'closing': "Keep grinding those beats, fellow gunter! Remember: _\"Being human is the only way to live.\"_ 🕹️",
         'giphy_search': 'ready player one parzival'
     },
     'aech': {
@@ -46,7 +46,7 @@ RPO_CHARACTERS = {
         'top_hits_intro': "These tracks were working overtime in your rotation - like me in the workshop:",
         'peak_activity_intro': "Your audio engine hit peak performance during (bet you wish you could race this fast):",
         'charts_intro': "I've been tinkering with these data visualizations while jamming to some old-school tunes:",
-        'closing': "Stay tuned for more beats, my friend! And remember: 'Thanks for playing, bro!' 🎧",
+        'closing': "Stay tuned for more beats, my friend! And remember: _\"Thanks for playing, bro!\"_ 🎧",
         'giphy_search': 'ready player one aech'
     },
     'art3mis': {
@@ -58,7 +58,7 @@ RPO_CHARACTERS = {
         'top_hits_intro': "These masterpieces caught your attention most - almost as captivating as a well-written blog post:",
         'peak_activity_intro': "Your creative peak moments aligned perfectly with (timing as crucial as beating the First Gate):",
         'charts_intro': "I've crafted these elegant data portraits while dodging IOI surveillance:",
-        'closing': "Until next time, keep creating beautiful moments with music! And remember: 'I created the OASIS because I never felt at home in the real world.' 🌸",
+        'closing': "Until next time, keep creating beautiful moments with music! And remember: _\"I created the OASIS because I never felt at home in the real world.\"_ 🌸",
         'giphy_search': 'ready player one art3mis'
     },
     'halliday': {
@@ -70,7 +70,7 @@ RPO_CHARACTERS = {
         'top_hits_intro': "These compositions achieved optimal replay coefficients (reminds me of replaying my favorite Atari games):",
         'peak_activity_intro': "Maximum engagement protocols were activated during (peak creativity hours, like when I coded late into the night):",
         'charts_intro': "I've encoded these patterns into visual matrices (Easter eggs hidden in plain sight):",
-        'closing': "Remember, music is the ultimate easter egg in the game of life! 'Thank you for playing my game.' 🥚",
+        'closing': "Remember, music is the ultimate easter egg in the game of life! _\"Thank you for playing my game.\"_ 🥚",
         'giphy_search': 'ready player one halliday'
     },
     'sorrento': {
@@ -82,7 +82,7 @@ RPO_CHARACTERS = {
         'top_hits_intro': "These assets delivered maximum engagement returns (unlike Parzival's amateur hour performances):",
         'peak_activity_intro': "Optimal output periods occurred during (precision timing that would make our loyalty center analysts proud):",
         'charts_intro': "Corporate analytics division generated these reports using state-of-the-art IOI technology:",
-        'closing': "Maintain these efficiency levels for continued growth. 'You see, when I win, I plan to announce new lottery drawings.' 📊",
+        'closing': "Maintain these efficiency levels for continued growth. _\"You see, when I win, I plan to announce new lottery drawings.\"_ 📊",
         'giphy_search': 'ready player one sorrento'
     },
     'ogden': {
@@ -94,7 +94,7 @@ RPO_CHARACTERS = {
         'top_hits_intro': "These songs spoke to your soul most clearly (she would have loved your taste in music):",
         'peak_activity_intro': "The universe aligned your focus during (timing is everything, as we learned with the OASIS launch):",
         'charts_intro': "Ancient wisdom translated into modern visuals (some secrets are worth preserving):",
-        'closing': "Remember, the real treasure is the music we discovered along the way! 'I suppose you could say we were friends.' ✨",
+        'closing': "Remember, the real treasure is the music we discovered along the way! _\"I suppose you could say we were friends.\"_ ✨",
         'giphy_search': 'ready player one ogden morrow'
     }
 }
@@ -366,11 +366,11 @@ def format_minutes_decimal(total_minutes):
 
 def create_ascii_bar(percentage, max_width=10, filled_char="█", empty_char="░"):
     """
-    Create ASCII bar for percentages with custom characters
+    Create ASCII bar for percentages with custom characters - matches weekly chart style
     
     Args:
         percentage: Value from 0-100
-        max_width: Width of bar in characters
+        max_width: Width of bar in characters (default 8 to match weekly charts)
         filled_char: Character for filled portions
         empty_char: Character for empty portions
         
@@ -393,11 +393,11 @@ def create_ascii_bar(percentage, max_width=10, filled_char="█", empty_char="�
 
 def create_progress_bar(percentage, max_width=10):
     """
-    Create ASCII progress bar for percentages
+    Create ASCII progress bar for percentages - matches weekly chart style
     
     Args:
         percentage: Value from 0-100
-        max_width: Width of progress bar in characters
+        max_width: Width of progress bar in characters (default 8 to match weekly charts)
         
     Returns:
         String with filled (█) and empty (░) characters
@@ -461,7 +461,7 @@ def create_genre_distribution_chart(songs_data):
     chart_lines = []
     for genre, count in sorted(genre_counts.items(), key=lambda x: x[1], reverse=True)[:4]:
         percentage = (count / total_songs) * 100
-        bar = create_ascii_bar(percentage, max_width=8)
+        bar = create_ascii_bar(percentage, max_width=10)
         chart_lines.append(f"{genre:12} {bar} {percentage:.0f}%")
     
     return "\n".join(chart_lines)
@@ -505,7 +505,7 @@ def create_genre_distribution_fallback(songs_data):
     chart_lines = []
     for genre, count in sorted(genre_counts.items(), key=lambda x: x[1], reverse=True)[:4]:
         percentage = (count / total_songs) * 100
-        bar = create_ascii_bar(percentage, max_width=8)
+        bar = create_ascii_bar(percentage, max_width=10)
         chart_lines.append(f"{genre:12} {bar} {percentage:.0f}%")
     
     return "\n".join(chart_lines)
@@ -536,15 +536,15 @@ def create_weekly_pattern_chart(current_date=None):
     for i, (day, hour) in enumerate(zip(days, hours)):
         # Use the consistent ascii bar function instead of manual construction
         percentage = min((hour / 5.0) * 100, 100)  # Scale to percentage (max 5 hours = 100%)
-        bar = create_ascii_bar(percentage, max_width=8)
+        bar = create_ascii_bar(percentage, max_width=10)
         
         # Explicitly pad all day names to 3 characters with spaces for Slack alignment
         padded_day = (day + "   ")[:3]  # Ensure exactly 3 characters
         
         if i == today_pos:
-            chart_lines.append(f"{padded_day}:  {bar} {hour:.1f}h ← Today")
+            chart_lines.append(f"{padded_day}: {bar} {hour:.1f}h ← Today")
         else:
-            chart_lines.append(f"{padded_day}:  {bar} {hour:.1f}h")
+            chart_lines.append(f"{padded_day}: {bar} {hour:.1f}h")
     
     return "\n".join(chart_lines)
 
@@ -582,8 +582,8 @@ def create_new_vs_familiar_chart(songs_data):
     new_percentage = (new_songs / total) * 100
     familiar_percentage = (familiar_songs / total) * 100
     
-    new_bar = create_ascii_bar(new_percentage, max_width=8)
-    familiar_bar = create_ascii_bar(familiar_percentage, max_width=8)
+    new_bar = create_ascii_bar(new_percentage, max_width=10)
+    familiar_bar = create_ascii_bar(familiar_percentage, max_width=10)
     
     chart_lines = []
     chart_lines.append(f"🆕 New:      {new_bar} {new_percentage:.0f}%")
@@ -623,8 +623,8 @@ def create_social_discovery_chart(songs_data):
     mainstream_percentage = (mainstream_count / total) * 100
     underground_percentage = (underground_count / total) * 100
     
-    mainstream_bar = create_ascii_bar(mainstream_percentage, max_width=8)
-    underground_bar = create_ascii_bar(underground_percentage, max_width=8)
+    mainstream_bar = create_ascii_bar(mainstream_percentage, max_width=10)
+    underground_bar = create_ascii_bar(underground_percentage, max_width=10)
     
     chart_lines = []
     chart_lines.append(f"📈 Mainstream: {mainstream_bar} {mainstream_percentage:.0f}%")
@@ -773,12 +773,12 @@ def format_daily_summary(analysis_results, songs_data=None):
     
     # Mood & Energy with character commentary
     if analysis_results['energy_level'] > 0 or analysis_results['mood_level'] > 0:
-        energy_bar = create_progress_bar(analysis_results['energy_level'], max_width=8)
-        mood_bar = create_progress_bar(analysis_results['mood_level'], max_width=8)
+        energy_bar = create_progress_bar(analysis_results['energy_level'], max_width=10)
+        mood_bar = create_progress_bar(analysis_results['mood_level'], max_width=10)
         
-        vibe_section = f"*MOOD & ENERGY*\n{character['mood_energy_intro']}\n"        
+        vibe_section = f"*MOOD & ENERGY*\n{character['mood_energy_intro']}\n```\n"        
         vibe_section += f"⚡ Energy: {energy_bar} {analysis_results['energy_level']}%\n"
-        vibe_section += f"😊 Mood: {mood_bar} {analysis_results['mood_level']}%"
+        vibe_section += f"😊 Mood: {mood_bar} {analysis_results['mood_level']}%\n```"
         
         # Character-specific mood commentary
         avg_vibe = (analysis_results['energy_level'] + analysis_results['mood_level']) / 2
@@ -821,7 +821,7 @@ def format_daily_summary(analysis_results, songs_data=None):
         max_plays = max(count for _, count in top_songs)
         if max_plays >= 5:
             if character['name'] == 'Parzival':
-                hits_section += f"\n🔁 {max_plays} plays? That track had you in the zone like I was with 'Tempest'!"
+                hits_section += f"\n🔁 {max_plays} plays? That track had you in the zone like I was with _\"Tempest\"_!"
             elif character['name'] == 'Sorrento':
                 hits_section += f"\n📈 Maximum engagement achieved with {max_plays} replays - better metrics than most IOI products."
             elif character['name'] == 'Aech':
@@ -877,7 +877,7 @@ def format_daily_summary(analysis_results, songs_data=None):
             message_parts.append(charts_intro)
             
             for chart_title, chart_content in ascii_charts:
-                chart_section = f"*{chart_title}*\n{chart_content}"
+                chart_section = f"*{chart_title}*\n```\n{chart_content}\n```"
                 message_parts.append(chart_section)
     
     # Character closing message
@@ -1069,17 +1069,17 @@ def format_weekly_summary(weekly_analysis):
     
     # Character-specific closing for weekly
     if character['name'] == 'Parzival':
-        closing = "That's your week in the musical OASIS, gunter! Keep questing, keep discovering, and remember: 'Being human is the only way to live.' See you in the next cycle! 🎮"
+        closing = "That's your week in the musical OASIS, gunter! Keep questing, keep discovering, and remember: _\"Being human is the only way to live.\"_ See you in the next cycle! 🎮"
     elif character['name'] == 'Aech':
-        closing = "Another week of solid audio performance in the books! Keep those engines running and those beats pumping, friend. 'Thanks for playing along!' 🔧🎵"
+        closing = "Another week of solid audio performance in the books! Keep those engines running and those beats pumping, friend. _\"Thanks for playing along!\"_ 🔧🎵"
     elif character['name'] == 'Art3mis':
         closing = "Your weekly musical journey reveals such beautiful patterns of discovery and focus. Until next week, keep creating soundtrack to your story! 🌸🎨"
     elif character['name'] == 'Halliday':
-        closing = "Another week of data successfully archived in the great musical database of life. 'Thank you for playing my game' - see you next Sunday! 🎮✨"
+        closing = "Another week of data successfully archived in the great musical database of life. _\"Thank you for playing my game\"_ - see you next Sunday! 🎮✨"
     elif character['name'] == 'Sorrento':
         closing = "Weekly performance metrics complete. Maintain these engagement levels for optimal results. IOI will continue monitoring your progress. 📊💼"
     else:  # Ogden
-        closing = "What a wonderful week of musical exploration! Each song a small treasure, each day a new adventure. 'I suppose you could say we were friends' - with music as our guide! ✨🎵"
+        closing = "What a wonderful week of musical exploration! Each song a small treasure, each day a new adventure. _\"I suppose you could say we were friends\"_ - with music as our guide! ✨🎵"
     
     message_parts.append(closing)
     

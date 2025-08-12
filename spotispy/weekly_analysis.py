@@ -245,7 +245,7 @@ def calculate_listening_streak(daily_stats):
     return streak
 
 
-def create_weekly_chart(daily_stats, max_width=8):
+def create_weekly_chart(daily_stats, max_width=10):
     """
     Create ASCII chart showing weekly listening pattern
     
