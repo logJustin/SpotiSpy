@@ -194,8 +194,14 @@ def check_for_duplicates(songs_to_check):
     if not songs_to_check:
         return []
     
-    # Get played_at times to check
-    timestamps = [song['played_at'] for song in songs_to_check]
+    # Get played_at times to check and normalize format
+    timestamps = []
+    for song in songs_to_check:
+        # Parse and re-format to ensure consistent timestamp format
+        dt = datetime.fromisoformat(song['played_at'].replace('Z', '+00:00'))
+        # Store as ISO with Z suffix for consistency
+        normalized_ts = dt.isoformat().replace('+00:00', 'Z')
+        timestamps.append(normalized_ts)
     
     # Query existing songs with these timestamps
     # Use URL encoding for the timestamp values
@@ -209,11 +215,18 @@ def check_for_duplicates(songs_to_check):
         existing_songs = response.json()
         logger.debug("Found %s existing songs in database", len(existing_songs))
         
-        existing_timestamps = {song['played_at'] for song in existing_songs}
+        # Normalize existing timestamps for comparison
+        existing_timestamps = set()
+        for song in existing_songs:
+            dt = datetime.fromisoformat(song['played_at'].replace('Z', '+00:00'))
+            normalized_ts = dt.isoformat().replace('+00:00', 'Z')
+            existing_timestamps.add(normalized_ts)
         
-        # Filter out songs that already exist
-        new_songs = [song for song in songs_to_check 
-                    if song['played_at'] not in existing_timestamps]
+        # Filter out songs that already exist using normalized timestamps
+        new_songs = []
+        for i, song in enumerate(songs_to_check):
+            if timestamps[i] not in existing_timestamps:
+                new_songs.append(song)
         
         logger.info("Found %s new songs out of %s total", len(new_songs), len(songs_to_check))
         return new_songs
