@@ -7,6 +7,23 @@ from spotispy.helpers import get_logger
 
 load_dotenv()
 
+def normalize_release_date(date_str):
+    """
+    Normalize Spotify release dates to YYYY-MM-DD format
+    Handles formats: YYYY, YYYY-MM, YYYY-MM-DD
+    """
+    if not date_str:
+        return "1900-01-01"  # Default for missing dates
+    
+    parts = date_str.split('-')
+    
+    if len(parts) == 1:  # Just year: "1976"
+        return f"{parts[0]}-01-01"
+    elif len(parts) == 2:  # Year-month: "1967-08"
+        return f"{parts[0]}-{parts[1]}-01"
+    else:  # Already full date: "1973-01-01"
+        return date_str
+
 def create_spotify_client():
     """Create and return authenticated Spotify client"""
     spotify_id = os.getenv("SPOTIFY_CLIENT_ID")
@@ -49,8 +66,8 @@ def get_recent_tracks(start_time, limit=50):
                 "album": song_data['track']['album']['name'],
                 "artist": song_data['track']['album']['artists'][0]['name'],
                 "duration": int(song_data['track']['duration_ms']) / 1000,
-                "played_at": datetime.fromisoformat(song_data['played_at']).isoformat(),
-                "release_date": song_data['track']['album']['release_date'],
+                "played_at": datetime.fromisoformat(song_data['played_at'].replace('Z', '+00:00')).isoformat(),
+                "release_date": normalize_release_date(song_data['track']['album']['release_date']),
                 "song": song_data['track']['name'],
                 "song_popularity": song_data['track']['popularity'],
             }

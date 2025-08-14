@@ -7,7 +7,7 @@
 # Detect which system we're on and set the base path accordingly
 if [[ "$(uname)" == "Darwin" ]]; then
     # macOS
-    BASE_PATH="/Users/justinreynolds/Documents/SpotiSpy"
+    BASE_PATH="/Users/justinreynolds/Documents/Programming/SpotiSpy"
 elif [[ -d "/home/justinreynolds" ]]; then
     # Raspberry Pi
     BASE_PATH="/home/justinreynolds/Documents/SpotiSpy"
@@ -35,6 +35,9 @@ fi
 # Activate the virtual environment
 echo "Activating virtual environment..."
 source "$VENV_PATH/bin/activate"
+
+# Suppress urllib3 OpenSSL warning
+export PYTHONWARNINGS="ignore"
 
 # Check if activation worked
 if [ "$VIRTUAL_ENV" = "" ]; then

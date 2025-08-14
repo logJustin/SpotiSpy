@@ -12,6 +12,37 @@ CENTRAL_TZ = timezone(timedelta(hours=-5))  # CDT (Central Daylight Time)
 
 load_dotenv()
 
+
+def parse_datetime_robust(datetime_str):
+    """
+    Robustly parse datetime strings with various microsecond formats
+    Handles both Z suffix and +00:00 timezone formats
+    """
+    # Handle Z suffix
+    if datetime_str.endswith('Z'):
+        datetime_str = datetime_str.replace('Z', '+00:00')
+    
+    # Split datetime and timezone parts
+    if '+' in datetime_str:
+        dt_part, tz_part = datetime_str.rsplit('+', 1)
+        tz_part = '+' + tz_part
+    else:
+        dt_part = datetime_str
+        tz_part = ''
+    
+    # Handle microseconds - ensure they have 6 digits
+    if '.' in dt_part:
+        base_part, microsec_part = dt_part.rsplit('.', 1)
+        # Pad or truncate to 6 digits
+        microsec_part = microsec_part.ljust(6, '0')[:6]
+        dt_part = f"{base_part}.{microsec_part}"
+    
+    # Reconstruct the datetime string
+    full_datetime_str = dt_part + tz_part
+    
+    return datetime.fromisoformat(full_datetime_str)
+
+
 SUPABASE_URL = os.getenv('SUPABASE_URL')
 SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 SONGS_TABLE = 'songs'
@@ -141,6 +172,9 @@ def save_songs(song_list):
         
     except requests.RequestException as e:
         logger.error("Error saving to database: %s", e)
+        if hasattr(e, 'response') and e.response is not None:
+            logger.error("Response status: %s", e.response.status_code)
+            logger.error("Response body: %s", e.response.text)
         return False
 
 
@@ -198,7 +232,7 @@ def check_for_duplicates(songs_to_check):
     timestamps = []
     for song in songs_to_check:
         # Parse and re-format to ensure consistent timestamp format
-        dt = datetime.fromisoformat(song['played_at'].replace('Z', '+00:00'))
+        dt = parse_datetime_robust(song['played_at'])
         # Store as ISO with Z suffix for consistency
         normalized_ts = dt.isoformat().replace('+00:00', 'Z')
         timestamps.append(normalized_ts)
@@ -218,7 +252,7 @@ def check_for_duplicates(songs_to_check):
         # Normalize existing timestamps for comparison
         existing_timestamps = set()
         for song in existing_songs:
-            dt = datetime.fromisoformat(song['played_at'].replace('Z', '+00:00'))
+            dt = parse_datetime_robust(song['played_at'])
             normalized_ts = dt.isoformat().replace('+00:00', 'Z')
             existing_timestamps.add(normalized_ts)
         
