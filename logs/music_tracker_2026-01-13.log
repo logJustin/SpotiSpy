@@ -1,0 +1,73 @@
+2026-01-13 17:11:01,134 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:11:01,134 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-13 17:11:01,135 - music_tracker - ERROR - ytmusicapi not installed. Install with: pip install ytmusicapi
+2026-01-13 17:11:01,135 - music_tracker - ERROR - YouTube Music song collection completed with errors
+2026-01-13 17:11:15,916 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:11:15,916 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-13 17:11:15,916 - music_tracker - ERROR - ytmusicapi not installed. Install with: pip install ytmusicapi
+2026-01-13 17:11:15,916 - music_tracker - ERROR - YouTube Music song collection completed with errors
+2026-01-13 17:15:21,190 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:15:21,190 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-13 17:15:21,190 - music_tracker - ERROR - ytmusicapi not installed. Install with: pip install ytmusicapi
+2026-01-13 17:15:21,190 - music_tracker - ERROR - YouTube Music song collection completed with errors
+2026-01-13 17:17:15,987 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:17:15,987 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-13 17:17:15,987 - music_tracker - ERROR - ytmusicapi not installed. Install with: pip install ytmusicapi
+2026-01-13 17:17:15,987 - music_tracker - ERROR - YouTube Music song collection completed with errors
+2026-01-13 17:18:31,963 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:18:31,964 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-13 17:18:31,964 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-13 17:18:31,964 - music_tracker - INFO - Fetching YouTube Music history from last 1 hours
+2026-01-13 17:18:31,964 - music_tracker - ERROR - Error fetching YouTube Music history: ytmusicapi not installed. Install with: pip install ytmusicapi
+2026-01-13 17:18:31,964 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-13 17:18:31,964 - music_tracker - INFO - YouTube Music song collection completed successfully
+2026-01-13 17:19:49,621 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:19:49,621 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-13 17:19:49,621 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-13 17:19:49,621 - music_tracker - INFO - Fetching YouTube Music history from last 1 hours
+2026-01-13 17:19:49,621 - music_tracker - ERROR - Error fetching YouTube Music history: ytmusicapi import failed: No module named 'ytmusicapi'. Try: pip install ytmusicapi
+2026-01-13 17:19:49,621 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-13 17:19:49,621 - music_tracker - INFO - YouTube Music song collection completed successfully
+2026-01-13 17:21:20,848 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:21:20,848 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-13 17:21:20,848 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-13 17:21:20,848 - music_tracker - INFO - Fetching YouTube Music history from last 1 hours
+2026-01-13 17:21:21,093 - music_tracker - ERROR - Error fetching YouTube Music history: None
+2026-01-13 17:21:21,094 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-13 17:21:21,094 - music_tracker - INFO - YouTube Music song collection completed successfully
+2026-01-13 17:21:44,479 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:21:44,479 - music_tracker - INFO - Starting YouTube Music collection (last 6 hours)
+2026-01-13 17:21:44,479 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-13 17:21:44,479 - music_tracker - INFO - Fetching YouTube Music history from last 6 hours
+2026-01-13 17:21:44,736 - music_tracker - ERROR - Error fetching YouTube Music history: None
+2026-01-13 17:21:44,736 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-13 17:21:44,736 - music_tracker - INFO - YouTube Music song collection completed successfully
+2026-01-13 17:25:27,835 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:25:27,835 - music_tracker - INFO - Starting YouTube Music collection (last 6 hours)
+2026-01-13 17:25:27,835 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-13 17:25:27,835 - music_tracker - INFO - Fetching YouTube Music history from last 6 hours
+2026-01-13 17:25:28,049 - music_tracker - ERROR - Error fetching YouTube Music history: None
+2026-01-13 17:25:28,050 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-13 17:25:28,050 - music_tracker - INFO - YouTube Music song collection completed successfully
+2026-01-13 17:26:14,702 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 17:26:14,703 - music_tracker - INFO - Starting YouTube Music collection (last 6 hours)
+2026-01-13 17:26:14,703 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-13 17:26:14,703 - music_tracker - INFO - Fetching YouTube Music history from last 6 hours
+2026-01-13 17:26:14,719 - music_tracker - INFO - YouTube Music client created successfully
+2026-01-13 17:26:14,719 - music_tracker - INFO - Calling yt.get_history()...
+2026-01-13 17:26:14,914 - music_tracker - ERROR - Error fetching YouTube Music history: None
+2026-01-13 17:26:14,915 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-13 17:26:14,915 - music_tracker - INFO - YouTube Music song collection completed successfully
+2026-01-13 18:14:04,906 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-13 18:14:04,906 - music_tracker - INFO - Starting YouTube Music collection (last 6 hours)
+2026-01-13 18:14:04,906 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-13 18:14:04,906 - music_tracker - INFO - Fetching YouTube Music history from last 6 hours
+2026-01-13 18:14:05,777 - music_tracker - INFO - YouTube Music client created successfully
+2026-01-13 18:14:05,777 - music_tracker - INFO - Calling yt.get_history()...
+2026-01-13 18:14:05,844 - music_tracker - ERROR - get_history() failed with error: Server returned HTTP 401: Unauthorized.
+Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+2026-01-13 18:14:05,844 - music_tracker - ERROR - Error type: <class 'ytmusicapi.exceptions.YTMusicServerError'>
+2026-01-13 18:14:05,844 - music_tracker - ERROR - Error fetching YouTube Music history: Server returned HTTP 401: Unauthorized.
+Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+2026-01-13 18:14:05,844 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-13 18:14:05,844 - music_tracker - INFO - YouTube Music song collection completed successfully

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # SpotiSpy Song Collection Script (Hourly Cronjob)
-# This script ONLY collects songs from Spotify API and saves to database
+# This script collects songs from both Spotify API and YouTube Music and saves to database
 # NO Slack messages are sent - that's handled by analysis.sh (daily cronjob)
 
 # Detect which system we're on and set the base path accordingly
@@ -45,20 +45,41 @@ if [ "$VIRTUAL_ENV" = "" ]; then
     exit 1
 fi
 
-# Run song collection (NO messaging)
+# Run song collection from both sources (NO messaging)
 echo "Collecting recent songs from Spotify..."
 python3 collect_songs.py --hours 1
+spotify_exit_code=$?
 
-# Capture exit code
-exit_code=$?
+if [ $spotify_exit_code -eq 0 ]; then
+    echo "Spotify collection completed successfully"
+else
+    echo "Spotify collection failed with exit code: $spotify_exit_code"
+fi
+
+echo "Collecting songs from YouTube Music..."
+python3 -m spotispy.youtube_music
+youtube_exit_code=$?
+
+if [ $youtube_exit_code -eq 0 ]; then
+    echo "YouTube Music collection completed successfully"
+else
+    echo "YouTube Music collection failed with exit code: $youtube_exit_code"
+fi
+
+# Overall exit code: fail if either source failed
+if [ $spotify_exit_code -eq 0 ] && [ $youtube_exit_code -eq 0 ]; then
+    exit_code=0
+else
+    exit_code=1
+fi
 
 # Deactivate the virtual environment
 deactivate
 
 if [ $exit_code -eq 0 ]; then
-    echo "Song collection completed successfully!"
+    echo "Song collection from all sources completed successfully!"
 else
-    echo "Song collection failed with exit code: $exit_code"
+    echo "Song collection completed with errors (exit code: $exit_code)"
 fi
 
 exit $exit_code

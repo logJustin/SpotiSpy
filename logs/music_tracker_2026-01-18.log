@@ -1,0 +1,77 @@
+2026-01-18 13:45:09,936 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-18 13:45:09,936 - music_tracker - INFO - Starting YouTube Music collection (last 6 hours)
+2026-01-18 13:45:09,936 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-18 13:45:09,936 - music_tracker - INFO - Fetching YouTube Music history from last 6 hours
+2026-01-18 13:45:10,739 - music_tracker - INFO - YouTube Music client created successfully
+2026-01-18 13:45:10,739 - music_tracker - INFO - Calling yt.get_history()...
+2026-01-18 13:45:10,809 - music_tracker - ERROR - get_history() failed with error: Server returned HTTP 401: Unauthorized.
+Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+2026-01-18 13:45:10,809 - music_tracker - ERROR - Error type: <class 'ytmusicapi.exceptions.YTMusicServerError'>
+2026-01-18 13:45:10,809 - music_tracker - ERROR - Error fetching YouTube Music history: Server returned HTTP 401: Unauthorized.
+Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+2026-01-18 13:45:10,809 - music_tracker - INFO - No new songs found from YouTube Music API
+2026-01-18 13:45:10,809 - music_tracker - INFO - YouTube Music song collection completed successfully
+2026-01-18 14:44:39,983 - music_tracker - INFO - Fetching YouTube Music history from last 24 hours
+2026-01-18 14:44:40,045 - music_tracker - INFO - YouTube Music client created successfully
+2026-01-18 14:44:40,045 - music_tracker - INFO - Calling yt.get_history()...
+2026-01-18 14:44:40,864 - music_tracker - ERROR - get_history() failed with error: Server returned HTTP 400: Bad Request.
+Request contains an invalid argument.
+2026-01-18 14:44:40,864 - music_tracker - ERROR - Error type: <class 'ytmusicapi.exceptions.YTMusicServerError'>
+2026-01-18 14:44:40,865 - music_tracker - ERROR - Error fetching YouTube Music history: Server returned HTTP 400: Bad Request.
+Request contains an invalid argument.
+2026-01-18 15:07:44,985 - music_tracker - INFO - YouTube Music song collection starting...
+2026-01-18 15:07:44,986 - music_tracker - INFO - Starting YouTube Music collection (last 1 hours)
+2026-01-18 15:07:44,986 - music_tracker - INFO - Fetching recent tracks from YouTube Music...
+2026-01-18 15:07:46,706 - music_tracker - INFO - Found 50 songs from YouTube Music API
+2026-01-18 15:07:46,706 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 15:07:48,416 - music_tracker - INFO - Found 50 new songs out of 50 total
+2026-01-18 15:07:48,417 - music_tracker - INFO - Found 50 new songs to save
+2026-01-18 15:07:48,417 - music_tracker - INFO - Saving songs to database...
+2026-01-18 15:07:48,666 - music_tracker - ERROR - Error saving to database: 400 Client Error: Bad Request for url: https://wpbsuyhjgwjugsqkriqe.supabase.co/rest/v1/songs
+2026-01-18 15:07:48,666 - music_tracker - ERROR - Response status: 400
+2026-01-18 15:07:48,667 - music_tracker - ERROR - Response body: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'artist_name' column of 'songs' in the schema cache"}
+2026-01-18 15:07:48,667 - music_tracker - ERROR - Failed to save YouTube Music songs to database
+2026-01-18 15:07:48,667 - music_tracker - ERROR - YouTube Music song collection completed with errors
+2026-01-18 19:43:59,335 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 19:43:59,336 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 19:43:59,336 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 19:43:59,524 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 19:43:59,525 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 19:43:59,525 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 19:43:59,684 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 19:43:59,684 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 19:44:01,333 - music_tracker - INFO - Processing 200 songs from YouTube Music history...
+2026-01-18 19:44:03,663 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 19:44:07,840 - music_tracker - INFO - Processed 10/200 songs (5.0%)
+2026-01-18 19:44:13,750 - music_tracker - INFO - Processed 20/200 songs (10.0%)
+2026-01-18 19:44:20,946 - music_tracker - INFO - Processed 30/200 songs (15.0%)
+2026-01-18 19:44:26,717 - music_tracker - INFO - Processed 40/200 songs (20.0%)
+2026-01-18 19:44:32,824 - music_tracker - INFO - Processed 50/200 songs (25.0%)
+2026-01-18 19:44:38,867 - music_tracker - INFO - Processed 60/200 songs (30.0%)
+2026-01-18 19:44:44,924 - music_tracker - INFO - Processed 70/200 songs (35.0%)
+2026-01-18 19:44:51,241 - music_tracker - INFO - Processed 80/200 songs (40.0%)
+2026-01-18 19:44:57,225 - music_tracker - INFO - Processed 90/200 songs (45.0%)
+2026-01-18 19:45:03,598 - music_tracker - INFO - Processed 100/200 songs (50.0%)
+2026-01-18 19:45:08,870 - music_tracker - INFO - Processed 110/200 songs (55.0%)
+2026-01-18 19:45:15,299 - music_tracker - INFO - Processed 120/200 songs (60.0%)
+2026-01-18 19:45:21,235 - music_tracker - INFO - Processed 130/200 songs (65.0%)
+2026-01-18 19:45:28,191 - music_tracker - INFO - Processed 140/200 songs (70.0%)
+2026-01-18 19:45:32,703 - music_tracker - ERROR - Error formatting song 'Phil Medley And The MVB Orchestra - Sheila': 'NoneType' object has no attribute 'get'
+2026-01-18 19:45:34,574 - music_tracker - INFO - Processed 150/200 songs (75.0%)
+2026-01-18 19:45:40,935 - music_tracker - INFO - Processed 160/200 songs (80.0%)
+2026-01-18 19:45:47,679 - music_tracker - INFO - Processed 170/200 songs (85.0%)
+2026-01-18 19:45:54,470 - music_tracker - INFO - Processed 180/200 songs (90.0%)
+2026-01-18 19:46:01,402 - music_tracker - INFO - Processed 190/200 songs (95.0%)
+2026-01-18 19:46:08,673 - music_tracker - INFO - Processed 200/200 songs (100.0%)
+2026-01-18 19:46:08,879 - music_tracker - INFO - 9 missing songs out of 200
+2026-01-18 19:46:08,879 - music_tracker - WARNING - Could not find Spotify data for 9 songs
+2026-01-18 19:46:08,883 - music_tracker - INFO - Found 198 songs from YouTube Music
+2026-01-18 19:46:08,883 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 19:46:10,107 - music_tracker - INFO - Found 198 new songs out of 198 total
+2026-01-18 19:46:10,108 - music_tracker - INFO - Found 198 new songs to save
+2026-01-18 19:46:10,108 - music_tracker - INFO - Saving songs to database...
+2026-01-18 19:46:10,435 - music_tracker - ERROR - Error saving to database: 400 Client Error: Bad Request for url: https://wpbsuyhjgwjugsqkriqe.supabase.co/rest/v1/songs
+2026-01-18 19:46:10,435 - music_tracker - ERROR - Response status: 400
+2026-01-18 19:46:10,435 - music_tracker - ERROR - Response body: {"code":"22P02","details":null,"hint":null,"message":"invalid input syntax for type uuid: \"PYPKQMuXo4M\""}
+2026-01-18 19:46:10,435 - music_tracker - ERROR - Failed to save songs to database
+2026-01-18 19:46:10,436 - music_tracker - ERROR - YouTube Music collection completed with errors

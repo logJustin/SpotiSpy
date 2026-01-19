@@ -9,3 +9,4 @@ __pycache__
 /scripts/slack/__pycache__
 /scripts/spotify/__pycache__
 /scripts/supabase/__pycache__
+browser.json
