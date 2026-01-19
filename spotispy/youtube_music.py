@@ -4,14 +4,14 @@ import traceback
 from datetime import datetime
 from dotenv import load_dotenv
 from ytmusicapi import YTMusic
-from .spotify import create_spotify_client
+from .spotify import create_spotify_client, normalize_release_date
 from .helpers import get_logger
-from .database import save_songs, check_for_duplicates
+from .database import save_songs, check_youtube_music_duplicates
 
 load_dotenv()
 
-def get_recent_youtube_music_history(ytmusic_client):
-    """Get YouTube Music listening history and enrich with Spotify data"""
+def get_recent_youtube_music_history(ytmusic_client, hours_limit=2):
+    """Get recent YouTube Music listening history (last ~2 hours) and enrich with Spotify data"""
     logger = get_logger()
     
     try:
@@ -21,11 +21,15 @@ def get_recent_youtube_music_history(ytmusic_client):
         if not raw_history:
             return []
         
-        recent_songs = []
-        total_songs = len(raw_history)
-        logger.info(f"Processing {total_songs} songs from YouTube Music history...")
+        # Limit to approximately last 2 hours (estimate ~20 songs per hour)
+        max_songs = hours_limit * 20
+        limited_history = raw_history[:max_songs]
         
-        for i, song in enumerate(raw_history, 1):
+        recent_songs = []
+        total_songs = len(limited_history)
+        logger.info(f"Processing {total_songs} recent songs from YouTube Music history (last {hours_limit} hours)")
+        
+        for i, song in enumerate(limited_history, 1):
             # 1. Skip if song data is missing
             if not song:
                 continue
@@ -58,7 +62,7 @@ def get_recent_youtube_music_history(ytmusic_client):
                 logger.info(f"Processed {i}/{total_songs} songs ({i/total_songs*100:.1f}%)")
             time.sleep(0.2)  # Rate limiting to prevent API timeouts
             
-        logger.info(f"{missing} missing songs out of {len(raw_history)}")
+        logger.info(f"{missing} missing songs out of {len(limited_history)}")
         if missing > 0:
             logger.warning(f"Could not find Spotify data for {missing} songs")
         
@@ -99,7 +103,7 @@ def get_spotify_data(song_title, youtube_album, artist):
         # print(f"Match found: {best_match['name']} on {best_match['album']['name']}")
         
         return [
-            best_match['album'].get('release_date', '1900-01-01'),
+            normalize_release_date(best_match['album'].get('release_date', '1900-01-01')),
             best_match.get('popularity', 0)
         ]
 
@@ -115,11 +119,10 @@ def format_song(song, spotify_data):
         popularity = 0
         
         if spotify_data and len(spotify_data) >= 2:
-            release_date = spotify_data[0]
+            release_date = normalize_release_date(spotify_data[0])
             popularity = spotify_data[1]
             
         return {
-            "id": song.get('videoId'),
             "song": song.get('title'),
             "artist": song['artists'][0]['name'] if song.get('artists') else 'Unknown',
             "album": song.get('album', {}).get('name', 'Single'),
@@ -157,9 +160,13 @@ def collect_youtube_music_songs():
             
         logger.info(f"Found {len(songs)} songs from YouTube Music")
         
-        # Check for duplicates to avoid saving the same song twice
+        # Add small delay to ensure any previous database transactions are committed
+        logger.debug("Waiting for database consistency...")
+        time.sleep(3)
+        
+        # Check for duplicates using YouTube Music-specific logic (content-based)
         logger.info("Checking for duplicates in database...")
-        new_songs = check_for_duplicates(songs)
+        new_songs = check_youtube_music_duplicates(songs, hours_back=2)
         
         if not new_songs:
             logger.info("All songs already exist in database")

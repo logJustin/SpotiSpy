@@ -75,3 +75,615 @@ Request contains an invalid argument.
 2026-01-18 19:46:10,435 - music_tracker - ERROR - Response body: {"code":"22P02","details":null,"hint":null,"message":"invalid input syntax for type uuid: \"PYPKQMuXo4M\""}
 2026-01-18 19:46:10,435 - music_tracker - ERROR - Failed to save songs to database
 2026-01-18 19:46:10,436 - music_tracker - ERROR - YouTube Music collection completed with errors
+2026-01-18 20:17:12,999 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:17:12,999 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:17:14,852 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:17:17,867 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:17:22,044 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:17:29,230 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:17:29,434 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:17:29,434 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:17:29,434 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:17:29,434 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:17:33,088 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:17:33,088 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:17:33,088 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:17:33,264 - music_tracker - ERROR - Error saving to database: 400 Client Error: Bad Request for url: https://wpbsuyhjgwjugsqkriqe.supabase.co/rest/v1/songs
+2026-01-18 20:17:33,264 - music_tracker - ERROR - Response status: 400
+2026-01-18 20:17:33,264 - music_tracker - ERROR - Response body: {"code":"22P02","details":null,"hint":null,"message":"invalid input syntax for type uuid: \"PYPKQMuXo4M\""}
+2026-01-18 20:17:33,264 - music_tracker - ERROR - Failed to save songs to database
+2026-01-18 20:17:33,264 - music_tracker - ERROR - YouTube Music collection completed with errors
+2026-01-18 20:18:11,351 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:18:11,351 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:18:13,257 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:18:15,522 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:18:18,703 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:18:24,402 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:18:24,608 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:18:24,608 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:18:24,610 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:18:24,610 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:18:27,873 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:18:27,874 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:18:27,874 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:18:28,089 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:18:28,089 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:18:28,089 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:18:37,548 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:18:37,548 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:18:39,443 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:18:41,596 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:18:45,462 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:18:50,949 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:18:51,154 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:18:51,154 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:18:51,155 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:18:51,155 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:18:53,718 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:18:53,718 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:18:53,718 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:18:53,924 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:18:53,924 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:18:53,924 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:19:00,525 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 1 total
+2026-01-18 20:19:07,644 - music_tracker - INFO - Fetched 38 songs from database
+2026-01-18 20:19:34,805 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 2 total
+2026-01-18 20:25:02,653 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:25:02,653 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:25:02,654 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:25:02,830 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:25:02,831 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:25:02,831 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:25:02,987 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:25:02,987 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:25:04,844 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:25:06,944 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:25:10,943 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:25:17,440 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:25:17,643 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:25:17,643 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:25:17,647 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:25:17,647 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:25:20,708 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:25:20,709 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:25:20,709 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:25:21,104 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:25:21,105 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:25:21,106 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:27:59,400 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 1 total
+2026-01-18 20:28:39,901 - music_tracker - INFO - YouTube Music duplicate check: 2 new out of 3 total
+2026-01-18 20:28:46,838 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:28:46,838 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:28:48,472 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:28:50,528 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:28:53,858 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:28:59,904 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:29:00,109 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:29:00,109 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:29:00,110 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:29:00,110 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:29:03,366 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:29:03,366 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:29:03,366 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:29:03,532 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:29:03,532 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:29:03,532 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:36:43,819 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:36:43,819 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:36:43,819 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:36:43,987 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:36:43,988 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:36:43,988 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:36:44,142 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:36:44,142 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:36:45,827 - music_tracker - INFO - Processing 60 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:36:48,315 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:36:51,977 - music_tracker - INFO - Processed 10/60 songs (16.7%)
+2026-01-18 20:36:58,840 - music_tracker - INFO - Processed 20/60 songs (33.3%)
+2026-01-18 20:37:05,291 - music_tracker - INFO - Processed 30/60 songs (50.0%)
+2026-01-18 20:37:11,103 - music_tracker - INFO - Processed 40/60 songs (66.7%)
+2026-01-18 20:37:17,217 - music_tracker - INFO - Processed 50/60 songs (83.3%)
+2026-01-18 20:37:23,312 - music_tracker - INFO - Processed 60/60 songs (100.0%)
+2026-01-18 20:37:23,517 - music_tracker - INFO - 4 missing songs out of 60
+2026-01-18 20:37:23,518 - music_tracker - WARNING - Could not find Spotify data for 4 songs
+2026-01-18 20:37:23,520 - music_tracker - INFO - Found 59 songs from YouTube Music
+2026-01-18 20:37:23,521 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:37:33,601 - music_tracker - INFO - YouTube Music duplicate check: 59 new out of 59 total
+2026-01-18 20:37:33,603 - music_tracker - INFO - Found 59 new songs to save
+2026-01-18 20:37:33,603 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:37:33,748 - music_tracker - ERROR - Error saving to database: 400 Client Error: Bad Request for url: https://wpbsuyhjgwjugsqkriqe.supabase.co/rest/v1/songs
+2026-01-18 20:37:33,748 - music_tracker - ERROR - Response status: 400
+2026-01-18 20:37:33,749 - music_tracker - ERROR - Response body: {"code":"22007","details":null,"hint":null,"message":"invalid input syntax for type date: \"2005\""}
+2026-01-18 20:37:33,749 - music_tracker - ERROR - Failed to save songs to database
+2026-01-18 20:37:33,750 - music_tracker - ERROR - YouTube Music collection completed with errors
+2026-01-18 20:39:42,929 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:39:42,929 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:39:44,978 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:39:47,499 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:39:50,998 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:39:57,835 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:39:58,041 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:39:58,041 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:39:58,043 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:39:58,043 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:40:00,803 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:40:00,803 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:40:00,803 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:40:00,999 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:40:00,999 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:40:00,999 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:40:07,579 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:40:07,579 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:40:07,579 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:40:07,710 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:40:07,710 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:40:07,710 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:40:07,860 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:40:07,860 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:40:09,511 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:40:11,286 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:40:15,010 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:40:21,592 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:40:21,797 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:40:21,797 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:40:21,798 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:40:21,798 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:40:25,501 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:40:25,502 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:40:25,502 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:40:25,673 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:40:25,673 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:40:25,673 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:40:47,081 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:40:47,081 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:40:47,081 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:40:47,566 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:40:47,567 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:40:47,568 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:40:47,727 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:40:47,728 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:40:49,586 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:40:51,741 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:40:55,081 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:41:01,151 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:41:01,356 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:41:01,357 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:41:01,359 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:41:01,360 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:41:04,348 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:41:04,349 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:41:04,349 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:41:04,494 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:41:04,495 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:41:04,495 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:41:37,151 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:41:37,151 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:41:37,151 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:41:37,377 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:41:37,380 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:41:37,380 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:41:37,528 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:41:37,528 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:41:39,301 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:41:41,377 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:41:44,810 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:41:51,085 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:41:51,291 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:41:51,292 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:41:51,294 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:41:51,294 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:41:55,196 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:41:55,196 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:41:55,197 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:41:55,336 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:41:55,337 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:41:55,337 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:43:37,851 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:43:37,851 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:43:37,851 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:43:38,017 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:43:38,017 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:43:38,018 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:43:38,174 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:43:38,174 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:43:39,711 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:43:41,708 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:43:45,527 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:43:52,136 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:43:52,342 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:43:52,342 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:43:52,345 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:43:52,345 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:43:55,584 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:43:55,585 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:43:55,585 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:43:55,740 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:43:55,741 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:43:55,741 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:44:21,661 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:44:21,661 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:44:21,661 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:44:21,841 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:44:21,841 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:44:21,841 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:44:21,993 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:44:21,993 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:44:23,688 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:44:25,844 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:44:29,573 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:44:35,242 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:44:35,448 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:44:35,449 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:44:35,451 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:44:35,451 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:44:39,133 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:44:39,134 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:44:39,134 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:44:39,278 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:44:39,278 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:44:39,279 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:45:39,851 - music_tracker - INFO - Fetched 38 songs from database
+2026-01-18 20:45:47,138 - music_tracker - INFO - Fetched 38 songs from database
+2026-01-18 20:45:58,320 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 1 total
+2026-01-18 20:46:45,277 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 1 total
+2026-01-18 20:47:12,014 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 1 total
+2026-01-18 20:48:09,069 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 1 total
+2026-01-18 20:48:15,283 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:48:15,283 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:48:16,953 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:48:19,080 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:48:22,705 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:48:29,079 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:48:29,280 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:48:29,280 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:48:29,282 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:48:29,282 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:48:32,314 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 19 total
+2026-01-18 20:48:32,315 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 20:48:32,315 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:48:32,443 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:48:32,444 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:48:32,444 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:48:55,562 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:48:55,562 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:48:57,266 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:48:59,360 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:49:02,840 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:49:08,968 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:49:09,169 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:49:09,169 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:49:09,170 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:49:09,170 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:49:11,747 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 19 total
+2026-01-18 20:49:11,747 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 20:49:11,748 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:49:12,146 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:49:12,146 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:49:12,146 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:50:17,992 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:50:17,992 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:50:17,992 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:50:18,485 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:50:18,486 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:50:18,486 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:50:18,643 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:50:18,643 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:50:20,559 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:50:22,517 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:50:26,078 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:50:32,073 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:50:32,279 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:50:32,279 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:50:32,282 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:50:32,282 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:50:36,890 - music_tracker - INFO - YouTube Music duplicate check: 19 new out of 19 total
+2026-01-18 20:50:36,891 - music_tracker - INFO - Found 19 new songs to save
+2026-01-18 20:50:36,892 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:50:37,059 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:50:37,060 - music_tracker - INFO - Successfully saved 19 songs to database
+2026-01-18 20:50:37,061 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:50:40,313 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:50:40,313 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:50:40,313 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:50:40,452 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:50:40,452 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:50:40,452 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:50:40,591 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:50:40,591 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:50:42,277 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:50:44,294 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:50:47,827 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:50:53,740 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:50:53,946 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:50:53,946 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:50:53,949 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:50:53,949 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:50:56,528 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 19 total
+2026-01-18 20:50:56,529 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 20:50:56,529 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:50:56,646 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:50:56,647 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:50:56,647 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:51:16,021 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:51:16,021 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:51:16,021 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:51:16,176 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:51:16,176 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:51:16,176 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:51:16,321 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:51:16,321 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:51:17,852 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:51:20,117 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:51:23,805 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:51:30,833 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:51:31,038 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:51:31,039 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:51:31,041 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:51:31,041 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:51:34,284 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 19 total
+2026-01-18 20:51:34,285 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 20:51:34,285 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:51:34,408 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:51:34,409 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:51:34,410 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:51:59,483 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:51:59,483 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:51:59,483 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:51:59,648 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:51:59,648 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:51:59,648 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:51:59,798 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:51:59,798 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:52:01,743 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:52:03,621 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:52:06,922 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:52:13,080 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:52:13,286 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:52:13,286 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:52:13,288 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:52:13,289 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:52:15,943 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 19 total
+2026-01-18 20:52:15,944 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 20:52:15,944 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:52:16,062 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:52:16,063 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:52:16,064 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:52:38,060 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 20:52:38,060 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 20:52:38,060 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 20:52:38,196 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 20:52:38,196 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 20:52:38,196 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 20:52:38,338 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:52:38,338 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:52:39,942 - music_tracker - INFO - Processing 20 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:52:41,801 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:52:45,514 - music_tracker - INFO - Processed 10/20 songs (50.0%)
+2026-01-18 20:52:51,529 - music_tracker - INFO - Processed 20/20 songs (100.0%)
+2026-01-18 20:52:51,735 - music_tracker - INFO - 1 missing songs out of 20
+2026-01-18 20:52:51,735 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-18 20:52:51,737 - music_tracker - INFO - Found 19 songs from YouTube Music
+2026-01-18 20:52:51,738 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:52:54,494 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 19 total
+2026-01-18 20:52:54,494 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 20:52:54,495 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:52:54,614 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:52:54,615 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 20:52:54,616 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:57:07,781 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 1 total
+2026-01-18 20:57:18,317 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 1 total
+2026-01-18 20:57:56,401 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 1 total
+2026-01-18 20:58:33,175 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 1 total
+2026-01-18 20:58:40,224 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:58:40,224 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:58:41,858 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:58:44,026 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:58:47,107 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 20:58:53,051 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 20:58:58,887 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 20:59:04,358 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 20:59:04,559 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 20:59:04,559 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 20:59:04,560 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 20:59:07,560 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:59:13,829 - music_tracker - INFO - YouTube Music duplicate check: 20 new out of 39 total
+2026-01-18 20:59:13,829 - music_tracker - INFO - Found 20 new songs to save
+2026-01-18 20:59:13,829 - music_tracker - INFO - Saving songs to database...
+2026-01-18 20:59:13,978 - music_tracker - INFO - Successfully saved 20 songs to database
+2026-01-18 20:59:13,978 - music_tracker - INFO - Successfully saved 20 songs to database
+2026-01-18 20:59:13,978 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 20:59:25,646 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 20:59:25,646 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 20:59:27,323 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 20:59:29,179 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 20:59:32,462 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 20:59:38,107 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 20:59:44,003 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 20:59:49,285 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 20:59:49,490 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 20:59:49,490 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 20:59:49,491 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 20:59:52,496 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 20:59:58,445 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-18 20:59:58,445 - music_tracker - INFO - All songs already exist in database
+2026-01-18 20:59:58,445 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:03:03,680 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:03:03,680 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:03:03,680 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:03:03,864 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:03:03,865 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:03:03,865 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:03:04,022 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:03:04,022 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:03:05,749 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:03:08,193 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:03:11,506 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:03:17,825 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:03:24,268 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:03:30,476 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:03:30,679 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:03:30,679 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:03:30,681 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:03:33,683 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:03:40,393 - music_tracker - INFO - YouTube Music duplicate check: 39 new out of 39 total
+2026-01-18 21:03:40,395 - music_tracker - INFO - Found 39 new songs to save
+2026-01-18 21:03:40,395 - music_tracker - INFO - Saving songs to database...
+2026-01-18 21:03:40,605 - music_tracker - INFO - Successfully saved 39 songs to database
+2026-01-18 21:03:40,606 - music_tracker - INFO - Successfully saved 39 songs to database
+2026-01-18 21:03:40,606 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:04:09,620 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:04:09,620 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:04:09,620 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:04:09,756 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:04:09,756 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:04:09,756 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:04:09,901 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:04:09,901 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:04:11,635 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:04:14,709 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:04:18,541 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:04:25,095 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:04:33,286 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:04:40,556 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:04:40,762 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:04:40,763 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:04:40,766 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:04:43,771 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:04:49,078 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-18 21:04:49,078 - music_tracker - INFO - All songs already exist in database
+2026-01-18 21:04:49,079 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:05:09,574 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:05:09,574 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:05:09,574 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:05:09,706 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:05:09,706 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:05:09,706 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:05:09,849 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:05:09,850 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:05:11,586 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:05:13,564 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:05:17,420 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:05:24,181 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:05:30,891 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:05:37,714 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:05:37,920 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:05:37,921 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:05:37,924 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:05:40,928 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:05:45,340 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-18 21:05:45,341 - music_tracker - INFO - All songs already exist in database
+2026-01-18 21:05:45,341 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:06:21,216 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:06:21,216 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:06:21,216 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:06:21,380 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:06:21,380 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:06:21,380 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:06:21,534 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:06:21,534 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:06:23,202 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:06:25,216 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:06:28,485 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:06:34,394 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:06:41,017 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:06:46,999 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:06:47,205 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:06:47,205 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:06:47,207 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:06:50,213 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:06:55,260 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-18 21:06:55,261 - music_tracker - INFO - All songs already exist in database
+2026-01-18 21:06:55,262 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:08:29,152 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:08:29,152 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:08:29,152 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:08:29,331 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:08:29,331 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:08:29,331 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:08:29,488 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:08:29,488 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:08:31,408 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:08:33,731 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:08:37,204 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:08:43,349 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:08:49,697 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:08:55,523 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:08:55,726 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:08:55,726 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:08:55,728 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:08:58,734 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:09:04,204 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-18 21:09:04,205 - music_tracker - INFO - All songs already exist in database
+2026-01-18 21:09:04,205 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:16:29,869 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:16:29,869 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:16:29,869 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:16:30,198 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:16:30,199 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:16:30,199 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:16:30,354 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:16:30,355 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:16:32,164 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:16:34,765 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:16:37,483 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:16:43,401 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:16:49,545 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:16:55,464 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:16:55,670 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:16:55,671 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:16:55,673 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:16:58,675 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:17:03,888 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 39 total
+2026-01-18 21:17:03,889 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 21:17:03,889 - music_tracker - INFO - Saving songs to database...
+2026-01-18 21:17:04,005 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 21:17:04,006 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 21:17:04,007 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:21:58,442 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:21:58,443 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:21:58,443 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:21:58,590 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:21:58,590 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:21:58,590 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:21:58,738 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:21:58,738 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:22:00,369 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:22:03,728 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:22:06,393 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:22:12,640 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:22:18,828 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:22:24,602 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:22:24,808 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:22:24,809 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:22:24,811 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:22:27,812 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:22:32,421 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 39 total
+2026-01-18 21:22:32,421 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 21:22:32,421 - music_tracker - INFO - Saving songs to database...
+2026-01-18 21:22:32,543 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 21:22:32,543 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 21:22:32,543 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-18 21:26:57,105 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-18 21:26:57,106 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-18 21:26:57,106 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-18 21:26:57,268 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-18 21:26:57,268 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-18 21:26:57,268 - music_tracker - INFO - Song collection completed successfully
+2026-01-18 21:26:57,424 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-18 21:26:57,424 - music_tracker - INFO - Using browser auth file: /Users/justinreynolds/Documents/Programming/SpotiSpy/browser.json
+2026-01-18 21:26:59,374 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-18 21:27:03,458 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-18 21:27:05,282 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-18 21:27:11,217 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-18 21:27:17,143 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-18 21:27:22,845 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-18 21:27:23,051 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-18 21:27:23,051 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-18 21:27:23,054 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-18 21:27:26,059 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-18 21:27:31,048 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 39 total
+2026-01-18 21:27:31,048 - music_tracker - INFO - Found 1 new songs to save
+2026-01-18 21:27:31,049 - music_tracker - INFO - Saving songs to database...
+2026-01-18 21:27:31,184 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 21:27:31,185 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-18 21:27:31,185 - music_tracker - INFO - YouTube Music collection completed successfully

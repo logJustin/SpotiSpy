@@ -271,6 +271,104 @@ def check_for_duplicates(songs_to_check):
         return songs_to_check
 
 
+def check_youtube_music_duplicates(songs_to_check, hours_back=2):
+    """
+    Check if YouTube Music songs already exist in database using content-based matching
+    
+    Args:
+        songs_to_check: List of YouTube Music song dictionaries
+        hours_back: Number of hours to look back for duplicates (default: 2)
+        
+    Returns:
+        List of songs that don't exist in database
+    """
+    logger = get_logger()
+    
+    if not songs_to_check:
+        return []
+    
+    # Filter to only YouTube Music songs
+    youtube_songs = [song for song in songs_to_check if song.get('source') == 'YoutubeMusic']
+    
+    if not youtube_songs:
+        return songs_to_check  # No YouTube Music songs to check
+    
+    # Calculate time window (last N hours) based on created_at for more reliable duplicate detection
+    from datetime import datetime, timedelta, timezone
+    now = datetime.now(timezone.utc)
+    cutoff_time = now - timedelta(hours=hours_back)
+    cutoff_iso = cutoff_time.isoformat().replace('+00:00', 'Z')
+    
+    try:
+        # Create list of song+artist+album combinations to check
+        content_checks = []
+        song_lookup = {}  # Map content to original song
+        
+        for song in youtube_songs:
+            content_key = f"{song.get('song', '')}-{song.get('artist', '')}-{song.get('album', '')}"
+            content_checks.append(content_key)
+            song_lookup[content_key] = song
+        
+        # Query database for songs with same content in the time window
+        # We'll check each combination individually to avoid URL length issues
+        existing_content = set()
+        
+        for song in youtube_songs:
+            song_name = song.get('song', '')
+            artist_name = song.get('artist', '')
+            album_name = song.get('album', '')
+            
+            # Query for song+artist combination (more flexible than requiring exact album match)
+            # This handles cases where same song appears on different albums/singles/compilations
+            # Use created_at instead of played_at for more reliable duplicate detection
+            endpoint = (f"{SUPABASE_URL}/rest/v1/{SONGS_TABLE}"
+                       f"?song=eq.{urllib.parse.quote(song_name)}"
+                       f"&artist=eq.{urllib.parse.quote(artist_name)}"
+                       f"&source=eq.YoutubeMusic"
+                       f"&created_at=gte.{cutoff_iso}"
+                       f"&select=song,artist,album,created_at")
+            
+            response = requests.get(endpoint, headers=headers, timeout=10)
+            response.raise_for_status()
+            matches = response.json()
+            
+            if matches:
+                # Use song+artist only for content key (more flexible)
+                content_key = f"{song.get('song', '')}-{song.get('artist', '')}"
+                existing_content.add(content_key)
+                logger.debug(f"Found existing YouTube Music song: {song_name} by {artist_name} (created: {matches[0].get('created_at', 'N/A')})")
+        
+        # Filter out songs that already exist in database (using song+artist key)
+        database_filtered = []
+        for song in youtube_songs:
+            content_key = f"{song.get('song', '')}-{song.get('artist', '')}"
+            if content_key not in existing_content:
+                database_filtered.append(song)
+        
+        # Also filter out duplicates within the batch itself (in-batch deduplication)
+        seen_in_batch = set()
+        batch_filtered = []
+        for song in database_filtered:
+            content_key = f"{song.get('song', '')}-{song.get('artist', '')}"
+            if content_key not in seen_in_batch:
+                seen_in_batch.add(content_key)
+                batch_filtered.append(song)
+            else:
+                logger.debug(f"Filtered in-batch duplicate: {song.get('song', '')} by {song.get('artist', '')}")
+        
+        # Add back any non-YouTube Music songs
+        non_youtube_songs = [song for song in songs_to_check if song.get('source') != 'YoutubeMusic']
+        result = batch_filtered + non_youtube_songs
+        
+        logger.info(f"YouTube Music duplicate check: {len(batch_filtered)} new out of {len(youtube_songs)} total")
+        return result
+        
+    except requests.RequestException as e:
+        logger.error(f"Error checking YouTube Music duplicates: {e}")
+        # If we can't check, better to risk duplicates than lose data
+        return songs_to_check
+
+
 if __name__ == "__main__":
     # Test database functions
     logger = get_logger()
