@@ -1,0 +1,350 @@
+2026-01-19 00:58:02,803 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 00:58:02,804 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 00:58:02,805 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 00:58:03,187 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 00:58:03,189 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 00:58:03,190 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 00:58:05,131 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 00:58:05,132 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 00:58:07,489 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 00:58:14,134 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 00:58:14,695 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 00:58:20,083 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 00:58:27,122 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 00:58:33,900 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 00:58:34,102 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 00:58:34,102 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 00:58:34,107 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 00:58:37,108 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 00:58:47,364 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 39 total
+2026-01-19 00:58:47,365 - music_tracker - INFO - Found 1 new songs to save
+2026-01-19 00:58:47,366 - music_tracker - INFO - Saving songs to database...
+2026-01-19 00:58:47,582 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 00:58:47,584 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 00:58:47,585 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 01:58:03,731 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 01:58:03,732 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 01:58:03,732 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 01:58:04,200 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 01:58:04,202 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 01:58:04,202 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 01:58:06,072 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 01:58:06,073 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 01:58:08,498 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 01:58:15,165 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 01:58:15,856 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 01:58:21,550 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 01:58:27,826 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 01:58:33,823 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 01:58:34,024 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 01:58:34,025 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 01:58:34,030 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 01:58:37,031 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 01:58:46,885 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-19 01:58:46,887 - music_tracker - INFO - All songs already exist in database
+2026-01-19 01:58:46,888 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 02:58:02,861 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 02:58:02,862 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 02:58:02,863 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 02:58:03,201 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 02:58:03,203 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 02:58:03,204 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 02:58:05,073 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 02:58:05,073 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 02:58:07,384 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 02:58:13,408 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 02:58:14,057 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 02:58:19,141 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 02:58:25,701 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 02:58:31,816 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 02:58:32,017 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 02:58:32,018 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 02:58:32,023 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 02:58:35,024 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 02:58:44,483 - music_tracker - INFO - YouTube Music duplicate check: 38 new out of 39 total
+2026-01-19 02:58:44,484 - music_tracker - INFO - Found 38 new songs to save
+2026-01-19 02:58:44,485 - music_tracker - INFO - Saving songs to database...
+2026-01-19 02:58:44,825 - music_tracker - INFO - Successfully saved 38 songs to database
+2026-01-19 02:58:44,827 - music_tracker - INFO - Successfully saved 38 songs to database
+2026-01-19 02:58:44,829 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 03:58:02,828 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 03:58:02,828 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 03:58:02,829 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 03:58:03,193 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 03:58:03,195 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 03:58:03,196 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 03:58:05,055 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 03:58:05,056 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 03:58:07,195 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 03:58:13,023 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 03:58:13,744 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 03:58:19,128 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 03:58:25,700 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 03:58:31,805 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 03:58:32,006 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 03:58:32,007 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 03:58:32,012 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 03:58:35,013 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 03:58:44,699 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 39 total
+2026-01-19 03:58:44,701 - music_tracker - INFO - Found 1 new songs to save
+2026-01-19 03:58:44,702 - music_tracker - INFO - Saving songs to database...
+2026-01-19 03:58:44,918 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 03:58:44,920 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 03:58:44,921 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 04:58:02,851 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 04:58:02,852 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 04:58:02,852 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 04:58:03,220 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 04:58:03,222 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 04:58:03,222 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 04:58:05,089 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 04:58:05,090 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 04:58:07,359 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 04:58:13,914 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 04:58:14,512 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 04:58:20,568 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 04:58:26,779 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 04:58:33,003 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 04:58:33,204 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 04:58:33,205 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 04:58:33,209 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 04:58:36,211 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 04:58:45,584 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-19 04:58:45,586 - music_tracker - INFO - All songs already exist in database
+2026-01-19 04:58:45,587 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 05:58:03,579 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 05:58:03,580 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 05:58:03,581 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 05:58:04,029 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 05:58:04,031 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 05:58:04,032 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 05:58:05,901 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 05:58:05,902 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 05:58:08,482 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 05:58:14,680 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 05:58:15,216 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 05:58:20,783 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 05:58:26,986 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 05:58:33,421 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 05:58:33,622 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 05:58:33,623 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 05:58:33,628 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 05:58:36,629 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 05:58:46,760 - music_tracker - INFO - YouTube Music duplicate check: 38 new out of 39 total
+2026-01-19 05:58:46,762 - music_tracker - INFO - Found 38 new songs to save
+2026-01-19 05:58:46,762 - music_tracker - INFO - Saving songs to database...
+2026-01-19 05:58:47,148 - music_tracker - INFO - Successfully saved 38 songs to database
+2026-01-19 05:58:47,150 - music_tracker - INFO - Successfully saved 38 songs to database
+2026-01-19 05:58:47,151 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 06:58:03,177 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 06:58:03,178 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 06:58:03,179 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 06:58:03,572 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 06:58:03,574 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 06:58:03,575 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 06:58:05,441 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 06:58:05,441 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 06:58:07,967 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 06:58:13,945 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 06:58:14,785 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 06:58:20,071 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 06:58:26,471 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 06:58:32,997 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 06:58:33,198 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 06:58:33,199 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 06:58:33,204 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 06:58:36,205 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 06:58:45,678 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 39 total
+2026-01-19 06:58:45,679 - music_tracker - INFO - Found 1 new songs to save
+2026-01-19 06:58:45,680 - music_tracker - INFO - Saving songs to database...
+2026-01-19 06:58:45,893 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 06:58:45,894 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 06:58:45,896 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 07:58:02,814 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 07:58:02,815 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 07:58:02,815 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 07:58:03,182 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 07:58:03,184 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 07:58:03,185 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 07:58:05,052 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 07:58:05,053 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 07:58:07,583 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 07:58:14,208 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 07:58:15,093 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 07:58:20,583 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 07:58:27,323 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 07:58:34,096 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 07:58:34,297 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 07:58:34,298 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 07:58:34,303 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 07:58:37,304 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 07:58:47,033 - music_tracker - INFO - YouTube Music duplicate check: 0 new out of 39 total
+2026-01-19 07:58:47,035 - music_tracker - INFO - All songs already exist in database
+2026-01-19 07:58:47,036 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 08:58:02,990 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 08:58:02,991 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 08:58:02,991 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 08:58:03,405 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 08:58:03,407 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 08:58:03,408 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 08:58:05,328 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 08:58:05,328 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 08:58:07,823 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 08:58:13,836 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 08:58:14,535 - music_tracker - ERROR - Error formatting song 'Oh Wonder - Body Gold (Louis The Child Remix)': 'NoneType' object has no attribute 'get'
+2026-01-19 08:58:19,852 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 08:58:26,326 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 08:58:33,136 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 08:58:33,337 - music_tracker - INFO - 2 missing songs out of 40
+2026-01-19 08:58:33,338 - music_tracker - WARNING - Could not find Spotify data for 2 songs
+2026-01-19 08:58:33,343 - music_tracker - INFO - Found 39 songs from YouTube Music
+2026-01-19 08:58:36,344 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 08:58:46,106 - music_tracker - INFO - YouTube Music duplicate check: 38 new out of 39 total
+2026-01-19 08:58:46,108 - music_tracker - INFO - Found 38 new songs to save
+2026-01-19 08:58:46,109 - music_tracker - INFO - Saving songs to database...
+2026-01-19 08:58:46,484 - music_tracker - INFO - Successfully saved 38 songs to database
+2026-01-19 08:58:46,487 - music_tracker - INFO - Successfully saved 38 songs to database
+2026-01-19 08:58:46,488 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 09:00:17,192 - music_tracker - INFO - SpotiSpy starting...
+2026-01-19 09:00:17,192 - music_tracker - INFO - Starting daily SpotiSpy analysis
+2026-01-19 09:00:17,193 - music_tracker - INFO - Fetching yesterday's listening data...
+2026-01-19 09:00:18,115 - music_tracker - INFO - Fetched 201 songs from database
+2026-01-19 09:00:18,117 - music_tracker - INFO - Found 201 songs to analyze
+2026-01-19 09:00:18,118 - music_tracker - INFO - Running analysis...
+2026-01-19 09:00:18,138 - music_tracker - INFO - Sending daily summary to Slack...
+2026-01-19 09:00:30,614 - music_tracker - INFO - Message sent successfully to Slack
+2026-01-19 09:00:30,615 - music_tracker - INFO - Daily analysis completed successfully!
+2026-01-19 09:00:30,616 - music_tracker - INFO - SpotiSpy completed successfully
+2026-01-19 09:58:03,482 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 09:58:03,482 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 09:58:03,483 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 09:58:04,077 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 09:58:04,079 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 09:58:04,080 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 09:58:05,922 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 09:58:05,923 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 09:58:08,162 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CMsdEP7eChgLIhMIyvPWjfyXkgMVc1leAx3nvDikygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpItfVA5VIbjl64FFmoyunQox3lZ4gFZpYZklOO4zW3O7Es0P0ZiGkJmdky4FmDTHb4-eOTvGoxllXriLlNRoFgAkBScQBKlxeCW99dUlw-8LiZF2tk'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CMsdEP7eChgLIhMIyvPWjfyXkgMVc1leAx3nvDikygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpIg1Ocz7V_AB0MwaSTsXaH7-eQD3XtWebvHgnUDkuzTSFeAODO0ka-TbgSKKFGmgMiVX5Q-Ws9iNB_w24ClbqUiUCTTj4K_ZB69-iZ8f9vJ2CAHVxc'}}, 'trackingParams': 'CMsdEP7eChgLIhMIyvPWjfyXkgMVc1leAx3nvDik'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 09:58:08,191 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 09:58:08,192 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 10:58:03,245 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 10:58:03,246 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 10:58:03,246 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 10:58:03,640 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 10:58:03,642 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 10:58:03,643 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 10:58:05,469 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 10:58:05,469 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 10:58:07,393 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CMsdEP7eChgLIhMIs7OMwomYkgMVQWFeAx1V0CxtygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpL5w5trfeyM9yEKPGMibWyGIjnsvBlHBEQhyfCHh-VW25e_FQs82j5u1u6kqSf8jqLIwbILkRW4i0eI3jFHbInfUtP-qnh9QG6pXRQ9tdhmFCyxKtQ'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CMsdEP7eChgLIhMIs7OMwomYkgMVQWFeAx1V0CxtygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpL3uJU99Ln4jqG4ZlvaKy_NypaRaYNCWYAqlPKKZN6KJqgkwvQIZWDykvEtTXNUo5Ti9-wXQzuJ_jo-Gvr3s1EkIjseDBlS70-nTtAFHzVPoRCrba8'}}, 'trackingParams': 'CMsdEP7eChgLIhMIs7OMwomYkgMVQWFeAx1V0Cxt'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 10:58:07,422 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 10:58:07,423 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 11:58:03,329 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 11:58:03,330 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 11:58:03,331 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 11:58:03,751 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 11:58:03,753 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 11:58:03,754 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 11:58:05,590 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 11:58:05,590 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 11:58:07,240 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CM0dEP7eChgKIhMIqdPf9paYkgMVR19eAx345hAFygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpIEQMI6_qZwNwAfV73JXfMQNq8GdFnA3ov0DUehLWv7TSdJ88qkyIPP4H_1GjwJe4ohCN7j3JYDWE4vjgPMJWjwZL5lKOSxVkpovAq__j8tNq2AshQ'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CM0dEP7eChgKIhMIqdPf9paYkgMVR19eAx345hAFygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpJoEEu3QSKO-C0xiL-370wwdX6-qM3ygBisVjy_zcI5sXNsyJ0g3ObHaAf8wDoNJF82GwsqukbUO1A3rt-kfzVAP6MZ3hWO34JNzdmat-nQIKLI2PE'}}, 'trackingParams': 'CM0dEP7eChgKIhMIqdPf9paYkgMVR19eAx345hAF'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 11:58:07,272 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 11:58:07,272 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 12:58:04,470 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 12:58:04,477 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 12:58:04,478 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 12:58:04,920 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 12:58:04,922 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 12:58:04,922 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 12:58:06,833 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 12:58:06,837 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 12:58:08,665 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CMgdEP7eChgLIhMIl5P8q6SYkgMVe64rBh359Tj_ygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpI_MnGY14UITrFAMkhQO8toUJPHwQIdIak-BLmHRVyfvQULgQQoV1Pav6VRf8EyOTztmAqyNDhKD9Eb05dLOXM87NAXseSQnoaV2ReDO4Lqupy_gNk'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CMgdEP7eChgLIhMIl5P8q6SYkgMVe64rBh359Tj_ygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpL7gWYPrRCv5TqIJ6j6nX8a1jO-cRDLYL2_K5bKhJz9HbOC4E8YiDU86QJezmd8HQ4_4hKRrhcbXlLapeEGFEyGLKJKoo7JtLVfqXTYruaZBwjILuY'}}, 'trackingParams': 'CMgdEP7eChgLIhMIl5P8q6SYkgMVe64rBh359Tj_'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 12:58:08,694 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 12:58:08,695 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 13:58:02,668 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 13:58:02,669 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 13:58:02,670 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 13:58:03,042 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 13:58:03,044 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 13:58:03,045 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 13:58:04,911 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 13:58:04,911 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 13:58:06,738 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CMgdEP7eChgLIhMIpeDW37GYkgMVg20SAR0rZTuhygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpIC-vS9M_MwH4eFm_L7SAIcnbepIb5D7NHelEmj3OdedpIM-A6qJa-iNV0p72bHuJwcmzUPDZLgwxq45vewDBgVSU6TofqX8VEpa5e5IJxWCvdbIac'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CMgdEP7eChgLIhMIpeDW37GYkgMVg20SAR0rZTuhygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpIAXXjPHFdVsvk2nIQsgiWzToD2oN2YJVgSr4ve10wbGnGYww__c-eMZd0oV6oJ8YfO1BQcF3kAUDzRROwEJ5qNt7F2SrncM1VWyizdM-yzp9YfOdk'}}, 'trackingParams': 'CMgdEP7eChgLIhMIpeDW37GYkgMVg20SAR0rZTuh'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 13:58:06,768 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 13:58:06,769 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 14:58:02,776 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 14:58:02,777 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 14:58:02,778 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 14:58:03,162 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 14:58:03,164 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 14:58:03,164 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 14:58:05,067 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 14:58:05,068 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 14:58:06,863 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CMgdEP7eChgLIhMIpe2tlL-YkgMVUmNeAx1HEBwjygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpLf6ZaquSF5w1lt5v4bIv08ntSkgTSL_1CxYpCqIb2nTSLF2-e_26hutPLs6btF5wKa6KFlYSnlFGgapz-4jC0bwSOrEOCHeKrokOyUj7Ep3EALvJM'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CMgdEP7eChgLIhMIpe2tlL-YkgMVUmNeAx1HEBwjygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpLC6KfdWLwut5FVQZcH9pqAJSE9IFCHszCdljyw2pk0qfvlYPRhCIe2cA2Wzr83uWH1VTbA5zLbFzeEmwXmIqZuPWfvxK9xuv1GxhtQ8fuK4J3Sw_w'}}, 'trackingParams': 'CMgdEP7eChgLIhMIpe2tlL-YkgMVUmNeAx1HEBwj'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 14:58:06,891 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 14:58:06,892 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 15:58:02,792 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 15:58:02,793 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 15:58:02,794 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 15:58:03,138 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 15:58:03,140 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 15:58:03,141 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 15:58:04,978 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 15:58:04,978 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 15:58:06,712 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CMYdEP7eChgLIhMIzJz2yMyYkgMVTGFeAx2-1TV8ygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpJtrM0BZUDkj-XZ_aTfFRkhLzvvzvnXE7vO_BOqWMwYPzxhsnQaJEEVzlCwHYT5QlDVgHLvsLjfPxv7DV7UTle7GtV9h1HZ2vVichFY84QQQKjrnng'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CMYdEP7eChgLIhMIzJz2yMyYkgMVTGFeAx2-1TV8ygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpLBScyWCsiP0yjXsfs4pibiCFUy_qaGdEq2eXU-CLo19f6V2tZTRRKYqfxujilWNnfKlJ1vWRzinB72558z49o-2UNrsHtgt2oEmWXXnlfBBZIwQM8'}}, 'trackingParams': 'CMYdEP7eChgLIhMIzJz2yMyYkgMVTGFeAx2-1TV8'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 15:58:06,741 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 15:58:06,742 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 16:58:02,641 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 16:58:02,641 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 16:58:02,642 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 16:58:03,028 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 16:58:03,030 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 16:58:03,031 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 16:58:04,848 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 16:58:04,849 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 16:58:06,861 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CM0dEP7eChgLIhMI1cu8_dmYkgMVcnJeAx2P0hppygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpJjRXRSe3uZTEnReLfbuDjvf-rllIa8nF9QbcYt3gWhSPkMK7EauS8ea2zINsrqL8eMqva7QtXxcAlkNbpeHr1ku-OZlda0_yEKT2Q9Us9AMpjJO8k'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CM0dEP7eChgLIhMI1cu8_dmYkgMVcnJeAx2P0hppygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpJV2-HqrOJfYLlfs5J3VO8oJnyMd0EimsmLtqHFYMcyntDXUjysjGWIgk9_VeP-cfQuGN9IV1yoAGD-idQN9Euiw4f4_PPKmvuZksCCtX8SE5CCxBA'}}, 'trackingParams': 'CM0dEP7eChgLIhMI1cu8_dmYkgMVcnJeAx2P0hpp'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 16:58:06,889 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 16:58:06,890 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 17:58:04,950 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 17:58:04,952 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 17:58:04,953 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 17:58:05,314 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 17:58:05,316 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 17:58:05,316 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 17:58:07,218 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 17:58:07,219 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 17:58:08,884 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CNYdEP7eChgLIhMIw_Gbs-eYkgMVYmsSAR3YryJlygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpJL3-fxTJQ0fkb8bSSqHtExz9y1TZnjnx9w4oudxkmpXcWy5124aW8zmGnLCytaSPKYMpvuW2loi-96d-MfQOQGpFsQvKpAJz9m8JiEYddB8IvQJrE'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CNYdEP7eChgLIhMIw_Gbs-eYkgMVYmsSAR3YryJlygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpK8qvkedsGHB_Yj-NYh8xK0O-WtaXMCU891140qR2DdSOP5vrd78p26DRGs8DBDaSu9YvtAP2kOj4ZUJERcQhMnjgiri_Lh3k92asX2hwdnDOBYuVI'}}, 'trackingParams': 'CNYdEP7eChgLIhMIw_Gbs-eYkgMVYmsSAR3YryJl'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 17:58:08,913 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 17:58:08,914 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 18:00:53,820 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 18:00:53,820 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 18:00:53,821 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 18:00:54,004 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 18:00:54,006 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 18:00:54,006 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 18:00:55,855 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 18:00:55,856 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 18:00:57,454 - music_tracker - ERROR - Error getting YouTube Music history: "Unable to find 'menuServiceItemRenderer' using path ['menu', 'menuRenderer', 'items', -1, 'menuServiceItemRenderer', 'serviceEndpoint', 'feedbackEndpoint', 'feedbackToken'] on {'toggleMenuServiceItemRenderer': {'defaultText': {'runs': [{'text': 'Pin to Listen again'}]}, 'defaultIcon': {'iconType': 'KEEP'}, 'defaultServiceEndpoint': {'clickTrackingParams': 'CNYdEP7eChgLIhMI0tzOg-iYkgMV9mReAx1I_zqJygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpLWyljiFWtRlYpmCAMtRa-oKapSyBB-FeLp7QRvxxjlY6OQd6O_B0_lVIRv_6G26r3PURauMZ_viESOvjqWBXbSCRF2pRBC083c6f6ASIwyk1oNrzo'}}, 'toggledText': {'runs': [{'text': 'Unpin from Listen again'}]}, 'toggledIcon': {'iconType': 'KEEP_OFF'}, 'toggledServiceEndpoint': {'clickTrackingParams': 'CNYdEP7eChgLIhMI0tzOg-iYkgMV9mReAx1I_zqJygEEDnHU8g==', 'feedbackEndpoint': {'feedbackToken': 'AB9zfpKpe2qvsAfGbcIaYEv4Ogc4g-MbgGOIXqC0TKyh_EecFq2tjIFpKwg59hdWQsEkzR3OvFFFTDrq3ZCch6uN7Y0Bcw-LYX8L4QFVmjB1MA4MP_PJdPk'}}, 'trackingParams': 'CNYdEP7eChgLIhMI0tzOg-iYkgMV9mReAx1I_zqJ'}}, exception: 'menuServiceItemRenderer'"
+2026-01-19 18:00:57,484 - music_tracker - INFO - No songs found from YouTube Music
+2026-01-19 18:00:57,485 - music_tracker - INFO - YouTube Music collection completed successfully
+2026-01-19 18:17:39,160 - music_tracker - INFO - SpotiSpy song collection starting...
+2026-01-19 18:17:39,161 - music_tracker - INFO - Starting song collection (last 1 hours)
+2026-01-19 18:17:39,162 - music_tracker - INFO - Fetching recent tracks from Spotify...
+2026-01-19 18:17:39,330 - music_tracker - INFO - No recent songs found from Spotify
+2026-01-19 18:17:39,332 - music_tracker - INFO - No new songs found from Spotify API
+2026-01-19 18:17:39,332 - music_tracker - INFO - Song collection completed successfully
+2026-01-19 18:17:41,205 - music_tracker - INFO - YouTube Music collection starting...
+2026-01-19 18:17:41,205 - music_tracker - INFO - Using browser auth file: /home/justinreynolds/Documents/SpotiSpy/browser.json
+2026-01-19 18:17:43,558 - music_tracker - INFO - Processing 40 recent songs from YouTube Music history (last 2 hours)
+2026-01-19 18:17:49,370 - music_tracker - INFO - Processed 10/40 songs (25.0%)
+2026-01-19 18:17:55,661 - music_tracker - INFO - Processed 20/40 songs (50.0%)
+2026-01-19 18:18:02,061 - music_tracker - INFO - Processed 30/40 songs (75.0%)
+2026-01-19 18:18:08,590 - music_tracker - INFO - Processed 40/40 songs (100.0%)
+2026-01-19 18:18:08,792 - music_tracker - INFO - 1 missing songs out of 40
+2026-01-19 18:18:08,793 - music_tracker - WARNING - Could not find Spotify data for 1 songs
+2026-01-19 18:18:08,798 - music_tracker - INFO - Found 40 songs from YouTube Music
+2026-01-19 18:18:11,799 - music_tracker - INFO - Checking for duplicates in database...
+2026-01-19 18:18:26,002 - music_tracker - INFO - YouTube Music duplicate check: 1 new out of 40 total
+2026-01-19 18:18:26,003 - music_tracker - INFO - Found 1 new songs to save
+2026-01-19 18:18:26,004 - music_tracker - INFO - Saving songs to database...
+2026-01-19 18:18:26,244 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 18:18:26,245 - music_tracker - INFO - Successfully saved 1 songs to database
+2026-01-19 18:18:26,246 - music_tracker - INFO - YouTube Music collection completed successfully
