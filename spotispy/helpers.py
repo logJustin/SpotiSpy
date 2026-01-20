@@ -1,6 +1,47 @@
 import logging
 import os
+import re
 from datetime import datetime, timedelta
+
+
+class SensitiveDataFilter(logging.Filter):
+    """Filter to redact sensitive data from log messages"""
+    
+    def __init__(self):
+        super().__init__()
+        # Patterns to redact
+        self.patterns = [
+            # Supabase URLs
+            (re.compile(r'https://[a-z0-9]+\.supabase\.co'), 'https://[REDACTED].supabase.co'),
+            # API keys (common patterns)
+            (re.compile(r'Bearer [A-Za-z0-9._-]{20,}'), 'Bearer [REDACTED]'),
+            (re.compile(r'apikey["\s]*:["\s]*[A-Za-z0-9._-]{20,}'), 'apikey: [REDACTED]'),
+            # Tokens
+            (re.compile(r'xoxb-[0-9]+-[0-9]+-[0-9]+-[a-f0-9]+'), 'xoxb-[REDACTED]'),
+            # Generic secrets in URLs
+            (re.compile(r'(\w+://[^/]+/[^?]*\?)([^&]*secret[^&]*&?)', re.IGNORECASE), 
+             r'\1[REDACTED_PARAMS]'),
+        ]
+    
+    def filter(self, record):
+        """Redact sensitive data from log record"""
+        if hasattr(record, 'msg'):
+            message = str(record.msg)
+            for pattern, replacement in self.patterns:
+                message = pattern.sub(replacement, message)
+            record.msg = message
+        
+        # Also check args if they exist
+        if hasattr(record, 'args') and record.args:
+            sanitized_args = []
+            for arg in record.args:
+                arg_str = str(arg)
+                for pattern, replacement in self.patterns:
+                    arg_str = pattern.sub(replacement, arg_str)
+                sanitized_args.append(arg_str)
+            record.args = tuple(sanitized_args)
+        
+        return True
 
 
 def get_last_hour_timestamp():
@@ -54,15 +95,17 @@ def setup_logger(log_name='music_tracker', log_level=logging.INFO):
     if not logger.handlers:
         logger.setLevel(log_level)
 
-        # File handler - logs to file
+        # File handler - logs to file with sensitive data filtering
         file_handler = logging.FileHandler(log_file)
         file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         file_handler.setFormatter(file_formatter)
+        file_handler.addFilter(SensitiveDataFilter())
 
-        # Console handler - logs to terminal
+        # Console handler - logs to terminal with sensitive data filtering
         console_handler = logging.StreamHandler()
         console_formatter = logging.Formatter('%(levelname)s: %(message)s')
         console_handler.setFormatter(console_formatter)
+        console_handler.addFilter(SensitiveDataFilter())
 
         logger.addHandler(file_handler)
         logger.addHandler(console_handler)
