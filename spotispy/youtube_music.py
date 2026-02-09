@@ -15,10 +15,18 @@ def get_recent_youtube_music_history(ytmusic_client, hours_limit=2):
     logger = get_logger()
     
     try:
+        logger.info("Attempting to fetch YouTube Music history...")
         raw_history = ytmusic_client.get_history()
         missing = 0
         
+        logger.info(f"Raw history response: {type(raw_history)} - Length: {len(raw_history) if raw_history else 'None'}")
+        
+        if raw_history is None:
+            logger.error("YouTube Music get_history() returned None - this usually indicates authentication issues")
+            return []
+        
         if not raw_history:
+            logger.info("YouTube Music history is empty (but not None)")
             return []
         
         # Limit to approximately last 2 hours (estimate ~20 songs per hour)
@@ -149,7 +157,32 @@ def collect_youtube_music_songs():
     try:
         browser_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'browser.json')
         logger.info(f"Using browser auth file: {browser_path}")
+        
+        # Check if browser.json exists
+        if not os.path.exists(browser_path):
+            logger.error(f"Browser auth file not found at: {browser_path}")
+            return False
+            
         ytmusic = YTMusic(browser_path)
+        logger.info("YouTube Music client initialized successfully")
+        
+        # Test authentication by trying to get user info
+        try:
+            # This is a simple test to see if auth works
+            logger.info("Testing YouTube Music authentication...")
+            test_result = ytmusic.get_history()
+            if test_result is None:
+                logger.error("Authentication test failed - get_history() returned None")
+                logger.error("Your browser.json authentication may have expired")
+                logger.info("To fix this:")
+                logger.info("1. Go to https://music.youtube.com in your browser")
+                logger.info("2. Log in to your account") 
+                logger.info("3. Regenerate browser.json using ytmusicapi setup")
+                return False
+            logger.info("Authentication test passed")
+        except Exception as auth_test_error:
+            logger.error(f"Authentication test failed: {auth_test_error}")
+            return False
         
         # Get all YouTube Music history
         songs = get_recent_youtube_music_history(ytmusic)
